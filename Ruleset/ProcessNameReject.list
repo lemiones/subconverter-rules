@@ -1,0 +1,7 @@
+PROCESS-NAME,clash,REJECT
+PROCESS-NAME,clash-meta,REJECT
+PROCESS-NAME,verge-clash,REJECT
+PROCESS-NAME,verge-clash-meta,REJECT
+PROCESS-NAME,mihomo,REJECT
+PROCESS-NAME,verge-mihomo,REJECT
+PROCESS-NAME,verge-mihomo-alpha,REJECT
