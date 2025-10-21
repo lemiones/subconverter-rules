@@ -1,4 +1,16 @@
 name: Custom_DNS_Rules
+desc: |-
+  DNS分流配置, 默认使用阿里云和DNSPod
+  国内域名使用阿里云和DNSPod解析
+  国外域名使用谷歌和Quad9解析
+openUrl: 'http://boxjs.com/#/app/BiliBili.Redirect'
+author: |-
+  Lemione Yang[https://github.com/lemiones]
+icon: 'https://github.com/BiliUniverse/Redirect/raw/main/src/assets/icon_rounded.png'
+category: 'DNS'
+date: '2025-12-21 18:13:21'
+version: '0.1.0'
+
 dns: #!replace
   # 跳过证书验证，解决部分兼容性问题
   # https://help.nextdns.io/t/g9hdkjz
@@ -13,12 +25,8 @@ dns: #!replace
   # Stash 会使用最先获得的解析记录回复 DNS 请求
   # 不建议配置超过 2 个 DNS 服务器，会增加系统功耗
   nameserver:
-    - https://223.5.5.5/dns-query#skip-cert-verify=true
-    - https://223.6.6.6/dns-query#skip-cert-verify=true
-    - https://1.12.12.12/dns-query#skip-cert-verify=true
-    - https://120.53.53.53/dns-query#skip-cert-verify=true
-    - tls://[2400:3200::1]
-    - tls://[2400:3200:baba::1]
+    - https://223.5.5.5/dns-query
+    - https://1.12.12.12/dns-query
   # 对部分域名使用单独的 DNS 服务器  
   nameserver-policy:
     geosite:cn,private:
