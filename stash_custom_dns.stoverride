@@ -3,8 +3,6 @@ desc: |-
   DNS分流配置, 默认使用阿里云和DNSPod
   国内域名使用阿里云和DNSPod解析
   国外域名使用谷歌和Quad9解析
-icon: 'https://github.com/BiliUniverse/Redirect/raw/main/src/assets/icon_rounded.png'
-category: 'DNS'
 
 dns: #!replace
   # 跳过证书验证，解决部分兼容性问题
