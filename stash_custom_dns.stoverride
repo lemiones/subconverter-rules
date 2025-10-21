@@ -3,6 +3,13 @@ desc: |-
   自定义DNS设置,默认使用AliYun DNS和DnsPod解析
   国内域名使用AliYun DNS和DnsPod解析
   国外域名使用Google DNS和Quad9 DNS解析
+author: |-
+  Lemione[https://github.com/lemiones]
+homepage: 'https://github.com/lemiones/subconverter-rules/'
+icon: 'https://github.com/BiliUniverse/Redirect/raw/main/src/assets/icon_rounded.png'
+category: '🪐 BiliUniverse'
+date: '2024-12-21 07:13:21'
+version: '0.1.0'
 
 dns: #!replace
   # 跳过证书验证，解决部分兼容性问题
