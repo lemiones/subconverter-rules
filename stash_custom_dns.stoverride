@@ -1,4 +1,8 @@
 name: Custom_DNS_Rules
+desc: |-
+  自定义DNS设置,默认使用AliYun DNS和DnsPod解析
+  国内域名使用AliYun DNS和DnsPod解析
+  国外域名使用Google DNS和Quad9 DNS解析
 
 dns: #!replace
   # 跳过证书验证，解决部分兼容性问题
