@@ -1,8 +1,8 @@
 name: Custom_DNS_Rules
 desc: |-
-  DNS分流配置, 默认使用阿里云和DNSPod
-  国内域名使用阿里云和DNSPod解析
-  国外域名使用谷歌和Quad9解析
+  'DNS分流配置, 默认使用阿里云和DNSPod'
+  '国内域名使用阿里云和DNSPod解析'
+  '国外域名使用谷歌和Quad9解析'
 
 dns: #!replace
   # 跳过证书验证，解决部分兼容性问题
