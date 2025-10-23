@@ -12,6 +12,8 @@ date: '2024-12-21 07:13:21'
 version: '0.1.0'
 
 dns: #!replace
+  # DOH 优先使用 http/3
+  prefer-h3: true
   # 跳过证书验证，解决部分兼容性问题
   # https://help.nextdns.io/t/g9hdkjz
   skip-cert-verify: true
