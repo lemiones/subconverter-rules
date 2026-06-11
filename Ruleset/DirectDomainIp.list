@@ -3,3 +3,5 @@ IP-CIDR,97.64.20.151/32,no-resolve
 DOMAIN-SUFFIX,tiexuejunyan.com
 DOMAIN-SUFFIX,uclouder.com
 DOMAIN-SUFFIX,deeponder.com
+PROCESS-NAME,AnyConnect
+PROCESS-NAME,Cisco Secure Client
