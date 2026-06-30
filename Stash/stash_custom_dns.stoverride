@@ -12,18 +12,18 @@ date: '2024-12-21 07:13:21'
 version: '0.1.0'
 
 rule-providers:
-  openclash-custom-fake-filter:
+  OpenclashCustomFakeFilter:
     type: http
     behavior: domain
     url: https://raw.githubusercontent.com/vernesong/OpenClash/refs/heads/master/luci-app-openclash/root/etc/openclash/custom/openclash_custom_fake_filter.list
-    path: "./rule_provider/openclash_custom_fake_filter.list"
+    path: "./rule_provider/OpenclashCustomFakeFilter.list"
     interval: 86400
     format: text
-  shellcrash-fake-filter:
+  ShellCrashFakeFilter:
     type: http
     behavior: domain
     url: https://cdn.jsdelivr.net/gh/juewuy/ShellCrash@dev/public/fake_ip_filter.list
-    path: "./rule_provider/openclash_custom_fake_filter.list"
+    path: "./rule_provider/ShellCrashFakeFilter.list"
     interval: 86400
     format: text
 
@@ -55,7 +55,7 @@ dns: #!replace
        - tls://149.112.112.112
   # 在以下列表的域名将不会被解析为 fake ip，这些域名相关的解析请求将会返回它们真实的 IP 地址
   fake-ip-filter:
-    - "geosite:private"
-    - "geosite:connectivity-check"
-    - "rule-set:shellcrash-fake-filter"
-    - "rule-set:openclash-custom-fake-filter"
+    - 'geosite:private'
+    - 'geosite:connectivity-check'
+    - 'rule-set:OpenclashCustomFakeFilter'
+    - 'rule-set:ShellCrashFakeFilter'
