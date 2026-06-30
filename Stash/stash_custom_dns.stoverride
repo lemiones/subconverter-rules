@@ -19,7 +19,7 @@ rule-providers:
     path: ./rule_provider/openclash_custom_fake_filter.list
     interval: 86400
     format: text
-  ShellCrashFakeFilter:
+  shellcrash-fake-filter:
     type: http
     behavior: domain
     url: https://cdn.jsdelivr.net/gh/juewuy/ShellCrash@dev/public/fake_ip_filter.list
