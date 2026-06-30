@@ -11,21 +11,21 @@ category: 'DNS'
 date: '2024-12-21 07:13:21'
 version: '0.1.0'
 
-rule-providers:
-  openclash-custom-fake-filter:
-    type: http
-    behavior: domain
-    url: https://raw.githubusercontent.com/vernesong/OpenClash/refs/heads/master/luci-app-openclash/root/etc/openclash/custom/openclash_custom_fake_filter.list
-    path: ./rule_provider/openclash_custom_fake_filter.list
-    interval: 86400
-    format: text
-  ShellCrashFakeFilter:
-    type: http
-    behavior: domain
-    url: https://cdn.jsdelivr.net/gh/juewuy/ShellCrash@dev/public/fake_ip_filter.list
-    path: ./rule_provider/shellcrash-fake-filter.list
-    interval: 86400
-    format: text
+#rule-providers:
+#  openclash-custom-fake-filter:
+#    type: http
+#    behavior: domain
+#    url: https://raw.githubusercontent.com/vernesong/OpenClash/refs/heads/master/luci-app-openclash/root/etc/openclash/custom/openclash_custom_fake_filter.list
+#    path: ./rule_provider/openclash_custom_fake_filter.list
+#    interval: 86400
+#    format: text
+#  ShellCrashFakeFilter:
+#    type: http
+#    behavior: domain
+#    url: https://cdn.jsdelivr.net/gh/juewuy/ShellCrash@dev/public/fake_ip_filter.list
+#    path: ./rule_provider/shellcrash-fake-filter.list
+#    interval: 86400
+#    format: text
 
 dns: #!replace
   # DOH 优先使用 http/3
