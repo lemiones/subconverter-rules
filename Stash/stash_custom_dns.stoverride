@@ -68,5 +68,5 @@ dns: #!replace
   fake-ip-filter:
     - 'geosite:private'
     - 'geosite:connectivity-check'
-    - 'rule-set:OpenclashCustomFakeFilter'
-    - 'rule-set:ShellCrashFakeFilter'
+    - 'rule-set:openclash-custom-fake-filter'
+    - 'rule-set:shellcrash-fake-filter'
