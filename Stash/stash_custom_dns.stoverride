@@ -47,8 +47,11 @@ dns: #!replace
     - https://1.12.12.12/dns-query
   # 对部分域名使用单独的 DNS 服务器  
   nameserver-policy:
-    'geosite:cn,private': https://223.5.5.5/dns-query
-    'geosite:gfw,greatfire,geolocation-!cn': tls://8.8.8.8
+    'geosite:cn': https://223.5.5.5/dns-query
+    'geosite:private': https://223.5.5.5/dns-query
+    'geosite:gfw': tls://8.8.8.8
+    'geosite:greatfire': tls://8.8.8.8
+    'geosite:geolocation-!cn': tls://8.8.8.8
   #  'geosite:cn':
   #     - https://223.5.5.5/dns-query
   #     - https://1.12.12.12/dns-query 
