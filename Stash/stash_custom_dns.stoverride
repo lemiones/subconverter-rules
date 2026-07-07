@@ -27,7 +27,7 @@ rule-providers:
     interval: 86400
     format: text
 
-dns: #!replace
+dns:
   # DOH 优先使用 http/3
   prefer-h3: true
   # 跳过证书验证，解决部分兼容性问题
@@ -48,10 +48,10 @@ dns: #!replace
   # 对部分域名使用单独的 DNS 服务器  
   nameserver-policy: #!replace
     'geosite:cn': https://223.5.5.5/dns-query
-    'geosite:private': https://223.5.5.5/dns-query
-    'geosite:gfw': tls://8.8.8.8:853
-    'geosite:greatfire': tls://8.8.8.8:853
     'geosite:geolocation-!cn': tls://8.8.8.8:853
+    #'geosite:private': https://223.5.5.5/dns-query
+    #'geosite:gfw': tls://8.8.8.8:853
+    #'geosite:greatfire': tls://8.8.8.8:853
   # 在以下列表的域名将不会被解析为 fake ip，这些域名相关的解析请求将会返回它们真实的 IP 地址
   fake-ip-filter: #!replace
     - 'geosite:private'
