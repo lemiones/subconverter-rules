@@ -8,13 +8,14 @@ proxy-providers:
   anyland-proxy-provider:
     type:  http
     url: {{SUB_NODES_URL}}
-    path: ./providers/anyland-proxy-provider.yaml
+    path: ./provider/AnylandProxyProvider.yaml
     interval: 3600
+    tolerance: 50
     health-check:
       enable: true
       url: https://www.gstatic.com/generate_204
       interval: 300
-      timeout: 5000
+      timeout: 50
       lazy: true
       expected-status: 204
 
@@ -364,236 +365,236 @@ rule-providers:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/lemiones/subconverter-rules/refs/heads/main/Ruleset/DirectDomainIp.list
-    path: ./providers/DirectDomainIp.yaml
+    path: ./providers/DirectDomainIp.list
     interval: 86400
   LocalAreaNetwork:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/LocalAreaNetwork.list
-    path: ./providers/LocalAreaNetwork.yaml
+    path: ./providers/LocalAreaNetwork.list
     interval: 86400
   UnBan:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/UnBan.list
-    path: ./providers/UnBan.yaml
+    path: ./providers/UnBan.list
     interval: 86400
   GoogleFCM:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/GoogleFCM.list
-    path: ./providers/GoogleFCM.yaml
+    path: ./providers/GoogleFCM.list
     interval: 86400
   GoogleCN:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/GoogleCN.list
-    path: ./providers/GoogleCN.yaml
+    path: ./providers/GoogleCN.list
     interval: 86400
   SteamCN:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/SteamCN.list
-    path: ./providers/SteamCN.yaml
+    path: ./providers/SteamCN.list
     interval: 86400
   OneDrive:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/OneDrive.list
-    path: ./providers/OneDrive.yaml
+    path: ./providers/OneDrive.list
     interval: 86400
   Microsoft:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Microsoft.list
-    path: ./providers/Microsoft.yaml
+    path: ./providers/Microsoft.list
     interval: 86400
   Apple:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Apple.list
-    path: ./providers/Apple.yaml
+    path: ./providers/Apple.list
     interval: 86400
   Telegram:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Telegram.list
-    path: ./providers/Telegram.yaml
+    path: ./providers/Telegram.list
     interval: 86400
   AI:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AI.list
-    path: ./providers/AI.yaml
+    path: ./providers/AI.list
     interval: 86400
   OpenAi:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/OpenAi.list
-    path: ./providers/OpenAi.yaml
+    path: ./providers/OpenAi.list
     interval: 86400
   Copilot:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Copilot/Copilot.list
-    path: ./providers/Copilot.yaml
+    path: ./providers/Copilot.list
     interval: 86400
   GitHub:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/GitHub/GitHub.list
-    path: ./providers/GitHub.yaml
+    path: ./providers/GitHub.list
     interval: 86400
   NetEaseMusic:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/NetEaseMusic.list
-    path: ./providers/NetEaseMusic.yaml
+    path: ./providers/NetEaseMusic.list
     interval: 86400
   Epic:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Epic.list
-    path: ./providers/Epic.yaml
+    path: ./providers/Epic.list
     interval: 86400
   Origin:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Origin.list
-    path: ./providers/Origin.yaml
+    path: ./providers/Origin.list
     interval: 86400
   Sony:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Sony.list
-    path: ./providers/Sony.yaml
+    path: ./providers/Sony.list
     interval: 86400
   Steam:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Steam.list
-    path: ./providers/Steam.yaml
+    path: ./providers/Steam.list
     interval: 86400
   Nintendo:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Nintendo.list
-    path: ./providers/Nintendo.yaml
+    path: ./providers/Nintendo.list
     interval: 86400
   YouTube:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/YouTube.list
-    path: ./providers/YouTube.yaml
+    path: ./providers/YouTube.list
     interval: 86400
   Netflix:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Netflix.list
-    path: ./providers/Netflix.yaml
+    path: ./providers/Netflix.list
     interval: 86400
   AmazonIp:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/AmazonIp.list
-    path: ./providers/AmazonIp.yaml
+    path: ./providers/AmazonIp.list
     interval: 86400
   Bahamut:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bahamut.list
-    path: ./providers/Bahamut.yaml
+    path: ./providers/Bahamut.list
     interval: 86400
   BilibiliHMT:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Origin.list
-    path: ./providers/BilibiliHMT.yaml
+    path: ./providers/BilibiliHMT.list
     interval: 86400
   Bilibili:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Bilibili.list
-    path: ./providers/Bilibili.yaml
+    path: ./providers/Bilibili.list
     interval: 86400
   ChinaMedia:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaMedia.list
-    path: ./providers/ChinaMedia.yaml
+    path: ./providers/ChinaMedia.list
     interval: 86400
   ProxyMedia:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyMedia.list
-    path: ./providers/ProxyMedia.yaml
+    path: ./providers/ProxyMedia.list
     interval: 86400
   ProxyLite:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyLite.list
-    path: ./providers/ProxyLite.yaml
+    path: ./providers/ProxyLite.list
     interval: 86400
   ProxyGFWlist:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list
-    path: ./providers/ProxyGFWlist.yaml
+    path: ./providers/ProxyGFWlist.list
     interval: 86400
   ChinaDomain:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaDomain.list
-    path: ./providers/ChinaDomain.yaml
+    path: ./providers/ChinaDomain.list
     interval: 86400
   ChinaCompanyIp:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ChinaCompanyIp.list
-    path: ./providers/ChinaCompanyIp.yaml
+    path: ./providers/ChinaCompanyIp.list
     interval: 86400
   Download:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Download.list
-    path: ./providers/Download.yaml
+    path: ./providers/Download.list
     interval: 86400
   Download2:
     format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.list
-    path: ./providers/Download2.yaml
+    path: ./providers/Download2.list
     interval: 86400
