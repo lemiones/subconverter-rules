@@ -533,7 +533,7 @@ rule-providers:
     format: text
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/Origin.list
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Ruleset/BilibiliHMT.list
     path: ./providers/BilibiliHMT.list
     interval: 86400
   Bilibili:
