@@ -320,8 +320,9 @@ proxy-groups:
     tolerance: 50
     use:
       - anyland-proxy-provider
-    filter: "(?i)(IN|NP|TH|MY|PH|VN|ID|KH|MM|BD|MV|印度|尼泊尔|泰国|马来西亚|菲律宾|越南|印度尼西亚|柬埔寨|缅甸|孟加拉|马尔代夫|海得拉巴|班加罗尔|加德滿都|曼谷|吉隆坡|马尼拉|河内|雅加达|西哈努克|仰光|达卡)"
-
+    #filter: "(?i)(IN|NP|TH|MY|PH|VN|ID|KH|MM|BD|MV|印度|尼泊尔|泰国|马来西亚|菲律宾|越南|印度尼西亚|柬埔寨|缅甸|孟加拉|马尔代夫|海得拉巴|班加罗尔|加德滿都|曼谷|吉隆坡|马尼拉|河内|雅加达|西哈努克|仰光|达卡)"
+    filter: "(?i)(India|Nepal|Thailand|Malaysia|Philippines|Vietnam|Indonesia|Cambodia|Myanmar|Bangladesh|Maldives|印度|尼泊尔|泰国|马来西亚|菲律宾|越南|印度尼西亚|柬埔寨|缅甸|孟加拉|马尔代夫|海得拉巴|班加罗尔|加德滿都|曼谷|吉隆坡|马尼拉|河内|雅加达|西哈努克|仰光|达卡)"
+    
 rules:
   - RULE-SET,DirectDomainIp,🎯 全球直连
   - RULE-SET,LocalAreaNetwork,🎯 全球直连
