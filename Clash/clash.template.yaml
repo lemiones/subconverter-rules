@@ -9,7 +9,7 @@ proxy-providers:
     type:  http
     url: {{SUB_NODES_URL}}
     path: ./provider/AnylandProxyProvider.yaml
-    interval: 3600
+    interval: 14400
     tolerance: 50
     health-check:
       enable: true
