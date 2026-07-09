@@ -39,6 +39,11 @@
     {
       "type": "direct",
       "tag": "direct"
+    },
+    {
+      "type": "selector",
+      "tag": "proxy",
+      "outbounds": []
     }
   ],
   "route": {
