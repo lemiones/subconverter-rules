@@ -9,13 +9,15 @@
         "tag": "dns-proxy",
         "type": "https",
         "server": "8.8.8.8",
-        "path": "/dns-query"
+        "path": "/dns-query",
+        "detour": "auto-proxy"
       },
       {
         "tag": "dns-direct",
         "type": "https",
         "server": "223.5.5.5",
-        "path": "/dns-query"
+        "path": "/dns-query",
+         "detour": "direct"
       }
     ],
     "rules": [
@@ -55,6 +57,10 @@
     "auto_detect_interface": true,
     "default_domain_resolver": "dns-direct",
     "rules": [
+       {
+        "ip_is_private": true,
+        "outbound": "direct"
+      },
       {
         "action": "sniff"
       },
@@ -65,10 +71,6 @@
       {
         "rule_set": ["geosite-cn"],
         "outbound":"direct"
-      },
-      {
-        "ip_is_private": true,
-        "outbound": "direct"
       }
     ],
     "rule_set": [
@@ -77,7 +79,8 @@
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/SagerNet/sing-geosite@rule-set/geosite-cn.srs",
-        "download_detour": "direct"
+        "download_detour": "direct",
+        "update_interval": "1d"
       }
      ],
     "final": "auto-proxy"
