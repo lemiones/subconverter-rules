@@ -65,9 +65,6 @@
     "final":"proxy"
   },
   "experimental": {
-    // 缓存 Fake IP 映射
-    "cache_file": {
-      "enabled": true
-    }
+    
   }
 }
