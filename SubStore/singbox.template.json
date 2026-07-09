@@ -41,8 +41,13 @@
       "tag": "direct"
     },
     {
-      "type": "selector",
-      "tag": "proxy",
+      "type": "urltest",
+      "tag": "auto-proxy",
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "3m",
+      "tolerance": 50,
+      "idle_timeout": "30m",
+      "interrupt_exist_connections": false,
       "outbounds": []
     }
   ],
@@ -75,7 +80,7 @@
         "download_detour": "direct"
       }
      ],
-    "final": "proxy"
+    "final": "auto-proxy"
   },
   "experimental": {
     
