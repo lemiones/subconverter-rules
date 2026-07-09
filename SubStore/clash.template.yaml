@@ -360,6 +360,7 @@ rules:
   - RULE-SET,Download2,🎯 全球直连
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
+
 rule-providers:
   DirectDomainIp:
     format: text
