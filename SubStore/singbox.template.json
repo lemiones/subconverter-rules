@@ -55,6 +55,7 @@
         "ip_is_private": true,
         "outbound": "direct"
       },
+       "final":"proxy"
     ],
     "rule_set": [
       {
@@ -64,8 +65,7 @@
         "url": "https://fastly.jsdelivr.net/gh/SagerNet/sing-geosite@rule-set/geosite-cn.srs",
         "download_detour": "direct"
       }
-     ],
-    "final":"proxy"
+     ]
   },
   "experimental": {
     
