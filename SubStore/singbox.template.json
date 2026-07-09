@@ -9,15 +9,13 @@
         "tag": "dns-proxy",
         "type": "https",
         "server": "8.8.8.8",
-        "path": "/dns-query",
-        "detour": "auto-proxy"
+        "path": "/dns-query"
       },
       {
         "tag": "dns-direct",
         "type": "https",
         "server": "223.5.5.5",
-        "path": "/dns-query",
-         "detour": "direct"
+        "path": "/dns-query"
       }
     ],
     "rules": [
