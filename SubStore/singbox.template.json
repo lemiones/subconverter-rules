@@ -35,7 +35,12 @@
       "users": []
     }
   ],
-  "outbounds": [],
+  "outbounds": [
+    {
+      "type": "direct",
+      "tag": "direct"
+    }
+  ],
   "route": {
     "auto_detect_interface": true,
     "default_domain_resolver": "local",
@@ -68,7 +73,8 @@
         "url": "https://fastly.jsdelivr.net/gh/SagerNet/sing-geosite@rule-set/geosite-cn.srs",
         "download_detour": "direct"
       }
-     ]
+     ],
+    "final": "proxy"
   },
   "experimental": {
     
