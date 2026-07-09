@@ -59,10 +59,6 @@
       {
         "ip_is_private": true,
         "outbound": "direct"
-      },
-      {
-        "type": "direct",
-        "tag": "direct"
       }
     ],
     "rule_set": [
