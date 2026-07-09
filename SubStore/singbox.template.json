@@ -42,7 +42,7 @@
     },
     {
       "type": "urltest",
-      "tag": "auto-proxy",
+      "tag": "proxy",
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
       "tolerance": 50,
@@ -81,7 +81,7 @@
         "update_interval": "1d"
       }
      ],
-    "final": "auto-proxy"
+    "final": "proxy"
   },
   "experimental": {
     
