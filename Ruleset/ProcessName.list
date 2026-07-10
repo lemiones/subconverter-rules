@@ -1,10 +1,10 @@
-PROCESS-NAME,clash,DIRECT
-PROCESS-NAME,clash-meta,DIRECT
-PROCESS-NAME,verge-clash,DIRECT
-PROCESS-NAME,verge-clash-meta,DIRECT
-PROCESS-NAME,mihomo,DIRECT
-PROCESS-NAME,sing-box,DIRECT
-PROCESS-NAME,verge-mihomo,DIRECT
-PROCESS-NAME,verge-mihomo-alpha,DIRECT
-PROCESS-NAME,AnyConnect,DIRECT
-PROCESS-NAME,Cisco Secure Client,DIRECT
+PROCESS-NAME,clash
+PROCESS-NAME,clash-meta
+PROCESS-NAME,verge-clash
+PROCESS-NAME,verge-clash-meta
+PROCESS-NAME,mihomo
+PROCESS-NAME,sing-box
+PROCESS-NAME,verge-mihom
+PROCESS-NAME,verge-mihomo-alpha
+PROCESS-NAME,AnyConnect
+PROCESS-NAME,Cisco Secure Client
