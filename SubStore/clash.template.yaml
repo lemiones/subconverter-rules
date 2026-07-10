@@ -5,10 +5,10 @@ log-level: info
 external-controller: 127.0.0.1:9090
 
 proxy-providers:
-  AnylandProxyProvider:
+  SubProxyProvider:
     type:  http
-    url: {{SUB_NODES_URL}}
-    path: ./provider/AnylandProxyProvider.yaml
+    url: {{SUB_PROXY_URL}}
+    path: ./provider/SubProxyProvider.yaml
     interval: 14400
     tolerance: 50
     health-check:
@@ -36,14 +36,14 @@ proxy-groups:
   - name: 🚀 手动切换
     type: select
     use:
-      - AnylandProxyProvider
+      - SubProxyProvider
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     use:
-      - AnylandProxyProvider
+      - SubProxyProvider
   - name: 📲 电报消息
     type: select
     proxies:
@@ -271,7 +271,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - AnylandProxyProvider
+      - SubProxyProvider
     filter: "(?i)(HK|Hong Kong|港|香港)"
   - name: 🇨🇳 台湾节点
     type: url-test
@@ -279,7 +279,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - AnylandProxyProvider
+      - SubProxyProvider
     filter: "(?i)(TW|Taiwan|台|台湾|新北|彰化)"
   - name: 🇯🇵 日本节点
     type: url-test
@@ -287,7 +287,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - AnylandProxyProvider
+      - SubProxyProvider
     filter: "(?i)(JP|Japan|JPN|日本|川日|东京|大阪|泉日|埼玉|沪日|深日)"
   - name: 🇰🇷 韩国节点
     type: url-test
@@ -295,7 +295,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - AnylandProxyProvider
+      - SubProxyProvider
     filter: "(?i)(KR|Korea|KOR|韩国|首尔|韩|韓)"
   - name: 🇸🇬 狮城节点
     type: url-test
@@ -303,7 +303,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - AnylandProxyProvider
+      - SubProxyProvider
     filter: "(?i)(SG|Singapore|新加坡|坡|狮城)"
   - name: 🇺🇲 美国节点
     type: url-test
@@ -311,7 +311,7 @@ proxy-groups:
     interval: 300
     tolerance: 150
     use:
-      - AnylandProxyProvider
+      - SubProxyProvider
     filter: "(?i)(US|United States|美|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|旧金山)"
   - name: 🇦🇸 东盟节点
     type: url-test
@@ -319,7 +319,7 @@ proxy-groups:
     interval: 300
     tolerance: 50
     use:
-      - AnylandProxyProvider
+      - SubProxyProvider
     #filter: "(?i)(IN|NP|TH|MY|PH|VN|ID|KH|MM|BD|MV|印度|尼泊尔|泰国|马来西亚|菲律宾|越南|印度尼西亚|柬埔寨|缅甸|孟加拉|马尔代夫|海得拉巴|班加罗尔|加德滿都|曼谷|吉隆坡|马尼拉|河内|雅加达|西哈努克|仰光|达卡)"
     filter: "(?i)(India|Nepal|Thailand|Malaysia|Philippines|Vietnam|Indonesia|Cambodia|Myanmar|Bangladesh|Maldives|印度|尼泊尔|泰国|马来西亚|菲律宾|越南|印度尼西亚|柬埔寨|缅甸|孟加拉|马尔代夫|海得拉巴|班加罗尔|加德滿都|曼谷|吉隆坡|马尼拉|河内|雅加达|西哈努克|仰光|达卡)"
     
