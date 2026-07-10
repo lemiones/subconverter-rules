@@ -31,6 +31,7 @@ proxy-groups:
       - 🇰🇷 韩国节点
       - 🇺🇲 美国节点
       - 🇦🇸 东盟节点
+      - 🇸🇦 中东节点
       - 🚀 手动切换
       - DIRECT
   - name: 🚀 手动切换
@@ -56,6 +57,7 @@ proxy-groups:
       - 🇰🇷 韩国节点
       - 🇺🇲 美国节点
       - 🇦🇸 东盟节点
+      - 🇸🇦 中东节点
       - 🚀 手动切换
       - DIRECT
   - name: 💬 OpenAI
@@ -70,6 +72,7 @@ proxy-groups:
       - 🇰🇷 韩国节点
       - 🇺🇲 美国节点
       - 🇦🇸 东盟节点
+      - 🇸🇦 中东节点
       - 🚀 手动切换
       - DIRECT
   - name: Ⓜ️ Copilot
@@ -84,6 +87,7 @@ proxy-groups:
       - 🇰🇷 韩国节点
       - 🇺🇲 美国节点
       - 🇦🇸 东盟节点
+      - 🇸🇦 中东节点
       - 🚀 手动切换
       - DIRECT
   - name: 🌀 GitHub
@@ -98,6 +102,7 @@ proxy-groups:
       - 🇰🇷 韩国节点
       - 🇺🇲 美国节点
       - 🇦🇸 东盟节点
+      - 🇸🇦 中东节点
       - 🚀 手动切换
       - DIRECT
   - name: 📹 油管视频
@@ -112,6 +117,7 @@ proxy-groups:
       - 🇰🇷 韩国节点
       - 🇺🇲 美国节点
       - 🇦🇸 东盟节点
+      - 🇸🇦 中东节点
       - 🚀 手动切换
       - DIRECT
   - name: 🎥 奈飞视频
@@ -126,6 +132,7 @@ proxy-groups:
       - 🇰🇷 韩国节点
       - 🇺🇲 美国节点
       - 🇦🇸 东盟节点
+      - 🇸🇦 中东节点
       - 🚀 手动切换
       - DIRECT
   - name: 📺 巴哈姆特
@@ -162,6 +169,7 @@ proxy-groups:
       - 🇰🇷 韩国节点
       - 🇺🇲 美国节点
       - 🇦🇸 东盟节点
+      - 🇸🇦 中东节点
       - 🚀 手动切换
       - DIRECT
   - name: 🌏 国内媒体
@@ -186,6 +194,7 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
       - 🇦🇸 东盟节点
+      - 🇸🇦 中东节点
       - 🚀 手动切换
   - name: Ⓜ️ 微软云盘
     type: select
@@ -199,6 +208,7 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
       - 🇦🇸 东盟节点
+      - 🇸🇦 中东节点
       - 🚀 手动切换
   - name: Ⓜ️ 微软服务
     type: select
@@ -212,6 +222,7 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
       - 🇦🇸 东盟节点
+      - 🇸🇦 中东节点
       - 🚀 手动切换
   - name: 🍎 苹果服务
     type: select
@@ -225,6 +236,7 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
       - 🇦🇸 东盟节点
+      - 🇸🇦 中东节点
       - 🚀 手动切换
   - name: 🎮 游戏平台
     type: select
@@ -238,6 +250,7 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
       - 🇦🇸 东盟节点
+      - 🇸🇦 中东节点
       - 🚀 手动切换
   - name: 🎶 网易音乐
     type: select
@@ -264,6 +277,7 @@ proxy-groups:
       - 🇰🇷 韩国节点
       - 🇺🇲 美国节点
       - 🇦🇸 东盟节点
+      - 🇸🇦 中东节点
       - 🚀 手动切换
   - name: 🇭🇰 香港节点
     type: url-test
@@ -304,7 +318,8 @@ proxy-groups:
     tolerance: 50
     use:
       - SubProxyProvider
-    filter: "(?i)(SG|Singapore|新加坡|坡|狮城)"
+    #filter: "(?i)(SG|Singapore|新加坡|坡|狮城)"
+    filter: "(?i)(Singapore|新加坡|坡|狮城)"
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -322,7 +337,14 @@ proxy-groups:
       - SubProxyProvider
     #filter: "(?i)(IN|NP|TH|MY|PH|VN|ID|KH|MM|BD|MV|印度|尼泊尔|泰国|马来西亚|菲律宾|越南|印度尼西亚|柬埔寨|缅甸|孟加拉|马尔代夫|海得拉巴|班加罗尔|加德滿都|曼谷|吉隆坡|马尼拉|河内|雅加达|西哈努克|仰光|达卡)"
     filter: "(?i)(India|Nepal|Thailand|Malaysia|Philippines|Vietnam|Indonesia|Cambodia|Myanmar|Bangladesh|Maldives|印度|尼泊尔|泰国|马来西亚|菲律宾|越南|印度尼西亚|柬埔寨|缅甸|孟加拉|马尔代夫|海得拉巴|班加罗尔|加德滿都|曼谷|吉隆坡|马尼拉|河内|雅加达|西哈努克|仰光|达卡)"
-    
+  - name: 🇸🇦 中东节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 150
+    use:
+      - SubProxyProvider
+    filter: "(?i)(SA|AE|QA|IL|IQ|PK|OM|BH|沙特|阿联酋|卡塔尔|以色列|伊拉克|巴基斯坦|阿曼|巴林|吉达|迪拜|多哈|耶路撒冷|巴格达|卡拉奇|马斯喀特|麦纳麦)"
 rules:
   - RULE-SET,DirectDomainIp,🎯 全球直连
   - RULE-SET,LocalAreaNetwork,🎯 全球直连
