@@ -9,6 +9,7 @@ proxy-providers:
     type:  http
     url: {{SUB_PROXY_URL}}
     path: ./provider/SubProxyProvider.yaml
+    age-secret-key: {{AGE_SECRET_KEY}}
     interval: 7200
     tolerance: 50
     health-check:
