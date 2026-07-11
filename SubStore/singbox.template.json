@@ -84,6 +84,9 @@
     "final": "proxy"
   },
   "experimental": {
-    
+     "clash_api": {
+      "external_controller": "127.0.0.1:65530",
+      "external_ui": "zashboard"
+    }
   }
 }
