@@ -358,7 +358,7 @@ proxy-groups:
     tolerance: 50
     use:
       - SubProxyProvider
-    filter: "(?i)(HK|Hong Kong|港|香港)"
+    filter: "(?i)(Hong Kong|港|香港)"
   - name: 🇨🇳 台湾节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -366,7 +366,7 @@ proxy-groups:
     tolerance: 50
     use:
       - SubProxyProvider
-    filter: "(?i)(TW|Taiwan|台|台湾|新北|彰化)"
+    filter: "(?i)(Taiwan|台|台湾|新北|彰化)"
   - name: 🇯🇵 日本节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -374,7 +374,7 @@ proxy-groups:
     tolerance: 50
     use:
       - SubProxyProvider
-    filter: "(?i)(JP|Japan|JPN|日本|川日|东京|大阪|泉日|埼玉|沪日|深日)"
+    filter: "(?i)(Japan|JPN|日本|川日|东京|大阪|泉日|埼玉|沪日|深日)"
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -382,7 +382,7 @@ proxy-groups:
     tolerance: 50
     use:
       - SubProxyProvider
-    filter: "(?i)(KR|Korea|KOR|韩国|首尔|韩|韓)"
+    filter: "(?i)(Korea|KOR|韩国|首尔|韩|韓)"
   - name: 🇸🇬 狮城节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -390,7 +390,7 @@ proxy-groups:
     tolerance: 50
     use:
       - SubProxyProvider
-    filter: "(?i)(SG|Singapore|新加坡|狮城)"
+    filter: "(?i)(Singapore|新加坡|狮城)"
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -406,7 +406,7 @@ proxy-groups:
     tolerance: 150
     use:
       - SubProxyProvider
-    filter: "(?i)(CA|Canada|加拿大|蒙特利尔|温哥华|楓葉|枫叶)"
+    filter: "(?i)(Canada|加拿大|蒙特利尔|温哥华|楓葉|枫叶)"
   - name: 🇬🇧 英国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -414,23 +414,23 @@ proxy-groups:
     tolerance: 150
     use:
       - SubProxyProvider
-    filter: "(?i)(UK|England|UnitedKingdom|IE|英|英国|伦敦|爱尔兰|都柏林)"
-  - name: 🇦🇺 澳洲节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 150
-    use:
-      - SubProxyProvider
-    filter: "(?i)(AU|Australia|澳洲|澳大利亚|悉尼|墨尔本)"
-  - name: 🇷🇺 俄国节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 150
-    use:
-      - SubProxyProvider
-    filter: "(?i)(RU|Russia|俄罗斯|莫斯科|西伯利亚)"
+    filter: "(?i)(England|UnitedKingdom|IE|英|英国|伦敦|爱尔兰|都柏林)"
+  #- name: 🇦🇺 澳洲节点
+  #  type: url-test
+  #  url: http://www.gstatic.com/generate_204
+  #  interval: 300
+  #  tolerance: 150
+  #  use:
+  #    - SubProxyProvider
+  #  filter: "(?i)(AU|Australia|澳洲|澳大利亚|悉尼|墨尔本)"
+  #- name: 🇷🇺 俄国节点
+  #  type: url-test
+  #  url: http://www.gstatic.com/generate_204
+  #  interval: 300
+  #  tolerance: 150
+  #  use:
+  #    - SubProxyProvider
+  #  filter: "(?i)(RU|Russia|俄罗斯|莫斯科|西伯利亚)"
   - name: 🇪🇺 欧洲节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -438,7 +438,7 @@ proxy-groups:
     tolerance: 150
     use:
       - SubProxyProvider
-    filter: "(?i)(DE|FR|IT|ES|PT|AT|CH|NL|BE|PL|TR|SE|GR|RS|BG|LT|LV|UA|IS|NO|DK|BA|MD|CZ|RO|HU|FI|EE|德国|法国|意大利|西班牙|葡萄牙|奥地利|荷兰|比利时|瑞士|波兰|土耳其|瑞典|希腊|塞尔维亚|保加利亚|立陶宛|拉脱维亚|乌克兰|冰岛|挪威|丹麦|芬兰|爱沙尼亚|波黑|摩尔多瓦|捷克|罗马尼亚|匈牙利|柏林|法兰克福|巴黎|马赛|米兰|马德里|里斯本|维也纳|阿姆斯特丹|布鲁塞尔|苏黎世|卢布|伊斯坦布尔|斯德哥尔摩|雅典|贝尔格莱德|基辅|哈尔科夫|维尔纽斯|雷克雅未克|奥斯陆|哥本哈根|赫尔辛基|塔林|基希讷乌|布拉格|布加勒斯特|布达佩斯)"
+    filter: "(?i)(Germany|France|Italy|Spain|Portugal|Austria|Switzerland|Netherlands|Belgium|Poland|Turkey|Sweden|Greece|Serbia|Bulgaria|Lithuania|Latvia|Ukraine|Iceland|Norway|Denmark|Bosnia|Moldova|Czech|Romania|Hungary|Finland|Estonia|德国|法国|意大利|西班牙|葡萄牙|奥地利|荷兰|比利时|瑞士|波兰|土耳其|瑞典|希腊|塞尔维亚|保加利亚|立陶宛|拉脱维亚|乌克兰|冰岛|挪威|丹麦|芬兰|爱沙尼亚|波黑|摩尔多瓦|捷克|罗马尼亚|匈牙利|柏林|法兰克福|巴黎|马赛|米兰|马德里|里斯本|维也纳|阿姆斯特丹|布鲁塞尔|苏黎世|卢布|伊斯坦布尔|斯德哥尔摩|雅典|贝尔格莱德|基辅|哈尔科夫|维尔纽斯|雷克雅未克|奥斯陆|哥本哈根|赫尔辛基|塔林|基希讷乌|布拉格|布加勒斯特|布达佩斯)"
   - name: 🇦🇸 东盟节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -454,7 +454,7 @@ proxy-groups:
     tolerance: 150
     use:
       - SubProxyProvider
-    filter: "(?i)(SA|AE|QA|IL|IQ|PK|OM|BH|沙特|阿联酋|卡塔尔|以色列|伊拉克|巴基斯坦|阿曼|巴林|吉达|迪拜|多哈|耶路撒冷|巴格达|卡拉奇|马斯喀特|麦纳麦)"
+    filter: "(?i)(SA|AE|QA|IL|IQ|PK|OM|BH|Saudi Arabia|United Arab Emirates|Qatar|Israel|Iraq|Pakistan|Oman|Bahrain|Jeddah|Riyadh|Dubai|Abu Dhabi|Doha|Jerusalem|Tel Aviv|Baghdad|Basra|Karachi|Islamabad|Muscat|Manama|沙特|阿联酋|卡塔尔|以色列|伊拉克|巴基斯坦|阿曼|巴林|吉达|迪拜|多哈|耶路撒冷|巴格达|卡拉奇|马斯喀特|麦纳麦)"
 rules:
   - RULE-SET,DirectDomainIp,🎯 全球直连
   - RULE-SET,LocalAreaNetwork,🎯 全球直连
