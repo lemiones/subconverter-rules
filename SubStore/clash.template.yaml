@@ -30,13 +30,20 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
       - 🇺🇲 美国节点
-      - 🇦🇸 东盟节点
       - 🇨🇦 枫叶节点
+      - 🇲🇽 北美节点
       - 🇬🇧 英国节点
-      #- 🇦🇺 澳洲节点
-      #- 🇷🇺 俄国节点
-      - 🇪🇺 欧洲节点
+      - 🇦🇺 澳洲节点
+      - 🇷🇺 俄国节点
+      - 🇰🇿 中亚节点
+      - 🇦🇸 东盟节点
+      - 🇪🇺 西欧节点
+      - 🇺🇳 东欧节点
+      - ☀️ 南欧节点
+      - ❄️ 北欧节点
       - 🇸🇦 中东节点
+      - 🇧🇷 南美节点
+      - 🌍 非洲节点
       - 🚀 手动切换
       - DIRECT
   - name: 🚀 手动切换
@@ -60,14 +67,21 @@ proxy-groups:
       - 🇨🇳 台湾节点
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
-      - 🇦🇸 东盟节点
       - 🇺🇲 美国节点
       - 🇨🇦 枫叶节点
+      - 🇲🇽 北美节点
       - 🇬🇧 英国节点
-      #- 🇦🇺 澳洲节点
-      #- 🇷🇺 俄国节点
-      - 🇪🇺 欧洲节点
+      - 🇦🇺 澳洲节点
+      - 🇷🇺 俄国节点
+      - 🇰🇿 中亚节点
+      - 🇦🇸 东盟节点
+      - 🇪🇺 西欧节点
+      - 🇺🇳 东欧节点
+      - ☀️ 南欧节点
+      - ❄️ 北欧节点
       - 🇸🇦 中东节点
+      - 🇧🇷 南美节点
+      - 🌍 非洲节点
       - 🚀 手动切换
       - DIRECT
   - name: 💬 OpenAI
@@ -75,19 +89,27 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
+      - 🛜 家宽节点
       - 🇸🇬 狮城节点
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
-      - 🇦🇸 东盟节点
       - 🇺🇲 美国节点
       - 🇨🇦 枫叶节点
+      - 🇲🇽 北美节点
       - 🇬🇧 英国节点
-      #- 🇦🇺 澳洲节点
-      #- 🇷🇺 俄国节点
-      - 🇪🇺 欧洲节点
+      - 🇦🇺 澳洲节点
+      - 🇷🇺 俄国节点
+      - 🇰🇿 中亚节点
+      - 🇦🇸 东盟节点
+      - 🇪🇺 西欧节点
+      - 🇺🇳 东欧节点
+      - ☀️ 南欧节点
+      - ❄️ 北欧节点
       - 🇸🇦 中东节点
+      - 🇧🇷 南美节点
+      - 🌍 非洲节点
       - 🚀 手动切换
       - DIRECT
   - name: Ⓜ️ Copilot
@@ -95,19 +117,27 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
+      - 🛜 家宽节点
       - 🇸🇬 狮城节点
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
-      - 🇦🇸 东盟节点
       - 🇺🇲 美国节点
       - 🇨🇦 枫叶节点
+      - 🇲🇽 北美节点
       - 🇬🇧 英国节点
-      #- 🇦🇺 澳洲节点
-      #- 🇷🇺 俄国节点
-      - 🇪🇺 欧洲节点
+      - 🇦🇺 澳洲节点
+      - 🇷🇺 俄国节点
+      - 🇰🇿 中亚节点
+      - 🇦🇸 东盟节点
+      - 🇪🇺 西欧节点
+      - 🇺🇳 东欧节点
+      - ☀️ 南欧节点
+      - ❄️ 北欧节点
       - 🇸🇦 中东节点
+      - 🇧🇷 南美节点
+      - 🌍 非洲节点
       - 🚀 手动切换
       - DIRECT
   - name: 🌀 GitHub
@@ -115,19 +145,27 @@ proxy-groups:
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
+      - 🛜 家宽节点
       - 🇸🇬 狮城节点
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
-      - 🇦🇸 东盟节点
       - 🇺🇲 美国节点
       - 🇨🇦 枫叶节点
+      - 🇲🇽 北美节点
       - 🇬🇧 英国节点
-      #- 🇦🇺 澳洲节点
-      #- 🇷🇺 俄国节点
-      - 🇪🇺 欧洲节点
+      - 🇦🇺 澳洲节点
+      - 🇷🇺 俄国节点
+      - 🇰🇿 中亚节点
+      - 🇦🇸 东盟节点
+      - 🇪🇺 西欧节点
+      - 🇺🇳 东欧节点
+      - ☀️ 南欧节点
+      - ❄️ 北欧节点
       - 🇸🇦 中东节点
+      - 🇧🇷 南美节点
+      - 🌍 非洲节点
       - 🚀 手动切换
       - DIRECT
   - name: 📹 油管视频
@@ -140,14 +178,21 @@ proxy-groups:
       - 🇨🇳 台湾节点
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
-      - 🇦🇸 东盟节点
       - 🇺🇲 美国节点
       - 🇨🇦 枫叶节点
+      - 🇲🇽 北美节点
       - 🇬🇧 英国节点
-      #- 🇦🇺 澳洲节点
-      #- 🇷🇺 俄国节点
-      - 🇪🇺 欧洲节点
+      - 🇦🇺 澳洲节点
+      - 🇷🇺 俄国节点
+      - 🇰🇿 中亚节点
+      - 🇦🇸 东盟节点
+      - 🇪🇺 西欧节点
+      - 🇺🇳 东欧节点
+      - ☀️ 南欧节点
+      - ❄️ 北欧节点
       - 🇸🇦 中东节点
+      - 🇧🇷 南美节点
+      - 🌍 非洲节点
       - 🚀 手动切换
       - DIRECT
   - name: 🎥 奈飞视频
@@ -160,14 +205,21 @@ proxy-groups:
       - 🇨🇳 台湾节点
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
-      - 🇦🇸 东盟节点
       - 🇺🇲 美国节点
       - 🇨🇦 枫叶节点
+      - 🇲🇽 北美节点
       - 🇬🇧 英国节点
-      #- 🇦🇺 澳洲节点
-      #- 🇷🇺 俄国节点
-      - 🇪🇺 欧洲节点
+      - 🇦🇺 澳洲节点
+      - 🇷🇺 俄国节点
+      - 🇰🇿 中亚节点
+      - 🇦🇸 东盟节点
+      - 🇪🇺 西欧节点
+      - 🇺🇳 东欧节点
+      - ☀️ 南欧节点
+      - ❄️ 北欧节点
       - 🇸🇦 中东节点
+      - 🇧🇷 南美节点
+      - 🌍 非洲节点
       - 🚀 手动切换
       - DIRECT
   - name: 📺 巴哈姆特
@@ -179,6 +231,7 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
       - 🇺🇲 美国节点
+      - 🇨🇦 枫叶节点
       - 🚀 节点选择
       - 🚀 手动切换
       - DIRECT
@@ -192,6 +245,7 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
       - 🇺🇲 美国节点
+      - 🇨🇦 枫叶节点
       - 🚀 节点选择
       - DIRECT
   - name: 🌍 国外媒体
@@ -204,14 +258,21 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
-      - 🇦🇸 东盟节点
       - 🇺🇲 美国节点
       - 🇨🇦 枫叶节点
+      - 🇲🇽 北美节点
       - 🇬🇧 英国节点
-      #- 🇦🇺 澳洲节点
-      #- 🇷🇺 俄国节点
-      - 🇪🇺 欧洲节点
+      - 🇦🇺 澳洲节点
+      - 🇷🇺 俄国节点
+      - 🇰🇿 中亚节点
+      - 🇦🇸 东盟节点
+      - 🇪🇺 西欧节点
+      - 🇺🇳 东欧节点
+      - ☀️ 南欧节点
+      - ❄️ 北欧节点
       - 🇸🇦 中东节点
+      - 🇧🇷 南美节点
+      - 🌍 非洲节点
       - 🚀 手动切换
       - DIRECT
   - name: 🌏 国内媒体
@@ -223,6 +284,7 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
+      - 🇺🇲 美国节点
       - 🚀 手动切换
   - name: 📢 谷歌FCM
     type: select
@@ -235,13 +297,20 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
-      - 🇦🇸 东盟节点
       - 🇨🇦 枫叶节点
+      - 🇲🇽 北美节点
       - 🇬🇧 英国节点
-      #- 🇦🇺 澳洲节点
-      #- 🇷🇺 俄国节点
-      - 🇪🇺 欧洲节点
+      - 🇦🇺 澳洲节点
+      - 🇷🇺 俄国节点
+      - 🇰🇿 中亚节点
+      - 🇦🇸 东盟节点
+      - 🇪🇺 西欧节点
+      - 🇺🇳 东欧节点
+      - ☀️ 南欧节点
+      - ❄️ 北欧节点
       - 🇸🇦 中东节点
+      - 🇧🇷 南美节点
+      - 🌍 非洲节点
       - 🚀 手动切换
   - name: Ⓜ️ 微软云盘
     type: select
@@ -256,11 +325,19 @@ proxy-groups:
       - 🇰🇷 韩国节点
       - 🇦🇸 东盟节点
       - 🇨🇦 枫叶节点
+      - 🇲🇽 北美节点
       - 🇬🇧 英国节点
-      #- 🇦🇺 澳洲节点
-      #- 🇷🇺 俄国节点
-      - 🇪🇺 欧洲节点
+      - 🇦🇺 澳洲节点
+      - 🇷🇺 俄国节点
+      - 🇰🇿 中亚节点
+      - 🇦🇸 东盟节点
+      - 🇪🇺 西欧节点
+      - 🇺🇳 东欧节点
+      - ☀️ 南欧节点
+      - ❄️ 北欧节点
       - 🇸🇦 中东节点
+      - 🇧🇷 南美节点
+      - 🌍 非洲节点
       - 🚀 手动切换
   - name: Ⓜ️ 微软服务
     type: select
@@ -273,13 +350,20 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
-      - 🇦🇸 东盟节点
       - 🇨🇦 枫叶节点
+      - 🇲🇽 北美节点
       - 🇬🇧 英国节点
-      #- 🇦🇺 澳洲节点
-      #- 🇷🇺 俄国节点
-      - 🇪🇺 欧洲节点
+      - 🇦🇺 澳洲节点
+      - 🇷🇺 俄国节点
+      - 🇰🇿 中亚节点
+      - 🇦🇸 东盟节点
+      - 🇪🇺 西欧节点
+      - 🇺🇳 东欧节点
+      - ☀️ 南欧节点
+      - ❄️ 北欧节点
       - 🇸🇦 中东节点
+      - 🇧🇷 南美节点
+      - 🌍 非洲节点
       - 🚀 手动切换
   - name: 🍎 苹果服务
     type: select
@@ -292,13 +376,20 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
-      - 🇦🇸 东盟节点
       - 🇨🇦 枫叶节点
+      - 🇲🇽 北美节点
       - 🇬🇧 英国节点
-      #- 🇦🇺 澳洲节点
-      #- 🇷🇺 俄国节点
-      - 🇪🇺 欧洲节点
+      - 🇦🇺 澳洲节点
+      - 🇷🇺 俄国节点
+      - 🇰🇿 中亚节点
+      - 🇦🇸 东盟节点
+      - 🇪🇺 西欧节点
+      - 🇺🇳 东欧节点
+      - ☀️ 南欧节点
+      - ❄️ 北欧节点
       - 🇸🇦 中东节点
+      - 🇧🇷 南美节点
+      - 🌍 非洲节点
       - 🚀 手动切换
   - name: 🎮 游戏平台
     type: select
@@ -311,13 +402,20 @@ proxy-groups:
       - 🇸🇬 狮城节点
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
-      - 🇦🇸 东盟节点
       - 🇨🇦 枫叶节点
+      - 🇲🇽 北美节点
       - 🇬🇧 英国节点
-      #- 🇦🇺 澳洲节点
-      #- 🇷🇺 俄国节点
-      - 🇪🇺 欧洲节点
+      - 🇦🇺 澳洲节点
+      - 🇷🇺 俄国节点
+      - 🇰🇿 中亚节点
+      - 🇦🇸 东盟节点
+      - 🇪🇺 西欧节点
+      - 🇺🇳 东欧节点
+      - ☀️ 南欧节点
+      - ❄️ 北欧节点
       - 🇸🇦 中东节点
+      - 🇧🇷 南美节点
+      - 🌍 非洲节点
       - 🚀 手动切换
   - name: 🎶 网易音乐
     type: select
@@ -343,13 +441,20 @@ proxy-groups:
       - 🇯🇵 日本节点
       - 🇰🇷 韩国节点
       - 🇺🇲 美国节点
-      - 🇦🇸 东盟节点
       - 🇨🇦 枫叶节点
+      - 🇲🇽 北美节点
       - 🇬🇧 英国节点
-      #- 🇦🇺 澳洲节点
-      #- 🇷🇺 俄国节点
-      - 🇪🇺 欧洲节点
+      - 🇦🇺 澳洲节点
+      - 🇷🇺 俄国节点
+      - 🇰🇿 中亚节点
+      - 🇦🇸 东盟节点
+      - 🇪🇺 西欧节点
+      - 🇺🇳 东欧节点
+      - ☀️ 南欧节点
+      - ❄️ 北欧节点
       - 🇸🇦 中东节点
+      - 🇧🇷 南美节点
+      - 🌍 非洲节点
       - 🚀 手动切换
   - name: 🇭🇰 香港节点
     type: url-test
@@ -391,42 +496,6 @@ proxy-groups:
     use:
       - SubProxyProvider
     filter: "(?i)(Singapore|新加坡|狮城)"
-  - name: 🇦🇸 东盟节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-    use:
-      - SubProxyProvider
-    filter: >-
-      (?i)(
-      India|Indian|IND|New Delhi|Delhi|Mumbai|Bombay|Bangalore|Bengaluru|Hyderabad|Chennai|Kolkata|印度|新德里|德里|孟买|班加罗尔|海得拉巴|钦奈|加尔各答|
-      Nepal|Nepali|NPL|Kathmandu|Pokhara|尼泊尔|加德满都|博卡拉|
-      Thailand|Thai|THA|Bangkok|Chiang Mai|Phuket|Pattaya|泰国|曼谷|清迈|普吉|芭提雅|
-      Malaysia|Malaysian|MYS|Kuala Lumpur|Johor Bahru|Penang|马来西亚|吉隆坡|新山|槟城|
-      Philippines|Filipino|PHL|Manila|Cebu|Davao|菲律宾|马尼拉|宿务|达沃|
-      Vietnam|Vietnamese|VNM|Hanoi|Ho Chi Minh City|Saigon|Da Nang|越南|河内|胡志明市|西贡|岘港|
-      Indonesia|Indonesian|IDN|Jakarta|Bali|Surabaya|Bandung|印度尼西亚|雅加达|巴厘岛|泗水|万隆|
-      Cambodia|Cambodian|KHM|Phnom Penh|Sihanoukville|Siem Reap|柬埔寨|金边|西哈努克|暹粒|
-      Myanmar|Burmese|MMR|Yangon|Rangoon|Mandalay|缅甸|仰光|曼德勒|
-      Bangladesh|Bangladeshi|BGD|Dhaka|Chittagong|孟加拉国|达卡|吉大港|
-      Maldives|Maldivian|MDV|Male|Malé|马尔代夫|马累
-      )
-  - name: 🇰🇿 中亚节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 50
-    use:
-      - SubProxyProvider
-    filter: >-
-      (?i)(
-      Kazakhstan|Kazakh|KAZ|Almaty|Astana|Nur-Sultan|哈萨克斯坦|阿拉木图|阿斯塔纳|努尔苏丹|
-      Uzbekistan|Uzbek|UZB|Tashkent|Samarkand|乌兹别克斯坦|塔什干|撒马尔罕|
-      Kyrgyzstan|Kyrgyz|KGZ|Bishkek|Osh|吉尔吉斯斯坦|比什凯克|奥什|
-      Tajikistan|Tajik|TJK|Dushanbe|塔吉克斯坦|杜尚别|
-      Turkmenistan|Turkmen|TKM|Ashgabat|土库曼斯坦|阿什哈巴德
-      )
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -487,6 +556,42 @@ proxy-groups:
     use:
       - SubProxyProvider
     filter: "(?i)(Russia|俄罗斯|莫斯科|西伯利亚)"
+  - name: 🇰🇿 中亚节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - SubProxyProvider
+    filter: >-
+      (?i)(
+      Kazakhstan|Kazakh|KAZ|Almaty|Astana|Nur-Sultan|哈萨克斯坦|阿拉木图|阿斯塔纳|努尔苏丹|
+      Uzbekistan|Uzbek|UZB|Tashkent|Samarkand|乌兹别克斯坦|塔什干|撒马尔罕|
+      Kyrgyzstan|Kyrgyz|KGZ|Bishkek|Osh|吉尔吉斯斯坦|比什凯克|奥什|
+      Tajikistan|Tajik|TJK|Dushanbe|塔吉克斯坦|杜尚别|
+      Turkmenistan|Turkmen|TKM|Ashgabat|土库曼斯坦|阿什哈巴德
+      )
+  - name: 🇦🇸 东盟节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - SubProxyProvider
+    filter: >-
+      (?i)(
+      India|Indian|IND|New Delhi|Delhi|Mumbai|Bombay|Bangalore|Bengaluru|Hyderabad|Chennai|Kolkata|印度|新德里|德里|孟买|班加罗尔|海得拉巴|钦奈|加尔各答|
+      Nepal|Nepali|NPL|Kathmandu|Pokhara|尼泊尔|加德满都|博卡拉|
+      Thailand|Thai|THA|Bangkok|Chiang Mai|Phuket|Pattaya|泰国|曼谷|清迈|普吉|芭提雅|
+      Malaysia|Malaysian|MYS|Kuala Lumpur|Johor Bahru|Penang|马来西亚|吉隆坡|新山|槟城|
+      Philippines|Filipino|PHL|Manila|Cebu|Davao|菲律宾|马尼拉|宿务|达沃|
+      Vietnam|Vietnamese|VNM|Hanoi|Ho Chi Minh City|Saigon|Da Nang|越南|河内|胡志明市|西贡|岘港|
+      Indonesia|Indonesian|IDN|Jakarta|Bali|Surabaya|Bandung|印度尼西亚|雅加达|巴厘岛|泗水|万隆|
+      Cambodia|Cambodian|KHM|Phnom Penh|Sihanoukville|Siem Reap|柬埔寨|金边|西哈努克|暹粒|
+      Myanmar|Burmese|MMR|Yangon|Rangoon|Mandalay|缅甸|仰光|曼德勒|
+      Bangladesh|Bangladeshi|BGD|Dhaka|Chittagong|孟加拉国|达卡|吉大港|
+      Maldives|Maldivian|MDV|Male|Malé|马尔代夫|马累
+      )
   #- name: 🇪🇺 欧洲节点
   #  type: url-test
   #  url: http://www.gstatic.com/generate_204
@@ -583,6 +688,25 @@ proxy-groups:
       Oman|Omani|OMN|Muscat|Salalah|阿曼|马斯喀特|塞拉莱|
       Bahrain|Bahraini|BHR|Manama|巴林|麦纳麦
       )
+  - name:  🇧🇷 南美节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 150
+    use:
+      - SubProxyProvider
+    filter: >-
+      (?i)(
+      Brazil|Brazilian|São Paulo|Sao Paulo|Rio de Janeiro|Campinas|巴西|圣保罗|里约热内卢|坎皮纳斯|
+      Argentina|Argentine|Argentinian|Buenos Aires|Cordoba|Córdoba|Rosario|阿根廷|布宜诺斯艾利斯|科尔多瓦|罗萨里奥|
+      Chile|Chilean|Santiago|Valparaiso|Valparaíso|Talca|智利|圣地亚哥|瓦尔帕莱索|塔尔卡|
+      Mexico|Mexican|Mexico City|Guadalajara|Monterrey|Tijuana|墨西哥|墨西哥城|瓜达拉哈拉|蒙特雷|蒂华纳|
+      Colombia|Colombian|Bogota|Bogotá|Medellin|Medellín|Cali|哥伦比亚|波哥大|麦德林|卡利|
+      Ecuador|Ecuadorian|Quito|Guayaquil|厄瓜多尔|基多|瓜亚基尔|
+      Guatemala|Guatemalan|Guatemala City|Mixco|危地马拉|危地马拉城|米斯科|
+      Peru|Peruvian|Lima|秘鲁|利马|
+      Bolivia|Bolivian|Sucre|La Paz|Santa Cruz|Santa Cruz de la Sierra|玻利维亚|苏克雷|拉巴斯|圣克鲁斯
+      )
   - name: 🌍 非洲节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -601,25 +725,6 @@ proxy-groups:
       Ghana|Ghanaian|GHA|Accra|Kumasi|加纳|阿克拉|库马西|
       Ethiopia|Ethiopian|ETH|Addis Ababa|埃塞俄比亚|亚的斯亚贝巴|
       Algeria|Algerian|DZA|Algiers|Oran|阿尔及利亚|阿尔及尔|奥兰
-      )
-  - name:  🌍 南美节点
-    type: url-test
-    url: http://www.gstatic.com/generate_204
-    interval: 300
-    tolerance: 150
-    use:
-      - SubProxyProvider
-    filter: >-
-      (?i)(
-      Brazil|Brazilian|São Paulo|Sao Paulo|Rio de Janeiro|Campinas|巴西|圣保罗|里约热内卢|坎皮纳斯|
-      Argentina|Argentine|Argentinian|Buenos Aires|Cordoba|Córdoba|Rosario|阿根廷|布宜诺斯艾利斯|科尔多瓦|罗萨里奥|
-      Chile|Chilean|Santiago|Valparaiso|Valparaíso|Talca|智利|圣地亚哥|瓦尔帕莱索|塔尔卡|
-      Mexico|Mexican|Mexico City|Guadalajara|Monterrey|Tijuana|墨西哥|墨西哥城|瓜达拉哈拉|蒙特雷|蒂华纳|
-      Colombia|Colombian|Bogota|Bogotá|Medellin|Medellín|Cali|哥伦比亚|波哥大|麦德林|卡利|
-      Ecuador|Ecuadorian|Quito|Guayaquil|厄瓜多尔|基多|瓜亚基尔|
-      Guatemala|Guatemalan|Guatemala City|Mixco|危地马拉|危地马拉城|米斯科|
-      Peru|Peruvian|Lima|秘鲁|利马|
-      Bolivia|Bolivian|Sucre|La Paz|Santa Cruz|Santa Cruz de la Sierra|玻利维亚|苏克雷|拉巴斯|圣克鲁斯
       )
   - name: 🛜 家宽节点
     type: url-test
