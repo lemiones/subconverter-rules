@@ -391,6 +391,22 @@ proxy-groups:
     use:
       - SubProxyProvider
     filter: "(?i)(Singapore|新加坡|狮城)"
+  - name: 🇦🇸 东盟节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - SubProxyProvider
+    filter: "(?i)(India|Nepal|Thailand|Malaysia|Philippines|Vietnam|Indonesia|Cambodia|Myanmar|Bangladesh|Maldives|印度|尼泊尔|泰国|马来西亚|菲律宾|越南|印度尼西亚|柬埔寨|缅甸|孟加拉|马尔代夫|海得拉巴|班加罗尔|加德滿都|曼谷|吉隆坡|马尼拉|河内|雅加达|西哈努克|仰光|达卡)"
+  - name: 🇰🇿 中亚节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - SubProxyProvider
+    filter: "(?i)(Kazakhstan|Kazakh|KAZ|KZ|Uzbekistan|Uzbek|UZB|UZ|Kyrgyzstan|Kyrgyz|KGZ|KG|Tajikistan|Tajik|TJK|TJ|Turkmenistan|Turkmen|TKM|TM|Almaty|Astana|Tashkent|Bishkek|哈萨克斯坦|乌兹别克斯坦|吉尔吉斯斯坦|塔吉克斯坦|土库曼斯坦|阿拉木图|阿斯塔纳|塔什干)"
   - name: 🇺🇲 美国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -407,6 +423,14 @@ proxy-groups:
     use:
       - SubProxyProvider
     filter: "(?i)(Canada|加拿大|蒙特利尔|温哥华|楓葉|枫叶)"
+  - name: 🇲🇽 北美节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 150
+    use:
+      - SubProxyProvider
+    filter: "(?i)(Mexico|Mexican|MEX|Mexico City|Monterrey|Guadalajara|Tijuana|Panama|Panamanian|PAN|Panama City|Costa Rica|Costa Rican|CRI|San Jose|Guatemala|Guatemalan|GTM|Guatemala City|Honduras|Honduran|HND|Tegucigalpa|El Salvador|Salvadoran|SLV|San Salvador|Nicaragua|Nicaraguan|NIC|Managua|Belize|Belizean|BLZ|Belmopan|Greenland|Kalaallit Nunaat|GRL|Nuuk|Bermuda|BMU|Hamilton|墨西哥|墨西哥城|蒙特雷|瓜达拉哈拉|蒂华纳|巴拿马|巴拿马城|哥斯达黎加|圣何塞|危地马拉|危地马拉城|洪都拉斯|特古西加尔巴|萨尔瓦多|圣萨尔瓦多|尼加拉瓜|马那瓜|伯利兹|贝尔莫潘|格陵兰|努克|百慕大|哈密尔顿)"
   - name: 🇬🇧 英国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -415,38 +439,62 @@ proxy-groups:
     use:
       - SubProxyProvider
     filter: "(?i)(England|UnitedKingdom|IE|英|英国|伦敦|爱尔兰|都柏林)"
-  #- name: 🇦🇺 澳洲节点
-  #  type: url-test
-  #  url: http://www.gstatic.com/generate_204
-  #  interval: 300
-  #  tolerance: 150
-  #  use:
-  #    - SubProxyProvider
-  #  filter: "(?i)(AU|Australia|澳洲|澳大利亚|悉尼|墨尔本)"
-  #- name: 🇷🇺 俄国节点
-  #  type: url-test
-  #  url: http://www.gstatic.com/generate_204
-  #  interval: 300
-  #  tolerance: 150
-  #  use:
-  #    - SubProxyProvider
-  #  filter: "(?i)(RU|Russia|俄罗斯|莫斯科|西伯利亚)"
-  - name: 🇪🇺 欧洲节点
+  - name: 🇦🇺 澳洲节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 150
     use:
       - SubProxyProvider
-    filter: "(?i)(Germany|France|Italy|Spain|Portugal|Austria|Switzerland|Netherlands|Belgium|Poland|Turkey|Sweden|Greece|Serbia|Bulgaria|Lithuania|Latvia|Ukraine|Iceland|Norway|Denmark|Bosnia|Moldova|Czech|Romania|Hungary|Finland|Estonia|德国|法国|意大利|西班牙|葡萄牙|奥地利|荷兰|比利时|瑞士|波兰|土耳其|瑞典|希腊|塞尔维亚|保加利亚|立陶宛|拉脱维亚|乌克兰|冰岛|挪威|丹麦|芬兰|爱沙尼亚|波黑|摩尔多瓦|捷克|罗马尼亚|匈牙利|柏林|法兰克福|巴黎|马赛|米兰|马德里|里斯本|维也纳|阿姆斯特丹|布鲁塞尔|苏黎世|卢布|伊斯坦布尔|斯德哥尔摩|雅典|贝尔格莱德|基辅|哈尔科夫|维尔纽斯|雷克雅未克|奥斯陆|哥本哈根|赫尔辛基|塔林|基希讷乌|布拉格|布加勒斯特|布达佩斯)"
-  - name: 🇦🇸 东盟节点
+    filter: "(?i)(Australia|澳洲|澳大利亚|悉尼|墨尔本)"
+  - name: 🇷🇺 俄国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
-    tolerance: 50
+    tolerance: 150
     use:
       - SubProxyProvider
-    filter: "(?i)(India|Nepal|Thailand|Malaysia|Philippines|Vietnam|Indonesia|Cambodia|Myanmar|Bangladesh|Maldives|印度|尼泊尔|泰国|马来西亚|菲律宾|越南|印度尼西亚|柬埔寨|缅甸|孟加拉|马尔代夫|海得拉巴|班加罗尔|加德滿都|曼谷|吉隆坡|马尼拉|河内|雅加达|西哈努克|仰光|达卡)"
+    filter: "(?i)(Russia|俄罗斯|莫斯科|西伯利亚)"
+  #- name: 🇪🇺 欧洲节点
+  #  type: url-test
+  #  url: http://www.gstatic.com/generate_204
+  #  interval: 300
+  #  tolerance: 150
+  #  use:
+  #    - SubProxyProvider
+  #  filter: "(?i)(Germany|France|Italy|Spain|Portugal|Austria|Switzerland|Netherlands|Belgium|Poland|Turkey|Sweden|Greece|Serbia|Bulgaria|Lithuania|Latvia|Ukraine|Iceland|Norway|Denmark|Bosnia|Moldova|Czech|Romania|Hungary|Finland|Estonia|德国|法国|意大利|西班牙|葡萄牙|奥地利|荷兰|比利时|瑞士|波兰|土耳其|瑞典|希腊|塞尔维亚|保加利亚|立陶宛|拉脱维亚|乌克兰|冰岛|挪威|丹麦|芬兰|爱沙尼亚|波黑|摩尔多瓦|捷克|罗马尼亚|匈牙利|柏林|法兰克福|巴黎|马赛|米兰|马德里|里斯本|维也纳|阿姆斯特丹|布鲁塞尔|苏黎世|卢布|伊斯坦布尔|斯德哥尔摩|雅典|贝尔格莱德|基辅|哈尔科夫|维尔纽斯|雷克雅未克|奥斯陆|哥本哈根|赫尔辛基|塔林|基希讷乌|布拉格|布加勒斯特|布达佩斯)"
+  - name: 🇪🇺 西欧节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 150
+    use:
+      - SubProxyProvider
+    filter: "(?i)(Germany|German|DEU|DE|France|French|FRA|FR|Netherlands|Dutch|Holland|NLD|NL|Belgium|Belgian|BEL|BE|Switzerland|Swiss|CHE|CH|Austria|Austrian|AUT|AT|Luxembourg|LUX|Ireland|Irish|IRL|Frankfurt|Berlin|Munich|Hamburg|Paris|Marseille|Amsterdam|Rotterdam|Brussels|Zurich|Geneva|Vienna|Dublin|德国|法国|荷兰|比利时|瑞士|奥地利|卢森堡|爱尔兰|法兰克福|柏林|巴黎|阿姆斯特丹|布鲁塞尔|苏黎世|维也纳|都柏林)"
+  - name: 🇺🇳 东欧节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 150
+    use:
+      - SubProxyProvider
+    filter: "(?i)(Poland|Polish|POL|PL|Czech|Czechia|CZE|CZ|Slovakia|SVK|Hungary|HUN|HU|Romania|ROU|RO|Bulgaria|BGR|BG|Croatia|HRV|Serbia|SRB|Slovenia|SVN|Ukraine|UKR|UA|Moldova|MDA|Warsaw|Prague|Budapest|Bucharest|Sofia|Kyiv|Kiev|波兰|捷克|斯洛伐克|匈牙利|罗马尼亚|保加利亚|克罗地亚|塞尔维亚|斯洛文尼亚|乌克兰|摩尔多瓦|华沙|布拉格|布达佩斯|布加勒斯特|索菲亚|基辅)"
+  - name: ☀️ 南欧节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 150
+    use:
+      - SubProxyProvider
+    filter: "(?i)(Italy|Italian|ITA|IT|Spain|Spanish|ESP|ES|Portugal|Portuguese|PRT|PT|Greece|Greek|GRC|GR|Malta|MLT|Cyprus|CYP|Rome|Milan|Venice|Madrid|Barcelona|Lisbon|Porto|Athens|意大利|西班牙|葡萄牙|希腊|马耳他|塞浦路斯|罗马|米兰|威尼斯|马德里|巴塞罗那|里斯本|雅典)"
+  - name: ❄️ 北欧节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 150
+    use:
+      - SubProxyProvider
+    filter: "(?i)(Sweden|Swedish|SWE|SE|Norway|Norwegian|NOR|NO|Denmark|Danish|DNK|DK|Finland|Finnish|FIN|FI|Iceland|ISL|IS|Stockholm|Oslo|Copenhagen|Helsinki|Reykjavik|瑞典|挪威|丹麦|芬兰|冰岛|斯德哥尔摩|奥斯陆|哥本哈根|赫尔辛基|雷克雅未克)"
   - name: 🇸🇦 中东节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -455,6 +503,22 @@ proxy-groups:
     use:
       - SubProxyProvider
     filter: "(?i)(SA|AE|QA|IL|IQ|PK|OM|BH|Saudi Arabia|United Arab Emirates|Qatar|Israel|Iraq|Pakistan|Oman|Bahrain|Jeddah|Riyadh|Dubai|Abu Dhabi|Doha|Jerusalem|Tel Aviv|Baghdad|Basra|Karachi|Islamabad|Muscat|Manama|沙特|阿联酋|卡塔尔|以色列|伊拉克|巴基斯坦|阿曼|巴林|吉达|迪拜|多哈|耶路撒冷|巴格达|卡拉奇|马斯喀特|麦纳麦)"
+  - name: 🌍 非洲节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 150
+    use:
+      - SubProxyProvider
+    filter: "(?i)(South Africa|ZAF|ZA|Egypt|EGY|Morocco|MAR|Tunisia|TUN|Kenya|KEN|Nigeria|NGA|Ghana|GHA|Ethiopia|ETH|Algeria|DZA|Cape Town|Johannesburg|Cairo|Casablanca|Nairobi|南非|埃及|摩洛哥|突尼斯|肯尼亚|尼日利亚|开普敦|约翰内斯堡|开罗|卡萨布兰卡|内罗毕)"
+  - name: 🛜 家宽节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    use:
+      - SubProxyProvider
+    filter: "(?i)(家宽|宽带|动态家宽)"
 rules:
   - RULE-SET,DirectDomainIp,🎯 全球直连
   - RULE-SET,LocalAreaNetwork,🎯 全球直连
