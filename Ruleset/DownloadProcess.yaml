@@ -6,7 +6,7 @@ payload:
   - PROCESS-NAME,verge-clash-meta
   - PROCESS-NAME,mihomo
   - PROCESS-NAME,sing-box
-  - PROCESS-NAME,verge-mihom
+  - PROCESS-NAME,verge-mihomo
   - PROCESS-NAME,verge-mihomo-alpha
   - PROCESS-NAME,AnyConnect
   - PROCESS-NAME,Cisco Secure Client
