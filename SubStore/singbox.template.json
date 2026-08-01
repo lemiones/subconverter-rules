@@ -39,7 +39,7 @@
       {
         "tag": "dns-proxy",
         "type": "https",
-        "server": "8.8.8.8",
+        "server": "149.112.112.112",
         "path": "/dns-query"
       }
     ],
