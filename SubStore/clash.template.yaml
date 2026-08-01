@@ -975,6 +975,7 @@ rule-providers:
     path: ./rule_provider/Download.yaml
     interval: 86400
   DownloadProcess:
+    type: http 
     behavior: classical
     url: https://raw.githubusercontent.com/lemiones/subconverter-rules/refs/heads/main/Ruleset/DownloadProcess.yaml
     path: ./rule_provider/DownloadProcess.yaml
