@@ -3,29 +3,6 @@
     "level": "info",
     "timestamp": true
   },
-  "dns": {
-    "servers": [
-      {
-        "tag": "dns-proxy",
-        "type": "https",
-        "server": "8.8.8.8",
-        "path": "/dns-query"
-      },
-      {
-        "tag": "dns-direct",
-        "type": "https",
-        "server": "223.5.5.5",
-        "path": "/dns-query"
-      }
-    ],
-    "rules": [
-      {
-        "rule_set": ["geosite-cn"],
-        "server": "dns-direct"
-      }
-    ],
-    "final": "dns-proxy"
-  },
   "inbounds": [
     {
       "listen": "127.0.0.1",
@@ -51,11 +28,36 @@
       "outbounds": []
     }
   ],
+  "dns": {
+    "servers": [
+      {
+        "tag": "dns-direct",
+        "type": "https",
+        "server": "223.5.5.5",
+        "path": "/dns-query"
+      },
+      {
+        "tag": "dns-proxy",
+        "type": "https",
+        "server": "8.8.8.8",
+        "path": "/dns-query"
+      }
+    ],
+    "rules": [
+      {
+        "rule_set": [
+          "geosite-cn"
+        ],
+        "server": "dns-direct"
+      }
+    ],
+    "final": "dns-proxy"
+  },
   "route": {
     "auto_detect_interface": true,
     "default_domain_resolver": "dns-direct",
     "rules": [
-       {
+      {
         "ip_is_private": true,
         "outbound": "direct"
       },
@@ -63,11 +65,13 @@
         "action": "sniff"
       },
       {
-        "protocol":"dns",
+        "protocol": "dns",
         "action": "hijack-dns"
       },
       {
-        "rule_set": ["geosite-cn"],
+        "rule_set": [
+          "geosite-cn"
+        ],
         "outbound": "direct"
       }
     ],
@@ -80,15 +84,21 @@
         "download_detour": "proxy",
         "update_interval": "1d"
       }
-     ],
+    ],
     "final": "proxy"
   },
-  "experimental": {
-     "clash_api": {
-      "external_controller": "127.0.0.1:65530",
-      "external_ui": "dashboard",
-      "external_ui_download_url": "https://github.com/MetaCubeX/Yacd-meta/archive/gh-pages.zip",
-      "external_ui_download_detour": "proxy"
+  "services": [
+    {
+      "tag": "singbox-api",
+      "type": "api",
+      "listen": "127.0.0.1",
+      "listen_port": 65530,
+      "dashboard": {
+        "enabled": true,
+        "path": "dashboard",
+        "download_url": "https://github.com/SagerNet/sing-box-dashboard/archive/refs/heads/gh-pages.zip",
+        "update_interval": "1d"
+      }
     }
-  }
+  ]
 }
