@@ -16,14 +16,14 @@ rule-providers:
     type: http
     behavior: domain
     url: https://raw.githubusercontent.com/vernesong/OpenClash/refs/heads/master/luci-app-openclash/root/etc/openclash/custom/openclash_custom_fake_filter.list
-    path: ./rule_providers/openclash_custom_fake_filter.list
+    path: ./rule_provider/openclash_custom_fake_filter.list
     interval: 86400
     format: text
   shellcrash-fake-filter:
     type: http
     behavior: domain
     url: https://cdn.jsdelivr.net/gh/juewuy/ShellCrash@dev/public/fake_ip_filter.list
-    path: ./rule_providers/shellcrash-fake-filter.list
+    path: ./rule_provider/shellcrash-fake-filter.list
     interval: 86400
     format: text
 
