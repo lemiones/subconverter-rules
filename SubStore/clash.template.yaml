@@ -768,17 +768,16 @@ rules:
   - RULE-SET,ChinaDomain,🎯 全球直连
   - RULE-SET,ChinaCompanyIp,🎯 全球直连
   - RULE-SET,Download,🎯 全球直连
-  - RULE-SET,Download2,🎯 全球直连
+  - RULE-SET,DownloadProcess,🎯 全球直连
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
 
 rule-providers:
   DirectDomainIp:
-    format: text
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/lemiones/subconverter-rules/refs/heads/main/Ruleset/DirectDomainIp.list
-    path: ./providers/DirectDomainIp.list
+    url: https://raw.githubusercontent.com/lemiones/subconverter-rules/refs/heads/main/Ruleset/DirectDomainIp.yaml
+    path: ./providers/DirectDomainIp.yaml
     interval: 86400
   LocalAreaNetwork:
     type: http
@@ -799,7 +798,6 @@ rule-providers:
     path: ./providers/GoogleFCM.yaml
     interval: 86400
   GoogleCN:
-    format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/GoogleCN.yaml
@@ -896,7 +894,6 @@ rule-providers:
     path: ./providers/Nintendo.yaml
     interval: 86400
   YouTube:
-    format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/YouTube.yaml
@@ -909,20 +906,19 @@ rule-providers:
     path: ./providers/Netflix.yaml
     interval: 86400
   AmazonIp:
-    format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/AmazonIp.yaml
     path: ./providers/AmazonIp.yaml
     interval: 86400
   Bahamut:
-    format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/Bahamut.yaml
     path: ./providers/Bahamut.yaml
     interval: 86400
   BilibiliHMT:
+    type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/BilibiliHMT.yaml
     path: ./providers/BilibiliHMT.yaml
@@ -934,6 +930,7 @@ rule-providers:
     path: ./providers/Bilibili.yaml
     interval: 86400
   ChinaMedia:
+    type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/ChinaMedia.yaml
     path: ./providers/ChinaMedia.yaml
@@ -963,18 +960,16 @@ rule-providers:
     path: ./providers/ChinaDomain.yaml
     interval: 86400
   ChinaCompanyIp:
-    format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/ChinaCompanyIp.yaml
     path: ./providers/ChinaCompanyIp.yaml
     interval: 86400
   Download:
-    format: text
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.yaml
-    path: ./providers/Download.list
+    path: ./providers/Download.yaml
     interval: 86400
   DownloadProcess:
     behavior: classical
