@@ -8,7 +8,7 @@ proxy-providers:
   SubProxyProvider:
     type:  http
     url: {{SUB_PROXY_URL}}
-    path: ./provider/SubProxyProvider.yaml
+    path: ./proxy_providers/SubProxyProvider.yaml
     interval: 7200
     tolerance: 50
     health-check:
@@ -778,202 +778,202 @@ rule-providers:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/lemiones/subconverter-rules/refs/heads/main/Ruleset/DirectDomainIp.yaml
-    path: ./providers/DirectDomainIp.yaml
+    path: ./rule_providers/DirectDomainIp.yaml
     interval: 86400
   LocalAreaNetwork:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/LocalAreaNetwork.yaml
-    path: ./providers/LocalAreaNetwork.yaml
+    path: ./rule_providers/LocalAreaNetwork.yaml
     interval: 86400
   UnBan:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/UnBan.yaml
-    path: ./providers/UnBan.yaml
+    path: ./rule_providers/UnBan.yaml
     interval: 86400
   GoogleFCM:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/GoogleFCM.yaml
-    path: ./providers/GoogleFCM.yaml
+    path: ./rule_providers/GoogleFCM.yaml
     interval: 86400
   GoogleCN:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/GoogleCN.yaml
-    path: ./providers/GoogleCN.yaml
+    path: ./rule_providers/GoogleCN.yaml
     interval: 86400
   SteamCN:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/SteamCN.yaml
-    path: ./providers/SteamCN.yaml
+    path: ./rule_providers/SteamCN.yaml
     interval: 86400
   OneDrive:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/OneDrive.yaml
-    path: ./providers/OneDrive.yaml
+    path: ./rule_providers/OneDrive.yaml
     interval: 86400
   Microsoft:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/Microsoft.yaml
-    path: ./providers/Microsoft.yaml
+    path: ./rule_providers/Microsoft.yaml
     interval: 86400
   Apple:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/Apple.yaml
-    path: ./providers/Apple.yaml
+    path: ./rule_providers/Apple.yaml
     interval: 86400
   Telegram:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/Telegram.yaml
-    path: ./providers/Telegram.yaml
+    path: ./rule_providers/Telegram.yaml
     interval: 86400
   AI:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/AI.yaml
-    path: ./providers/AI.yaml
+    path: ./rule_providers/AI.yaml
     interval: 86400
   OpenAi:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/OpenAi.yaml
-    path: ./providers/OpenAi.yaml
+    path: ./rule_providers/OpenAi.yaml
     interval: 86400
   Copilot:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/refs/heads/master/rule/Clash/Copilot/Copilot.yaml
-    path: ./providers/Copilot.yaml
+    path: ./rule_providers/Copilot.yaml
     interval: 86400
   GitHub:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/Github.yaml
-    path: ./providers/GitHub.yaml
+    path: ./rule_providers/GitHub.yaml
     interval: 86400
   NetEaseMusic:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/NetEaseMusic.yaml
-    path: ./providers/NetEaseMusic.yaml
+    path: ./rule_providers/NetEaseMusic.yaml
     interval: 86400
   Epic:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/Epic.yaml
-    path: ./providers/Epic.yaml
+    path: ./rule_providers/Epic.yaml
     interval: 86400
   Origin:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/Origin.yaml
-    path: ./providers/Origin.yaml
+    path: ./rule_providers/Origin.yaml
     interval: 86400
   Sony:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/Sony.yaml
-    path: ./providers/Sony.yaml
+    path: ./rule_providers/Sony.yaml
     interval: 86400
   Steam:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/Steam.yaml
-    path: ./providers/Steam.yaml
+    path: ./rule_providers/Steam.yaml
     interval: 86400
   Nintendo:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/Nintendo.yaml
-    path: ./providers/Nintendo.yaml
+    path: ./rule_providers/Nintendo.yaml
     interval: 86400
   YouTube:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/YouTube.yaml
-    path: ./providers/YouTube.yaml
+    path: ./rule_providers/YouTube.yaml
     interval: 86400
   Netflix:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/Netflix.yaml
-    path: ./providers/Netflix.yaml
+    path: ./rule_providers/Netflix.yaml
     interval: 86400
   AmazonIp:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/AmazonIp.yaml
-    path: ./providers/AmazonIp.yaml
+    path: ./rule_providers/AmazonIp.yaml
     interval: 86400
   Bahamut:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/Bahamut.yaml
-    path: ./providers/Bahamut.yaml
+    path: ./rule_providers/Bahamut.yaml
     interval: 86400
   BilibiliHMT:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/BilibiliHMT.yaml
-    path: ./providers/BilibiliHMT.yaml
+    path: ./rule_providers/BilibiliHMT.yaml
     interval: 86400
   Bilibili:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/Bilibili.yaml
-    path: ./providers/Bilibili.yaml
+    path: ./rule_providers/Bilibili.yaml
     interval: 86400
   ChinaMedia:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/ChinaMedia.yaml
-    path: ./providers/ChinaMedia.yaml
+    path: ./rule_providers/ChinaMedia.yaml
     interval: 86400
   ProxyMedia:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/ProxyMedia.yaml
-    path: ./providers/ProxyMedia.yaml
+    path: ./rule_providers/ProxyMedia.yaml
     interval: 86400
   ProxyLite:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/ProxyLite.yaml
-    path: ./providers/ProxyLite.yaml
+    path: ./rule_providers/ProxyLite.yaml
     interval: 86400
   ProxyGFWlist:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/ProxyGFWlist.yaml
-    path: ./providers/ProxyGFWlist.yaml
+    path: ./rule_providers/ProxyGFWlist.yaml
     interval: 86400
   ChinaDomain:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/ChinaDomain.yaml
-    path: ./providers/ChinaDomain.yaml
+    path: ./rule_providers/ChinaDomain.yaml
     interval: 86400
   ChinaCompanyIp:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/ChinaCompanyIp.yaml
-    path: ./providers/ChinaCompanyIp.yaml
+    path: ./rule_providers/ChinaCompanyIp.yaml
     interval: 86400
   Download:
     type: http
     behavior: classical
     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.yaml
-    path: ./providers/Download.yaml
+    path: ./rule_providers/Download.yaml
     interval: 86400
   DownloadProcess:
     behavior: classical
     url: https://raw.githubusercontent.com/lemiones/subconverter-rules/refs/heads/main/Ruleset/DownloadProcess.yaml
-    path: ./providers/DownloadProcess.yaml
+    path: ./rule_providers/DownloadProcess.yaml
     interval: 86400
