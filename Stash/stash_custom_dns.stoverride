@@ -12,11 +12,11 @@ date: '2024-12-21 07:13:21'
 version: '0.1.0'
 
 rule-providers:
-  openclash-custom-fake-filter:
+  openclash-fake-filter:
     type: http
     behavior: domain
     url: https://raw.githubusercontent.com/vernesong/OpenClash/refs/heads/master/luci-app-openclash/root/etc/openclash/custom/openclash_custom_fake_filter.list
-    path: ./rule_provider/openclash_custom_fake_filter.list
+    path: ./rule_provider/openclash-fake-filter.list
     interval: 86400
     format: text
   shellcrash-fake-filter:
@@ -56,5 +56,5 @@ dns:
   fake-ip-filter: #!replace
     - 'geosite:private'
     - 'geosite:connectivity-check'
-    - 'rule-set:openclash-custom-fake-filter'
+    - 'rule-set:openclash-fake-filter'
     - 'rule-set:shellcrash-fake-filter'
