@@ -907,10 +907,11 @@ rule-providers:
     path: ./rule_providers/Netflix.yaml
     interval: 86400
   AmazonIp:
+    format: text
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/Ruleset/AmazonIp.yaml
-    path: ./rule_providers/AmazonIp.yaml
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/AmazonIp.list
+    path: ./rule_providers/AmazonIp.list
     interval: 86400
   Bahamut:
     type: http
@@ -961,10 +962,11 @@ rule-providers:
     path: ./rule_providers/ChinaDomain.yaml
     interval: 86400
   ChinaCompanyIp:
+    format: text
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Providers/ChinaCompanyIp.yaml
-    path: ./rule_providers/ChinaCompanyIp.yaml
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ChinaCompanyIp.list
+    path: ./rule_providers/ChinaCompanyIp.list
     interval: 86400
   Download:
     type: http
