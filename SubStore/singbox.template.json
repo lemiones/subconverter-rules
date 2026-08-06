@@ -40,7 +40,8 @@
         "tag": "dns-proxy",
         "type": "https",
         "server": "149.112.112.112",
-        "path": "/dns-query"
+        "path": "/dns-query",
+        "detour": "proxy"
       }
     ],
     "rules": [
