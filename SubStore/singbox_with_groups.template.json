@@ -31,56 +31,56 @@
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": new RegExp("Hong Kong|港|香港", "i")
+      "filter": "Hong Kong|港|香港"
     },
     {
       "tag": "Taiwan-Nodes",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": new RegExp("Taiwan|台|台湾|新北|彰化", "i")
+      "filter": "Taiwan|台|台湾|新北|彰化"
     },
     {
       "tag": "Singapore-Nodes",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": new RegExp("Singapore|新加坡|狮城", "i")
+      "filter": "Singapore|新加坡|狮城"
     },
     {
       "tag": "Japan-Nodes",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": new RegExp("Japan|JPN|日本|川日|东京|大阪|泉日|埼玉|沪日|深日", "i")
+      "filter": "Japan|JPN|日本|川日|东京|大阪|泉日|埼玉|沪日|深日"
     },
     {
       "tag": "SouthKorea-Nodes",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": new RegExp("Korea|KOR|韩国|首尔|韩|韓", "i")
+      "filter": "Korea|KOR|韩国|首尔|韩|韓"
     },
     {
       "tag": "UnitedStates-Nodes",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": new RegExp("US|United States|美|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|旧金山", "i")
+      "filter": "US|United States|美|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|旧金山"
     },
     {
       "tag": "Canada-Nodes",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": new RegExp("Canada|加拿大|蒙特利尔|温哥华|楓葉|枫叶", "i")
+      "filter": "Canada|加拿大|蒙特利尔|温哥华|楓葉|枫叶"
     },
     {
       "tag": "NorthAmerica-Nodes",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": new RegExp([
+      "filter": [
          "Mexico|Mexican|MEX|Mexico City|Ciudad de México|Monterrey|Guadalajara|Tijuana|Cancún|Cancun|Querétaro|Queretaro",
          "墨西哥|墨西哥城|蒙特雷|瓜达拉哈拉|蒂华纳|坎昆|克雷塔罗",
          "Panama|Panamanian|PAN|Panama City|巴拿马|巴拿马城",
@@ -92,48 +92,48 @@
          "Belize|Belizean|BLZ|Belmopan|伯利兹|贝尔莫潘",
          "Greenland|Greenlandic|GRL|Kalaallit Nunaat|Nuuk|格陵兰|努克",
          "Bermuda|Bermudian|BMU|Hamilton|百慕大|哈密尔顿"
-      ].join("|"), "i")
+      ]
     },
     {
       "tag": "England-Nodes",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": new RegExp("England|UnitedKingdom|IE|英|英国|伦敦|爱尔兰|都柏林", "i")
+      "filter": "England|UnitedKingdom|IE|英|英国|伦敦|爱尔兰|都柏林"
     },
     {
       "tag": "Australia-Nodes",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": new RegExp("Australia|澳洲|澳大利亚|悉尼|墨尔本", "i")
+      "filter": "Australia|澳洲|澳大利亚|悉尼|墨尔本"
     },
     {
       "tag": "Russia-Nodes",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": new RegExp("Russia|俄罗斯|莫斯科|西伯利亚", "i")
+      "filter": "Russia|俄罗斯|莫斯科|西伯利亚"
     },
     {
       "tag": "CentralAsia-Nodes",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": new RegExp([
+      "filter": [
          "Kazakhstan|Kazakh|KAZ|Almaty|Astana|Nur-Sultan|哈萨克斯坦|阿拉木图|阿斯塔纳|努尔苏丹",
          "Uzbekistan|Uzbek|UZB|Tashkent|Samarkand|乌兹别克斯坦|塔什干|撒马尔罕",
          "Kyrgyzstan|Kyrgyz|KGZ|Bishkek|Osh|吉尔吉斯斯坦|比什凯克|奥什",
          "Tajikistan|Tajik|TJK|Dushanbe|塔吉克斯坦|杜尚别",
          "Turkmenistan|Turkmen|TKM|Ashgabat|土库曼斯坦|阿什哈巴德"
-      ].join("|"), "i")
+      ]
     },
     {
       "tag": "Asean-Nodes",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      filter: new RegExp([
+      filter: [
         "India|Indian|IND|New Delhi|Delhi|Mumbai|Bombay|Bangalore|Bengaluru|Hyderabad|Chennai|Kolkata",
         "印度|新德里|德里|孟买|班加罗尔|海得拉巴|钦奈|加尔各答",
         "Nepal|Nepali|NPL|Kathmandu|Pokhara|尼泊尔|加德满都|博卡拉",
@@ -146,14 +146,14 @@
         "Myanmar|Burmese|MMR|Yangon|Rangoon|Mandalay|缅甸|仰光|曼德勒",
         "Bangladesh|Bangladeshi|BGD|Dhaka|Chittagong|孟加拉国|达卡|吉大港",
         "Maldives|Maldivian|MDV|Male|Malé|马尔代夫|马累"
-    ].join("|"), "i")
+      ]
     },
     {
       "tag": "WesternEurope-Nodes",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": new RegExp([
+      "filter": [
          "Germany|German|DEU|Frankfurt|Berlin|Munich|München|Hamburg|Düsseldorf|Dusseldorf|Cologne|Köln|Stuttgart",
          "德国|法兰克福|柏林|慕尼黑|汉堡|杜塞尔多夫|科隆|斯图加特",
          "France|French|FRA|Paris|Marseille|Lyon|Nice|Toulouse|Bordeaux|Strasbourg",
@@ -168,14 +168,14 @@
          "奥地利|维也纳|萨尔茨堡|格拉茨|因斯布鲁克",
          "Luxembourg|Luxembourgish|LUX|Luxembourg City|卢森堡|卢森堡市",
          "Ireland|Irish|IRL|Dublin|Cork|Galway|爱尔兰|都柏林|科克|戈尔韦"
-      ].join("|"), "i"),
+      ]
     },
     {
       "tag": "EasternEurope-Nodes",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": new RegExp([
+      "filter": [
          "Germany|German|DEU|Frankfurt|Berlin|Munich|München|Hamburg|Düsseldorf|Dusseldorf|Cologne|Köln|Stuttgart",
          "德国|法兰克福|柏林|慕尼黑|汉堡|杜塞尔多夫|科隆|斯图加特",
          "France|French|FRA|Paris|Marseille|Lyon|Nice|Toulouse|Bordeaux|Strasbourg",
@@ -190,14 +190,14 @@
          "奥地利|维也纳|萨尔茨堡|格拉茨|因斯布鲁克",
          "Luxembourg|Luxembourgish|LUX|Luxembourg City|卢森堡|卢森堡市",
          "Ireland|Irish|IRL|Dublin|Cork|Galway|爱尔兰|都柏林|科克|戈尔韦"
-      ].join("|"), "i"),
+      ]
     },
     {
       "tag": "SouthernEurope-Nodes",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      filter: new RegExp([
+      filter: [
         "Italy|Italian|ITA|Rome|Milan|Milano|Venice|Venezia|Naples|Napoli|Turin|Torino|Florence|Firenze",
         "意大利|罗马|米兰|威尼斯|那不勒斯|都灵|佛罗伦萨",
         "Spain|Spanish|ESP|Madrid|Barcelona|Valencia|Seville|Sevilla|Bilbao|Malaga|Málaga",
@@ -209,14 +209,14 @@
         "Malta|Maltese|MLT|Valletta|马耳他|瓦莱塔",
         "Cyprus|Cypriot|CYP|Nicosia|Limassol|Larnaca",
         "塞浦路斯|尼科西亚|利马索尔|拉纳卡"
-      ].join("|"), "i")
+      ]
     },
     {
       "tag": "NorthernEurope-Nodes",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": new RegExp([
+      "filter": [
          "Sweden|Swedish|SWE|Stockholm|Gothenburg|Malmo|Malmö",
          "瑞典|斯德哥尔摩|哥德堡|马尔默",
          "Norway|Norwegian|NOR|Oslo|Bergen|Trondheim",
@@ -227,14 +227,14 @@
          "芬兰|赫尔辛基|埃斯波|坦佩雷",
          "Iceland|Icelandic|ISL|Reykjavik|Akureyri",
          "冰岛|雷克雅未克|阿克雷里"
-      ].join("|"), "i")
+      ]
     },
     {
       "tag": "MiddleEast-Nodes",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": new RegExp([
+      "filter": [
          "Saudi Arabia|Saudi|Saudi Arabian|KSA|SAU|Jeddah|Riyadh|Mecca|Makkah|Medina",
          "沙特|沙特阿拉伯|吉达|利雅得|麦加|麦地那",
          "United Arab Emirates|UAE|Emirates|Emirati|ARE|Dubai|Abu Dhabi|Sharjah",
@@ -250,14 +250,14 @@
          "阿曼|马斯喀特|塞拉莱",
          "Bahrain|Bahraini|BHR|Manama",
          "巴林|麦纳麦"
-      ].join("|"), "i"),
+      ]
     },
     {
       "tag": "SouthAmerica-Nodes",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": new RegExp([
+      "filter": [
          "Brazil|Brazilian|São Paulo|Sao Paulo|Rio de Janeiro|Campinas",
          "巴西|圣保罗|里约热内卢|坎皮纳斯",
          "Argentina|Argentine|Argentinian|Buenos Aires|Cordoba|Córdoba|Rosario",
@@ -275,14 +275,14 @@
          "Peru|Peruvian|Lima|秘鲁|利马",
          "Bolivia|Bolivian|Sucre|La Paz|Santa Cruz",
          "玻利维亚|苏克雷|拉巴斯|圣克鲁斯"
-      ].join("|"), "i")
+      ]
     },
     {
       "tag": "Africa-Nodes",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": new RegExp([
+      "filter": [
          "South Africa|South African|ZAF|ZA|Cape Town|Johannesburg|Pretoria|Durban",
          "南非|开普敦|约翰内斯堡|比勒陀利亚|德班",
          "Egypt|Egyptian|EGY|Cairo|Alexandria|Giza",
@@ -301,7 +301,7 @@
          "埃塞俄比亚|亚的斯亚贝巴",
          "Algeria|Algerian|DZA|Algiers|Oran",
          "阿尔及利亚|阿尔及尔|奥兰"
-      ].join("|"), "i")
+      ]
     },
     {
       "tag": "Auto-Proxy",
