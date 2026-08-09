@@ -133,7 +133,7 @@
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      filter: [
+      "filter": [
         "India|Indian|IND|New Delhi|Delhi|Mumbai|Bombay|Bangalore|Bengaluru|Hyderabad|Chennai|Kolkata",
         "印度|新德里|德里|孟买|班加罗尔|海得拉巴|钦奈|加尔各答",
         "Nepal|Nepali|NPL|Kathmandu|Pokhara|尼泊尔|加德满都|博卡拉",
@@ -197,7 +197,7 @@
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      filter: [
+      "filter": [
         "Italy|Italian|ITA|Rome|Milan|Milano|Venice|Venezia|Naples|Napoli|Turin|Torino|Florence|Firenze",
         "意大利|罗马|米兰|威尼斯|那不勒斯|都灵|佛罗伦萨",
         "Spain|Spanish|ESP|Madrid|Barcelona|Valencia|Seville|Sevilla|Bilbao|Malaga|Málaga",
