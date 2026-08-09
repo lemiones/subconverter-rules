@@ -20,7 +20,7 @@
     {
       "tag": "Node-Selector",
       "type": "selector",
-      "default": "auto-proxy",
+      "default": "Auto-Proxy",
       "interrupt_exist_connections": false,
       "outbounds": [
          "Auto-Proxy"
