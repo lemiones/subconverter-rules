@@ -31,49 +31,49 @@
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": new RegExp(["Hong Kong|港|香港"], "i")
+      "filter": new RegExp("Hong Kong|港|香港", "i")
     },
     {
       "tag": "Taiwan-Nodes",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": new RegExp(["Taiwan|台|台湾|新北|彰化"], "i")
+      "filter": new RegExp("Taiwan|台|台湾|新北|彰化", "i")
     },
     {
       "tag": "Singapore-Nodes",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": new RegExp(["Singapore|新加坡|狮城"], "i")
+      "filter": new RegExp("Singapore|新加坡|狮城", "i")
     },
     {
       "tag": "Japan-Nodes",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": new RegExp(["Japan|JPN|日本|川日|东京|大阪|泉日|埼玉|沪日|深日"], "i")
+      "filter": new RegExp("Japan|JPN|日本|川日|东京|大阪|泉日|埼玉|沪日|深日", "i")
     },
     {
       "tag": "SouthKorea-Nodes",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": new RegExp(["Korea|KOR|韩国|首尔|韩|韓"], "i")
+      "filter": new RegExp("Korea|KOR|韩国|首尔|韩|韓", "i")
     },
     {
       "tag": "UnitedStates-Nodes",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": new RegExp(["US|United States|美|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|旧金山"], "i")
+      "filter": new RegExp("US|United States|美|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|旧金山", "i")
     },
     {
       "tag": "Canada-Nodes",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": new RegExp(["Canada|加拿大|蒙特利尔|温哥华|楓葉|枫叶"], "i")
+      "filter": new RegExp("Canada|加拿大|蒙特利尔|温哥华|楓葉|枫叶", "i")
     },
     {
       "tag": "NorthAmerica-Nodes",
@@ -99,21 +99,21 @@
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": new RegExp(["England|UnitedKingdom|IE|英|英国|伦敦|爱尔兰|都柏林"], "i")
+      "filter": new RegExp("England|UnitedKingdom|IE|英|英国|伦敦|爱尔兰|都柏林", "i")
     },
     {
       "tag": "Australia-Nodes",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": new RegExp(["Australia|澳洲|澳大利亚|悉尼|墨尔本"], "i")
+      "filter": new RegExp("Australia|澳洲|澳大利亚|悉尼|墨尔本", "i")
     },
     {
       "tag": "Russia-Nodes",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": new RegExp(["Russia|俄罗斯|莫斯科|西伯利亚"], "i")
+      "filter": new RegExp("Russia|俄罗斯|莫斯科|西伯利亚", "i")
     },
     {
       "tag": "CentralAsia-Nodes",
