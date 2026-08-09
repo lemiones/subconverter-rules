@@ -1,0 +1,392 @@
+{
+  "log": {
+    "level": "info",
+    "timestamp": true
+  },
+  "inbounds": [
+    {
+      "listen": "127.0.0.1",
+      "listen_port": 65535,
+      "tag": "Mixed-Inbound",
+      "type": "mixed",
+      "users": []
+    }
+  ],
+  "outbounds": [
+    {
+      "tag": "Direct",
+      "type": "direct"
+    },
+    {
+      "tag": "Node-Selector",
+      "type": "selector",
+      "default": "auto-proxy"
+      "interrupt_exist_connections": false,
+      "outbounds": [
+         "Auto-Proxy"
+      ]
+    },
+    {
+      "tag": "HongKong-Nodes",
+      "type": "urltest",
+      "interrupt_exist_connections": false,
+      "outbounds": [],
+      "filter": /(Hong Kong|港|香港)/i
+    },
+    {
+      "tag": "Taiwan-Nodes",
+      "type": "urltest",
+      "interrupt_exist_connections": false,
+      "outbounds": [],
+      "filter": /(Taiwan|台|台湾|新北|彰化)/i
+    },
+    {
+      "tag": "Singapore-Nodes",
+      "type": "urltest",
+      "interrupt_exist_connections": false,
+      "outbounds": [],
+      "filter": /(Singapore|新加坡|狮城)/i
+    },
+    {
+      "tag": "Japan-Nodes",
+      "type": "urltest",
+      "interrupt_exist_connections": false,
+      "outbounds": [],
+      "filter": /(Japan|JPN|日本|川日|东京|大阪|泉日|埼玉|沪日|深日)/i
+    },
+    {
+      "tag": "SouthKorea-Nodes",
+      "type": "urltest",
+      "interrupt_exist_connections": false,
+      "outbounds": [],
+      "filter": /(Korea|KOR|韩国|首尔|韩|韓)/i
+    },
+    {
+      "tag": "UnitedStates-Nodes",
+      "type": "urltest",
+      "interrupt_exist_connections": false,
+      "outbounds": [],
+      "filter": /(US|United States|美|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|旧金山)/i
+    },
+    {
+      "tag": "Canada-Nodes",
+      "type": "urltest",
+      "interrupt_exist_connections": false,
+      "outbounds": [],
+      "filter": /(Canada|加拿大|蒙特利尔|温哥华|楓葉|枫叶)/i
+    },
+    {
+      "tag": "NorthAmerica-Nodes",
+      "type": "urltest",
+      "interrupt_exist_connections": false,
+      "outbounds": [],
+      "filter": new RegExp([
+         "Mexico|Mexican|MEX|Mexico City|Ciudad de México|Monterrey|Guadalajara|Tijuana|Cancún|Cancun|Querétaro|Queretaro",
+         "墨西哥|墨西哥城|蒙特雷|瓜达拉哈拉|蒂华纳|坎昆|克雷塔罗",
+         "Panama|Panamanian|PAN|Panama City|巴拿马|巴拿马城",
+         "Costa Rica|Costa Rican|CRI|San José|San Jose|Liberia|哥斯达黎加|圣何塞|利比里亚",
+         "Guatemala|Guatemalan|GTM|Guatemala City|Mixco|危地马拉|危地马拉城|米斯科",
+         "Honduras|Honduran|HND|Tegucigalpa|San Pedro Sula|洪都拉斯|特古西加尔巴|圣佩德罗苏拉",
+         "El Salvador|Salvadoran|SLV|San Salvador|萨尔瓦多|圣萨尔瓦多",
+         "Nicaragua|Nicaraguan|NIC|Managua|尼加拉瓜|马那瓜",
+         "Belize|Belizean|BLZ|Belmopan|伯利兹|贝尔莫潘",
+         "Greenland|Greenlandic|GRL|Kalaallit Nunaat|Nuuk|格陵兰|努克",
+         "Bermuda|Bermudian|BMU|Hamilton|百慕大|哈密尔顿"
+      ].join("|"), "i")
+    },
+    {
+      "tag": "England-Nodes",
+      "type": "urltest",
+      "interrupt_exist_connections": false,
+      "outbounds": [],
+      "filter": /(England|UnitedKingdom|IE|英|英国|伦敦|爱尔兰|都柏林)/i
+    },
+    {
+      "tag": "Australia-Nodes",
+      "type": "urltest",
+      "interrupt_exist_connections": false,
+      "outbounds": [],
+      "filter": /(Australia|澳洲|澳大利亚|悉尼|墨尔本)/i
+    },
+    {
+      "tag": "Russia-Nodes",
+      "type": "urltest",
+      "interrupt_exist_connections": false,
+      "outbounds": [],
+      "filter": /(Russia|俄罗斯|莫斯科|西伯利亚)/i
+    },
+    {
+      "tag": "CentralAsia-Nodes",
+      "type": "urltest",
+      "interrupt_exist_connections": false,
+      "outbounds": [],
+      "filter": new RegExp([
+         "Kazakhstan|Kazakh|KAZ|Almaty|Astana|Nur-Sultan|哈萨克斯坦|阿拉木图|阿斯塔纳|努尔苏丹",
+         "Uzbekistan|Uzbek|UZB|Tashkent|Samarkand|乌兹别克斯坦|塔什干|撒马尔罕",
+         "Kyrgyzstan|Kyrgyz|KGZ|Bishkek|Osh|吉尔吉斯斯坦|比什凯克|奥什",
+         "Tajikistan|Tajik|TJK|Dushanbe|塔吉克斯坦|杜尚别",
+         "Turkmenistan|Turkmen|TKM|Ashgabat|土库曼斯坦|阿什哈巴德"
+      ].join("|"), "i")
+    },
+    {
+      "tag": "Asean-Nodes",
+      "type": "urltest",
+      "interrupt_exist_connections": false,
+      "outbounds": [],
+      filter: new RegExp([
+        "India|Indian|IND|New Delhi|Delhi|Mumbai|Bombay|Bangalore|Bengaluru|Hyderabad|Chennai|Kolkata",
+        "印度|新德里|德里|孟买|班加罗尔|海得拉巴|钦奈|加尔各答",
+        "Nepal|Nepali|NPL|Kathmandu|Pokhara|尼泊尔|加德满都|博卡拉",
+        "Thailand|Thai|THA|Bangkok|Chiang Mai|Phuket|Pattaya|泰国|曼谷|清迈|普吉|芭提雅",
+        "Malaysia|Malaysian|MYS|Kuala Lumpur|Johor Bahru|Penang|马来西亚|吉隆坡|新山|槟城",
+        "Philippines|Filipino|PHL|Manila|Cebu|Davao|菲律宾|马尼拉|宿务|达沃",
+        "Vietnam|Vietnamese|VNM|Hanoi|Ho Chi Minh City|Saigon|Da Nang|越南|河内|胡志明市|西贡|岘港",
+        "Indonesia|Indonesian|IDN|Jakarta|Bali|Surabaya|Bandung|印度尼西亚|雅加达|巴厘岛|泗水|万隆",
+        "Cambodia|Cambodian|KHM|Phnom Penh|Sihanoukville|Siem Reap|柬埔寨|金边|西哈努克|暹粒",
+        "Myanmar|Burmese|MMR|Yangon|Rangoon|Mandalay|缅甸|仰光|曼德勒",
+        "Bangladesh|Bangladeshi|BGD|Dhaka|Chittagong|孟加拉国|达卡|吉大港",
+        "Maldives|Maldivian|MDV|Male|Malé|马尔代夫|马累"
+    ].join("|"), "i")
+    },
+    {
+      "tag": "WesternEurope-Nodes",
+      "type": "urltest",
+      "interrupt_exist_connections": false,
+      "outbounds": [],
+      "filter": new RegExp([
+         "Germany|German|DEU|Frankfurt|Berlin|Munich|München|Hamburg|Düsseldorf|Dusseldorf|Cologne|Köln|Stuttgart",
+         "德国|法兰克福|柏林|慕尼黑|汉堡|杜塞尔多夫|科隆|斯图加特",
+         "France|French|FRA|Paris|Marseille|Lyon|Nice|Toulouse|Bordeaux|Strasbourg",
+         "法国|巴黎|马赛|里昂|尼斯|图卢兹|波尔多|斯特拉斯堡",
+         "Netherlands|Dutch|Holland|NLD|Amsterdam|Rotterdam|The Hague|Den Haag|Utrecht|Eindhoven",
+         "荷兰|阿姆斯特丹|鹿特丹|海牙|乌得勒支|埃因霍温",
+         "Belgium|Belgian|BEL|Brussels|Antwerp|Ghent|Bruges",
+         "比利时|布鲁塞尔|安特卫普|根特|布鲁日",
+         "Switzerland|Swiss|CHE|Zurich|Zürich|Geneva|Genève|Basel|Bern|Lausanne",
+         "瑞士|苏黎世|日内瓦|巴塞尔|伯尔尼|洛桑",
+         "Austria|Austrian|AUT|Vienna|Wien|Salzburg|Graz|Innsbruck",
+         "奥地利|维也纳|萨尔茨堡|格拉茨|因斯布鲁克",
+         "Luxembourg|Luxembourgish|LUX|Luxembourg City|卢森堡|卢森堡市",
+         "Ireland|Irish|IRL|Dublin|Cork|Galway|爱尔兰|都柏林|科克|戈尔韦"
+      ].join("|"), "i"),
+    },
+    {
+      "tag": "EasternEurope-Nodes",
+      "type": "urltest",
+      "interrupt_exist_connections": false,
+      "outbounds": [],
+      "filter": new RegExp([
+         "Germany|German|DEU|Frankfurt|Berlin|Munich|München|Hamburg|Düsseldorf|Dusseldorf|Cologne|Köln|Stuttgart",
+         "德国|法兰克福|柏林|慕尼黑|汉堡|杜塞尔多夫|科隆|斯图加特",
+         "France|French|FRA|Paris|Marseille|Lyon|Nice|Toulouse|Bordeaux|Strasbourg",
+         "法国|巴黎|马赛|里昂|尼斯|图卢兹|波尔多|斯特拉斯堡",
+         "Netherlands|Dutch|Holland|NLD|Amsterdam|Rotterdam|The Hague|Den Haag|Utrecht|Eindhoven",
+         "荷兰|阿姆斯特丹|鹿特丹|海牙|乌得勒支|埃因霍温",
+         "Belgium|Belgian|BEL|Brussels|Antwerp|Ghent|Bruges",
+         "比利时|布鲁塞尔|安特卫普|根特|布鲁日",
+         "Switzerland|Swiss|CHE|Zurich|Zürich|Geneva|Genève|Basel|Bern|Lausanne",
+         "瑞士|苏黎世|日内瓦|巴塞尔|伯尔尼|洛桑",
+         "Austria|Austrian|AUT|Vienna|Wien|Salzburg|Graz|Innsbruck",
+         "奥地利|维也纳|萨尔茨堡|格拉茨|因斯布鲁克",
+         "Luxembourg|Luxembourgish|LUX|Luxembourg City|卢森堡|卢森堡市",
+         "Ireland|Irish|IRL|Dublin|Cork|Galway|爱尔兰|都柏林|科克|戈尔韦"
+      ].join("|"), "i"),
+    },
+    {
+      "tag": "SouthernEurope-Nodes",
+      "type": "urltest",
+      "interrupt_exist_connections": false,
+      "outbounds": [],
+      filter: new RegExp([
+        "Italy|Italian|ITA|Rome|Milan|Milano|Venice|Venezia|Naples|Napoli|Turin|Torino|Florence|Firenze",
+        "意大利|罗马|米兰|威尼斯|那不勒斯|都灵|佛罗伦萨",
+        "Spain|Spanish|ESP|Madrid|Barcelona|Valencia|Seville|Sevilla|Bilbao|Malaga|Málaga",
+        "西班牙|马德里|巴塞罗那|瓦伦西亚|塞维利亚|毕尔巴鄂|马拉加",
+        "Portugal|Portuguese|PRT|Lisbon|Lisboa|Porto|Braga",
+        "葡萄牙|里斯本|波尔图|布拉加",
+        "Greece|Greek|GRC|Athens|Thessaloniki|Patras",
+        "希腊|雅典|塞萨洛尼基|帕特雷",
+        "Malta|Maltese|MLT|Valletta|马耳他|瓦莱塔",
+        "Cyprus|Cypriot|CYP|Nicosia|Limassol|Larnaca",
+        "塞浦路斯|尼科西亚|利马索尔|拉纳卡"
+      ].join("|"), "i")
+    },
+    {
+      "tag": "NorthernEurope-Nodes",
+      "type": "urltest",
+      "interrupt_exist_connections": false,
+      "outbounds": [],
+      "filter": new RegExp([
+         "Sweden|Swedish|SWE|Stockholm|Gothenburg|Malmo|Malmö",
+         "瑞典|斯德哥尔摩|哥德堡|马尔默",
+         "Norway|Norwegian|NOR|Oslo|Bergen|Trondheim",
+         "挪威|奥斯陆|卑尔根|特隆赫姆",
+         "Denmark|Danish|DNK|Copenhagen|Aarhus|Odense",
+         "丹麦|哥本哈根|奥胡斯|欧登塞",
+         "Finland|Finnish|FIN|Helsinki|Espoo|Tampere",
+         "芬兰|赫尔辛基|埃斯波|坦佩雷",
+         "Iceland|Icelandic|ISL|Reykjavik|Akureyri",
+         "冰岛|雷克雅未克|阿克雷里"
+      ].join("|"), "i")
+    },
+    {
+      "tag": "MiddleEast-Nodes",
+      "type": "urltest",
+      "interrupt_exist_connections": false,
+      "outbounds": [],
+      "filter": new RegExp([
+         "Saudi Arabia|Saudi|Saudi Arabian|KSA|SAU|Jeddah|Riyadh|Mecca|Makkah|Medina",
+         "沙特|沙特阿拉伯|吉达|利雅得|麦加|麦地那",
+         "United Arab Emirates|UAE|Emirates|Emirati|ARE|Dubai|Abu Dhabi|Sharjah",
+         "迪拜|阿联酋|阿拉伯联合酋长国|阿布扎比|沙迦",
+         "Qatar|Qatari|QAT|Doha|卡塔尔|多哈",
+         "Israel|Israeli|ISR|Jerusalem|Tel Aviv|Haifa",
+         "以色列|耶路撒冷|特拉维夫|海法",
+         "Iraq|Iraqi|IRQ|Baghdad|Basra|Erbil",
+         "伊拉克|巴格达|巴士拉|埃尔比勒",
+         "Pakistan|Pakistani|PAK|Karachi|Islamabad|Lahore",
+         "巴基斯坦|卡拉奇|伊斯兰堡|拉合尔",
+         "Oman|Omani|OMN|Muscat|Salalah",
+         "阿曼|马斯喀特|塞拉莱",
+         "Bahrain|Bahraini|BHR|Manama",
+         "巴林|麦纳麦"
+      ].join("|"), "i"),
+    },
+    {
+      "tag": "SouthAmerica-Nodes",
+      "type": "urltest",
+      "interrupt_exist_connections": false,
+      "outbounds": [],
+      "filter": new RegExp([
+         "Brazil|Brazilian|São Paulo|Sao Paulo|Rio de Janeiro|Campinas",
+         "巴西|圣保罗|里约热内卢|坎皮纳斯",
+         "Argentina|Argentine|Argentinian|Buenos Aires|Cordoba|Córdoba|Rosario",
+         "阿根廷|布宜诺斯艾利斯|科尔多瓦|罗萨里奥",
+         "Chile|Chilean|Santiago|Valparaiso|Valparaíso|Talca",
+         "智利|圣地亚哥|瓦尔帕莱索|塔尔卡",
+         "Mexico|Mexican|Mexico City|Guadalajara|Monterrey|Tijuana",
+         "墨西哥|墨西哥城|瓜达拉哈拉|蒙特雷|蒂华纳",
+         "Colombia|Colombian|Bogota|Bogotá|Medellin|Medellín|Cali",
+         "哥伦比亚|波哥大|麦德林|卡利",
+         "Ecuador|Ecuadorian|Quito|Guayaquil",
+         "厄瓜多尔|基多|瓜亚基尔",
+         "Guatemala|Guatemalan|Guatemala City|Mixco",
+         "危地马拉|危地马拉城|米斯科",
+         "Peru|Peruvian|Lima|秘鲁|利马",
+         "Bolivia|Bolivian|Sucre|La Paz|Santa Cruz",
+         "玻利维亚|苏克雷|拉巴斯|圣克鲁斯"
+      ].join("|"), "i")
+    },
+    {
+      "tag": "Africa-Nodes",
+      "type": "urltest",
+      "interrupt_exist_connections": false,
+      "outbounds": [],
+      "filter": new RegExp([
+         "South Africa|South African|ZAF|ZA|Cape Town|Johannesburg|Pretoria|Durban",
+         "南非|开普敦|约翰内斯堡|比勒陀利亚|德班",
+         "Egypt|Egyptian|EGY|Cairo|Alexandria|Giza",
+         "埃及|开罗|亚历山大|吉萨",
+         "Morocco|Moroccan|MAR|Rabat|Casablanca|Marrakesh|Marrakech|Tangier",
+         "摩洛哥|拉巴特|卡萨布兰卡|马拉喀什|丹吉尔",
+         "Tunisia|Tunisian|TUN|Tunis|Sfax",
+         "突尼斯|突尼斯市|斯法克斯",
+         "Kenya|Kenyan|KEN|Nairobi|Mombasa",
+         "肯尼亚|内罗毕|蒙巴萨",
+         "Nigeria|Nigerian|NGA|Lagos|Abuja",
+         "尼日利亚|拉各斯|阿布贾",
+         "Ghana|Ghanaian|GHA|Accra|Kumasi",
+         "加纳|阿克拉|库马西",
+         "Ethiopia|Ethiopian|ETH|Addis Ababa",
+         "埃塞俄比亚|亚的斯亚贝巴",
+         "Algeria|Algerian|DZA|Algiers|Oran",
+         "阿尔及利亚|阿尔及尔|奥兰"
+      ].join("|"), "i")
+    },
+    {
+      "tag": "Auto-Proxy",
+      "type": "urltest",
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "3m",
+      "tolerance": 50,
+      "idle_timeout": "30m",
+      "interrupt_exist_connections": false,
+      "outbounds": []
+    }
+  ],
+  "dns": {
+    "servers": [
+      {
+        "tag": "Dns-Direct",
+        "type": "https",
+        "server": "223.5.5.5",
+        "path": "/dns-query",
+        "detour": "Direct"
+      },
+      {
+        "tag": "Dns-Proxy",
+        "type": "https",
+        "server": "149.112.112.112",
+        "path": "/dns-query",
+        "detour": "Node-Selector"
+      }
+    ],
+    "rules": [
+      {
+        "rule_set": [
+          "Geosite-CN"
+        ],
+        "server": "Dns-Direct"
+      }
+    ],
+    "final": "Dns-Proxy"
+  },
+  "route": {
+    "auto_detect_interface": true,
+    "default_domain_resolver": "Dns-Direct",
+    "rules": [
+      {
+        "ip_is_private": true,
+        "outbound": "Direct"
+      },
+      {
+        "action": "sniff"
+      },
+      {
+        "protocol": "dns",
+        "action": "hijack-dns"
+      },
+      {
+        "rule_set": [
+          "Geosite-CN"
+        ],
+        "outbound": "Direct"
+      }
+    ],
+    "rule_set": [
+      {
+        "tag": "Geosite-CN",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://fastly.jsdelivr.net/gh/SagerNet/sing-geosite@rule-set/geosite-cn.srs",
+        "download_detour": "Node-Selector",
+        "update_interval": "1d"
+      }
+    ],
+    "final": "Node-Selector"
+  },
+  "services": [
+    {
+      "tag": "singbox-api",
+      "type": "api",
+      "listen": "127.0.0.1",
+      "listen_port": 65530,
+      "dashboard": {
+        "enabled": true,
+        "path": "dashboard",
+        "download_url": "https://github.com/SagerNet/sing-box-dashboard/archive/refs/heads/gh-pages.zip",
+        "update_interval": "1d"
+      }
+    }
+  ]
+}
