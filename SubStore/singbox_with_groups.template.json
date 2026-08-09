@@ -7,76 +7,75 @@
     {
       "listen": "127.0.0.1",
       "listen_port": 65535,
-      "tag": "Mixed-Inbound",
+      "tag": "mixed-in",
       "type": "mixed",
       "users": []
     }
   ],
   "outbounds": [
     {
-      "tag": "Direct",
+      "tag": "direct",
       "type": "direct"
     },
     {
-      "tag": "Node-Selector",
+      "tag": "🚀 节点选择",
       "type": "selector",
-      "default": "Auto-Proxy",
       "interrupt_exist_connections": false,
       "outbounds": [
-         "Auto-Proxy"
+         "♻️ 自动选择"
       ]
     },
     {
-      "tag": "HongKong-Nodes",
+      "tag": "🇭🇰 香港节点",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
       "filter": "Hong Kong|港|香港"
     },
     {
-      "tag": "Taiwan-Nodes",
+      "tag": "🇨🇳 台湾节点",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
       "filter": "Taiwan|台|台湾|新北|彰化"
     },
     {
-      "tag": "Singapore-Nodes",
+      "tag": "🇸🇬 狮城节点",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
       "filter": "Singapore|新加坡|狮城"
     },
     {
-      "tag": "Japan-Nodes",
+      "tag": "🇯🇵 日本节点",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
       "filter": "Japan|JPN|日本|川日|东京|大阪|泉日|埼玉|沪日|深日"
     },
     {
-      "tag": "SouthKorea-Nodes",
+      "tag": "🇰🇷 韩国节点",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
       "filter": "Korea|KOR|韩国|首尔|韩|韓"
     },
     {
-      "tag": "UnitedStates-Nodes",
+      "tag": "🇺🇲 美国节点",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
       "filter": "US|United States|美|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|旧金山"
     },
     {
-      "tag": "Canada-Nodes",
+      "tag": "🇨🇦 枫叶节点",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
       "filter": "Canada|加拿大|蒙特利尔|温哥华|楓葉|枫叶"
     },
     {
-      "tag": "NorthAmerica-Nodes",
+      "tag": "🇲🇽 北美节点",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
@@ -95,28 +94,28 @@
       ]
     },
     {
-      "tag": "England-Nodes",
+      "tag": "🇬🇧 英国节点",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
       "filter": "England|UnitedKingdom|IE|英|英国|伦敦|爱尔兰|都柏林"
     },
     {
-      "tag": "Australia-Nodes",
+      "tag": "🇦🇺 澳洲节点",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
       "filter": "Australia|澳洲|澳大利亚|悉尼|墨尔本"
     },
     {
-      "tag": "Russia-Nodes",
+      "tag": "🇷🇺 俄国节点",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
       "filter": "Russia|俄罗斯|莫斯科|西伯利亚"
     },
     {
-      "tag": "CentralAsia-Nodes",
+      "tag": "🇰🇿 中亚节点",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
@@ -129,7 +128,7 @@
       ]
     },
     {
-      "tag": "Asean-Nodes",
+      "tag": "🇦🇸 东盟节点",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
@@ -149,7 +148,7 @@
       ]
     },
     {
-      "tag": "WesternEurope-Nodes",
+      "tag": "🇪🇺 西欧节点",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
@@ -171,7 +170,7 @@
       ]
     },
     {
-      "tag": "EasternEurope-Nodes",
+      "tag": "🇺🇳 东欧节点",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
@@ -193,7 +192,7 @@
       ]
     },
     {
-      "tag": "SouthernEurope-Nodes",
+      "tag": "☀️ 南欧节点",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
@@ -212,7 +211,7 @@
       ]
     },
     {
-      "tag": "NorthernEurope-Nodes",
+      "tag": "❄️ 北欧节点",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
@@ -230,7 +229,7 @@
       ]
     },
     {
-      "tag": "MiddleEast-Nodes",
+      "tag": "🇸🇦 中东节点",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
@@ -253,7 +252,7 @@
       ]
     },
     {
-      "tag": "SouthAmerica-Nodes",
+      "tag": "🇧🇷 南美节点",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
@@ -278,7 +277,7 @@
       ]
     },
     {
-      "tag": "Africa-Nodes",
+      "tag": "🌍 非洲节点",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
@@ -304,7 +303,7 @@
       ]
     },
     {
-      "tag": "Auto-Proxy",
+      "tag": "♻️ 自动选择",
       "type": "urltest",
       "url": "https://www.gstatic.com/generate_204",
       "interval": "3m",
@@ -317,37 +316,36 @@
   "dns": {
     "servers": [
       {
-        "tag": "Dns-Direct",
+        "tag": "dns-direct",
         "type": "https",
         "server": "223.5.5.5",
-        "path": "/dns-query",
-        "detour": "Direct"
+        "path": "/dns-query"
       },
       {
-        "tag": "Dns-Proxy",
+        "tag": "dns-proxy",
         "type": "https",
         "server": "149.112.112.112",
         "path": "/dns-query",
-        "detour": "Node-Selector"
+        "detour": "♻️ 自动选择"
       }
     ],
     "rules": [
       {
         "rule_set": [
-          "Geosite-CN"
+          "geosite-cn"
         ],
-        "server": "Dns-Direct"
+        "server": "dns-direct"
       }
     ],
-    "final": "Dns-Proxy"
+    "final": "dns-proxy"
   },
   "route": {
     "auto_detect_interface": true,
-    "default_domain_resolver": "Dns-Direct",
+    "default_domain_resolver": "dns-direct",
     "rules": [
       {
         "ip_is_private": true,
-        "outbound": "Direct"
+        "outbound": "direct"
       },
       {
         "action": "sniff"
@@ -358,22 +356,22 @@
       },
       {
         "rule_set": [
-          "Geosite-CN"
+          "deosite-cn"
         ],
-        "outbound": "Direct"
+        "outbound": "direct"
       }
     ],
     "rule_set": [
       {
-        "tag": "Geosite-CN",
+        "tag": "geosite-cn",
         "type": "remote",
         "format": "binary",
         "url": "https://fastly.jsdelivr.net/gh/SagerNet/sing-geosite@rule-set/geosite-cn.srs",
-        "download_detour": "Node-Selector",
+        "download_detour": "🚀 节点选择",
         "update_interval": "1d"
       }
     ],
-    "final": "Node-Selector"
+    "final": "🚀 节点选择"
   },
   "services": [
     {
