@@ -330,8 +330,8 @@
       {
         "tag": "dns-proxy",
         "type": "tls",
-        "server": "1.1.1.1",
-        "detour": "♻️ 自动选择"
+        "server": "8.8.8.8",
+        "detour": "🚀 节点选择"
       }
     ],
     "rules": [
