@@ -303,6 +303,13 @@
       ]
     },
     {
+      "tag": "🛜 家宽节点",
+      "type": "urltest",
+      "interrupt_exist_connections": false,
+      "outbounds": [],
+      "filter": "家宽|宽带|动态家宽"
+    },
+    {
       "tag": "♻️ 自动选择",
       "type": "urltest",
       "url": "https://www.gstatic.com/generate_204",
@@ -352,6 +359,10 @@
         "action": "hijack-dns"
       },
       {
+        "rule_set": "geosite-category-ai-!cn",
+        "outbound": "🛜 家宽节点"
+      },
+      {
         "type": "logical",
         "mode": "and",
         "rules": [
@@ -392,6 +403,14 @@
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-geolocation-!cn.srs",
+        "download_detour": "🚀 节点选择",
+        "update_interval": "1d"
+      },
+      {
+        "tag": "geosite-category-ai-!cn",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ai-!cn.srs",
         "download_detour": "🚀 节点选择",
         "update_interval": "1d"
       }
