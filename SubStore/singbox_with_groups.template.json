@@ -402,10 +402,10 @@
         "update_interval": "1d"
       },
       {
-        "tag": "geosite-geolocation-cn@!cn",
+        "tag": "geosite-geolocation-!cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-geolocation-cn@!cn.srs",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-geolocation-!cn.srs",
         "download_detour": "🚀 节点选择",
         "update_interval": "1d"
       }
