@@ -317,22 +317,32 @@
     "servers": [
       {
         "tag": "dns-direct",
-        "type": "https",
-        "server": "223.5.5.5",
-        "path": "/dns-query"
+        "type": "tls",
+        "server": "223.5.5.5"
       },
       {
         "tag": "dns-proxy",
-        "type": "https",
-        "server": "149.112.112.112",
-        "path": "/dns-query",
+        "type": "tls",
+        "server": "8.8.8.8",
         "detour": "♻️ 自动选择"
       }
     ],
     "rules": [
       {
-        "rule_set": [
-          "geosite-cn"
+        "rule_set": "geosite-geolocation-cn",
+        "server": "dns-direct"
+      },
+      {
+        "type": "logical",
+        "mode": "and",
+        "rules": [
+          {
+            "rule_set": "geosite-geolocation-!cn",
+            "invert": true
+          },
+          {
+            "rule_set": "geoip-cn"
+          }
         ],
         "server": "dns-direct"
       }
@@ -342,36 +352,64 @@
   "route": {
     "auto_detect_interface": true,
     "default_domain_resolver": "dns-direct",
+    "final": "🚀 节点选择",
     "rules": [
+      {
+        "action": "sniff"
+      },
       {
         "ip_is_private": true,
         "outbound": "direct"
-      },
-      {
-        "action": "sniff"
       },
       {
         "protocol": "dns",
         "action": "hijack-dns"
       },
       {
-        "rule_set": [
-          "geosite-cn"
+        "type": "logical",
+        "mode": "and",
+        "rules": [
+          {
+            "rule_set": "geosite-geolocation-!cn",
+            "invert": true
+          },
+          {
+            "rule_set": "geoip-cn"
+          }
         ],
+        "outbound": "direct"
+      },
+      {
+        "rule_set": "geosite-geolocation-cn",
         "outbound": "direct"
       }
     ],
     "rule_set": [
       {
-        "tag": "geosite-cn",
+        "tag": "geoip-cn",
         "type": "remote",
         "format": "binary",
-        "url": "https://fastly.jsdelivr.net/gh/SagerNet/sing-geosite@rule-set/geosite-cn.srs",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-cn.srs",
+        "download_detour": "🚀 节点选择",
+        "update_interval": "1d"
+      },
+      {
+        "tag": "geosite-geolocation-cn",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-geolocation-cn.srs",
+        "download_detour": "🚀 节点选择",
+        "update_interval": "1d"
+      },
+      {
+        "tag": "geosite-geolocation-cn@!cn",
+        "type": "remote",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-geolocation-cn@!cn.srs",
         "download_detour": "🚀 节点选择",
         "update_interval": "1d"
       }
-    ],
-    "final": "🚀 节点选择"
+    ]
   },
   "services": [
     {
