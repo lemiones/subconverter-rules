@@ -769,8 +769,9 @@ rules:
   - RULE-SET,ChinaCompanyIp,🎯 全球直连
   - RULE-SET,Download,🎯 全球直连
   - RULE-SET,DownloadProcess,🎯 全球直连
+  - GEOSITE,geolocation-!cn@cn,🎯 全球直连
+  - GEOSITE,geolocation-cn,🎯 全球直连
   - GEOIP,CN,🎯 全球直连
-  - GEOSITE,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
 
 rule-providers:
