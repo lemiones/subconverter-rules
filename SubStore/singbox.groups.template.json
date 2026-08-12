@@ -331,20 +331,6 @@
       {
         "rule_set": "geosite-geolocation-cn",
         "server": "dns-direct"
-      },
-      {
-        "type": "logical",
-        "mode": "and",
-        "rules": [
-          {
-            "rule_set": "geosite-geolocation-!cn",
-            "invert": true
-          },
-          {
-            "rule_set": "geoip-cn"
-          }
-        ],
-        "server": "dns-direct"
       }
     ],
     "final": "dns-proxy"
