@@ -48,7 +48,7 @@ dns: #!replace
   # 代理服务器域名解析
   # 该配置使用独立的 DNS 查询链路，不会跟随代理规则，可避免连接代理服务器时产生递归查询。
   proxy-server-nameserver:
-    - https://doh.pub/dns-query
+    - tls://dot.pub
     - tls://dns.quad9.net
   # 对部分域名使用单独的 DNS 服务器  
   nameserver-policy: 
