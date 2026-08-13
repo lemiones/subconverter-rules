@@ -747,7 +747,9 @@ rules:
   - RULE-SET,Telegram,📲 电报消息
   - RULE-SET,AI,💬 OpenAI
   - RULE-SET,OpenAi,💬 OpenAI
-  - RULE-SET,Copilot,Ⓜ️ Copilot
+  # - RULE-SET,Copilot,Ⓜ️ Copilot
+  - RULE-SET,Copilot,💬 OpenAI
+  - GEOSITE,category-ai-!cn,💬 OpenAI
   - RULE-SET,GitHub,🌀 GitHub
   - RULE-SET,NetEaseMusic,🎶 网易音乐
   - RULE-SET,Epic,🎮 游戏平台
@@ -778,7 +780,7 @@ rule-providers:
   DirectDomainIp:
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/lemiones/subconverter-rules/refs/heads/main/Ruleset/DirectDomainIp.yaml
+    url: https://raw.githubusercontent.com/lemiones/subconverter-rules/refs/heads/main/ruleset/DirectDomainIp.yaml
     path: ./rule_provider/DirectDomainIp.yaml
     interval: 86400
   LocalAreaNetwork:
@@ -978,6 +980,6 @@ rule-providers:
   DownloadProcess:
     type: http 
     behavior: classical
-    url: https://raw.githubusercontent.com/lemiones/subconverter-rules/refs/heads/main/Ruleset/DownloadProcess.yaml
+    url: https://raw.githubusercontent.com/lemiones/subconverter-rules/refs/heads/main/ruleset/DownloadProcess.yaml
     path: ./rule_provider/DownloadProcess.yaml
     interval: 86400
