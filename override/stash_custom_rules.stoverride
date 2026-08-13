@@ -1,13 +1,11 @@
-name: custom_dns_rule
+name: custom_dns_rules
 desc: |-
-  自定义DNS设置,默认使用AliYun DNS和DnsPod解析
-  国内域名使用AliYun DNS和DnsPod解析
-  国外域名使用Google DNS和Quad9 DNS解析
+  Stash自定义规则
 author: |-
   Lemione[https://github.com/lemiones]
 homepage: 'https://github.com/lemiones/subconverter-rules/'
 icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png'
-category: 'DNS'
+category: 'Custom Rules'
 date: '2024-12-21 07:13:21'
 version: '0.1.0'
 
