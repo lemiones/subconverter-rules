@@ -32,21 +32,21 @@ dns: #!replace
   # https://help.nextdns.io/t/g9hdkjz
   skip-cert-verify: true
   # DNS 查询跟随代理规则
-  follow-rule: false
+  follow-rule: true
   # 以下填写的 DNS 服务器将会被用来解析 DNS 服务的域名
   # 仅填写 DNS 服务器的 IP 地址
   default-nameserver:
     - 223.5.5.5
     - 119.29.29.29
-  # 支持 UDP / TCP / DoT / DoH 协议的 DNS 服务，可以指明具体的连接端口号。
-  # 所有 DNS 请求将会直接发送到服务器，不经过任何代理。
+  # 支持 UDP / TCP / DoT / DoH 协议的 DNS 服务，可以指明具体的连接端口号
+  # 所有 DNS 请求将会直接发送到服务器，不经过任何代理
   # Stash 会使用最先获得的解析记录回复 DNS 请求
   # 不建议配置超过 2 个 DNS 服务器，会增加系统功耗
   nameserver: 
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
   # 代理服务器域名解析
-  # 该配置使用独立的 DNS 查询链路，不会跟随代理规则，可避免连接代理服务器时产生递归查询。
+  # 该配置使用独立的 DNS 查询链路，不会跟随代理规则，可避免连接代理服务器时产生递归查询
   proxy-server-nameserver:
     - tls://dot.pub
     - tls://dns.quad9.net
