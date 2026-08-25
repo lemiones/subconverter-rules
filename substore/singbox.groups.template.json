@@ -361,7 +361,7 @@
       },
       {
         "rule_set": "geosite-category-ai-!cn",
-        "outbound": "🛜 家宽节点"
+        "outbound": "🇺🇲 美国节点"
       },
       {
         "type": "logical",
@@ -416,7 +416,7 @@
   "http_clients": [
     {
       "tag": "proxy-http-detour",
-      "detour": "🚀 节点选择"
+      "detour": "🇺🇲 美国节点"
     }
   ],
   "services": [
