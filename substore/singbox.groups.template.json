@@ -323,12 +323,12 @@
   "dns": {
     "servers": [
       {
-        "tag": "dns-direct",
+        "tag": "dns-direct-detour",
         "type": "tls",
         "server": "223.5.5.5"
       },
       {
-        "tag": "dns-proxy",
+        "tag": "dns-proxy-detour",
         "type": "tls",
         "server": "8.8.8.8",
         "detour": "🚀 节点选择"
@@ -337,15 +337,15 @@
     "rules": [
       {
         "rule_set": "geosite-geolocation-cn",
-        "server": "dns-direct"
+        "server": "dns-direct-detour"
       }
     ],
-    "final": "dns-proxy"
+    "final": "dns-proxy-detour"
   },
   "route": {
     "auto_detect_interface": true,
-    "default_domain_resolver": "dns-direct",
-    "default_http_client": "proxy-http-detour",
+    "default_domain_resolver": "dns-direct-detour",
+    "default_http_client": "http-proxy-detour",
     "final": "🚀 节点选择",
     "rules": [
       {
@@ -415,9 +415,9 @@
   },
   "http_clients": [
     {
-      "tag": "proxy-http-detour",
+      "tag": "http-proxy-detour",
       "detour": "🚀 节点选择",
-      "domain_resolver": "dns-proxy"
+      "domain_resolver": "dns-proxy-detour"
     }
   ],
   "services": [
