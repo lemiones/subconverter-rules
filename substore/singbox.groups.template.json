@@ -416,7 +416,7 @@
   "http_clients": [
     {
       "tag": "proxy-http-detour",
-      "detour": "🇺🇲 美国节点"
+      "detour": "♻️ 自动选择"
     }
   ],
   "services": [
