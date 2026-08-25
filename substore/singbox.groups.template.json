@@ -345,7 +345,7 @@
   "route": {
     "auto_detect_interface": true,
     "default_domain_resolver": "dns-direct",
-    "default_http_client": "ruleset-detour",
+    "default_http_client": "proxy-http-detour",
     "final": "🚀 节点选择",
     "rules": [
       {
@@ -415,10 +415,8 @@
   },
   "http_clients": [
     {
-      "tag": "ruleset-detour",
-      "dial": {
-        "detour": "🚀 节点选择"
-      }
+      "tag": "proxy-http-detour",
+      "detour": "🚀 节点选择"
     }
   ],
   "services": [
