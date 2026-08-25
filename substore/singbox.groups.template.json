@@ -345,6 +345,7 @@
   "route": {
     "auto_detect_interface": true,
     "default_domain_resolver": "dns-direct",
+    "default_http_client": "rule-set",
     "final": "🚀 节点选择",
     "rules": [
       {
@@ -387,7 +388,6 @@
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-cn.srs",
-        "download_detour": "🚀 节点选择",
         "update_interval": "1d"
       },
       {
@@ -395,7 +395,6 @@
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-geolocation-cn.srs",
-        "download_detour": "🚀 节点选择",
         "update_interval": "1d"
       },
       {
@@ -403,7 +402,6 @@
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-geolocation-!cn.srs",
-        "download_detour": "🚀 节点选择",
         "update_interval": "1d"
       },
       {
@@ -411,11 +409,18 @@
         "type": "remote",
         "format": "binary",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ai-!cn.srs",
-        "download_detour": "🚀 节点选择",
         "update_interval": "1d"
       }
     ]
   },
+  "http_clients": [
+    {
+      "tag": "rule-set",
+      "dial": {
+        "detour": "🚀 节点选择"
+      }
+    }
+  ],
   "services": [
     {
       "tag": "singbox-api",
