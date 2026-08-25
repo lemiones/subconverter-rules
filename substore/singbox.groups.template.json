@@ -389,7 +389,7 @@
         "format": "binary",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geoip/rule-set/geoip-cn.srs",
         "update_interval": "1d",
-        "downlaod_detour": "🚀 节点选择"
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geosite-geolocation-cn",
@@ -397,7 +397,7 @@
         "format": "binary",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-geolocation-cn.srs",
         "update_interval": "1d",
-        "downlaod_detour": "🚀 节点选择"
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geosite-geolocation-!cn",
@@ -405,7 +405,7 @@
         "format": "binary",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-geolocation-!cn.srs",
         "update_interval": "1d",
-        "downlaod_detour": "🚀 节点选择"
+        "download_detour": "🚀 节点选择"
       },
       {
         "tag": "geosite-category-ai-!cn",
@@ -413,14 +413,15 @@
         "format": "binary",
         "url": "https://raw.githubusercontent.com/SagerNet/sing-geosite/rule-set/geosite-category-ai-!cn.srs",
         "update_interval": "1d",
-        "downlaod_detour": "🚀 节点选择"
+        "download_detour": "🚀 节点选择"
       }
     ]
   },
   "http_clients": [
     {
       "tag": "proxy-http-detour",
-      "detour": "🚀 节点选择"
+      "detour": "🚀 节点选择",
+      "domain_resolver": "dns-proxy",
     }
   ],
   "services": [
