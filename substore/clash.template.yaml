@@ -479,7 +479,7 @@ proxy-groups:
     tolerance: 50
     use:
       - SubProxyProvider
-    filter: "(?i)(Japan|JPN|日本|川日|东京|大阪|泉日|埼玉|沪日|深日)"
+    filter: "(?i)(\bJPN\b|Japan|日本|川日|东京|大阪|泉日|埼玉|沪日|深日)"
   - name: 🇰🇷 韩国节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -487,7 +487,7 @@ proxy-groups:
     tolerance: 50
     use:
       - SubProxyProvider
-    filter: "(?i)(Korea|KOR|韩国|首尔|韩|韓)"
+    filter: "(?i)(\bKOR\b|Korea|韩国|首尔|韩|韓)"
   - name: 🇸🇬 狮城节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -503,7 +503,7 @@ proxy-groups:
     tolerance: 150
     use:
       - SubProxyProvider
-    filter: "(?i)(US|United States|美|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|旧金山)"
+    filter: "(?i)(\bUS\b|\bUSA\b|United States|美|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|旧金山)"
   - name: 🇨🇦 枫叶节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -521,16 +521,16 @@ proxy-groups:
       - SubProxyProvider
     filter: >-
       (?i)(
-      Mexico|Mexican|MEX|Mexico City|Ciudad de México|Monterrey|Guadalajara|Tijuana|Cancún|Cancun|Querétaro|Queretaro|墨西哥|墨西哥城|蒙特雷|瓜达拉哈拉|蒂华纳|坎昆|克雷塔罗|
-      Panama|Panamanian|PAN|Panama City|巴拿马|巴拿马城|
-      Costa Rica|Costa Rican|CRI|San José|San Jose|Liberia|哥斯达黎加|圣何塞|利比里亚|
-      Guatemala|Guatemalan|GTM|Guatemala City|Mixco|危地马拉|危地马拉城|米斯科|
-      Honduras|Honduran|HND|Tegucigalpa|San Pedro Sula|洪都拉斯|特古西加尔巴|圣佩德罗苏拉|
-      El Salvador|Salvadoran|SLV|San Salvador|萨尔瓦多|圣萨尔瓦多|
-      Nicaragua|Nicaraguan|NIC|Managua|尼加拉瓜|马那瓜|
-      Belize|Belizean|BLZ|Belmopan|伯利兹|贝尔莫潘|
-      Greenland|Greenlandic|GRL|Kalaallit Nunaat|Nuuk|格陵兰|努克|
-      Bermuda|Bermudian|BMU|Hamilton|百慕大|哈密尔顿
+      \bMEX\b|Mexico|Mexican|Mexico City|Ciudad de México|Monterrey|Guadalajara|Tijuana|Cancún|Cancun|Querétaro|Queretaro|墨西哥|墨西哥城|蒙特雷|瓜达拉哈拉|蒂华纳|坎昆|克雷塔罗|
+      \bPAN\b|Panama|Panamanian|Panama City|巴拿马|巴拿马城|
+      \bCRI\b|Costa Rica|Costa Rican|San José|San Jose|Liberia|哥斯达黎加|圣何塞|利比里亚|
+      \bGTM\b|Guatemala|Guatemalan|Guatemala City|Mixco|危地马拉|危地马拉城|米斯科|
+      \bHND\b|Honduras|Honduran|Tegucigalpa|San Pedro Sula|洪都拉斯|特古西加尔巴|圣佩德罗苏拉|
+      \bSLV\b|El Salvador|Salvadoran|San Salvador|萨尔瓦多|圣萨尔瓦多|
+      \bNIC\b|Nicaragua|Nicaraguan|Managua|尼加拉瓜|马那瓜|
+      \bBLZ\b|Belize|Belizean|Belmopan|伯利兹|贝尔莫潘|
+      \bGRL\b|Greenland|Greenlandic|Kalaallit Nunaat|Nuuk|格陵兰|努克|
+      \bBMU\b|Bermuda|Bermudian|Hamilton|百慕大|哈密尔顿
       )
   - name: 🇬🇧 英国节点
     type: url-test
@@ -539,7 +539,7 @@ proxy-groups:
     tolerance: 150
     use:
       - SubProxyProvider
-    filter: "(?i)(England|UnitedKingdom|IE|英|英国|伦敦|爱尔兰|都柏林)"
+    filter: "(?i)(\bIE\b|England|UnitedKingdom|英|英国|伦敦|爱尔兰|都柏林)"
   - name: 🇦🇺 澳洲节点
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -565,11 +565,11 @@ proxy-groups:
       - SubProxyProvider
     filter: >-
       (?i)(
-      Kazakhstan|Kazakh|KAZ|Almaty|Astana|Nur-Sultan|哈萨克斯坦|阿拉木图|阿斯塔纳|努尔苏丹|
-      Uzbekistan|Uzbek|UZB|Tashkent|Samarkand|乌兹别克斯坦|塔什干|撒马尔罕|
-      Kyrgyzstan|Kyrgyz|KGZ|Bishkek|Osh|吉尔吉斯斯坦|比什凯克|奥什|
-      Tajikistan|Tajik|TJK|Dushanbe|塔吉克斯坦|杜尚别|
-      Turkmenistan|Turkmen|TKM|Ashgabat|土库曼斯坦|阿什哈巴德
+      \bKAZ\b|Kazakhstan|Kazakh|Almaty|Astana|Nur-Sultan|哈萨克斯坦|阿拉木图|阿斯塔纳|努尔苏丹|
+      \bUZB\b|Uzbekistan|Uzbek|Tashkent|Samarkand|乌兹别克斯坦|塔什干|撒马尔罕|
+      \bKGZ\b|Kyrgyzstan|Kyrgyz|Bishkek|Osh|吉尔吉斯斯坦|比什凯克|奥什|
+      \bTJK\b|Tajikistan|Tajik|Dushanbe|塔吉克斯坦|杜尚别|
+      \bTKM\b|Turkmenistan|Turkmen|Ashgabat|土库曼斯坦|阿什哈巴德
       )
   - name: 🇦🇸 东盟节点
     type: url-test
@@ -580,17 +580,17 @@ proxy-groups:
       - SubProxyProvider
     filter: >-
       (?i)(
-      India|Indian|IND|New Delhi|Delhi|Mumbai|Bombay|Bangalore|Bengaluru|Hyderabad|Chennai|Kolkata|印度|新德里|德里|孟买|班加罗尔|海得拉巴|钦奈|加尔各答|
-      Nepal|Nepali|NPL|Kathmandu|Pokhara|尼泊尔|加德满都|博卡拉|
-      Thailand|Thai|THA|Bangkok|Chiang Mai|Phuket|Pattaya|泰国|曼谷|清迈|普吉|芭提雅|
-      Malaysia|Malaysian|MYS|Kuala Lumpur|Johor Bahru|Penang|马来西亚|吉隆坡|新山|槟城|
-      Philippines|Filipino|PHL|Manila|Cebu|Davao|菲律宾|马尼拉|宿务|达沃|
-      Vietnam|Vietnamese|VNM|Hanoi|Ho Chi Minh City|Saigon|Da Nang|越南|河内|胡志明市|西贡|岘港|
-      Indonesia|Indonesian|IDN|Jakarta|Bali|Surabaya|Bandung|印度尼西亚|雅加达|巴厘岛|泗水|万隆|
-      Cambodia|Cambodian|KHM|Phnom Penh|Sihanoukville|Siem Reap|柬埔寨|金边|西哈努克|暹粒|
-      Myanmar|Burmese|MMR|Yangon|Rangoon|Mandalay|缅甸|仰光|曼德勒|
-      Bangladesh|Bangladeshi|BGD|Dhaka|Chittagong|孟加拉国|达卡|吉大港|
-      Maldives|Maldivian|MDV|Male|Malé|马尔代夫|马累
+      \bIND\b|India|Indian|New Delhi|Delhi|Mumbai|Bombay|Bangalore|Bengaluru|Hyderabad|Chennai|Kolkata|印度|新德里|德里|孟买|班加罗尔|海得拉巴|钦奈|加尔各答|
+      \bNPL\b|Nepal|Nepali|Kathmandu|Pokhara|尼泊尔|加德满都|博卡拉|
+      \bTHA\b|Thailand|Thai|Bangkok|Chiang Mai|Phuket|Pattaya|泰国|曼谷|清迈|普吉|芭提雅|
+      \bMYS\b|Malaysia|Malaysian|Kuala Lumpur|Johor Bahru|Penang|马来西亚|吉隆坡|新山|槟城|
+      \bPHL\b|Philippines|Filipino|Manila|Cebu|Davao|菲律宾|马尼拉|宿务|达沃|
+      \bVNM\b|Vietnam|Vietnamese|Hanoi|Ho Chi Minh City|Saigon|Da Nang|越南|河内|胡志明市|西贡|岘港|
+      \bIDN\b|Indonesia|Indonesian|Jakarta|Bali|Surabaya|Bandung|印度尼西亚|雅加达|巴厘岛|泗水|万隆|
+      \bKHM\b|Cambodia|Cambodian|Phnom Penh|Sihanoukville|Siem Reap|柬埔寨|金边|西哈努克|暹粒|
+      \bMMR\b|Myanmar|Burmese|Yangon|Rangoon|Mandalay|缅甸|仰光|曼德勒|
+      \bBGD\b|Bangladesh|Bangladeshi|Dhaka|Chittagong|孟加拉国|达卡|吉大港|
+      \bMDV\b|Maldives|Maldivian|Male|Malé|马尔代夫|马累
       )
   #- name: 🇪🇺 欧洲节点
   #  type: url-test
@@ -609,14 +609,14 @@ proxy-groups:
       - SubProxyProvider
     filter: >-
       (?i)(
-      Germany|German|DEU|Frankfurt|Berlin|Munich|München|Hamburg|Düsseldorf|Dusseldorf|Cologne|Köln|Stuttgart|德国|法兰克福|柏林|慕尼黑|汉堡|杜塞尔多夫|科隆|斯图加特|
-      France|French|FRA|Paris|Marseille|Lyon|Nice|Toulouse|Bordeaux|Strasbourg|法国|巴黎|马赛|里昂|尼斯|图卢兹|波尔多|斯特拉斯堡|
-      Netherlands|Dutch|Holland|NLD|Amsterdam|Rotterdam|The Hague|Den Haag|Utrecht|Eindhoven|荷兰|阿姆斯特丹|鹿特丹|海牙|乌得勒支|埃因霍温|
-      Belgium|Belgian|BEL|Brussels|Antwerp|Ghent|Bruges|比利时|布鲁塞尔|安特卫普|根特|布鲁日|
-      Switzerland|Swiss|CHE|Zurich|Zürich|Geneva|Genève|Basel|Bern|Lausanne|瑞士|苏黎世|日内瓦|巴塞尔|伯尔尼|洛桑|
-      Austria|Austrian|AUT|Vienna|Wien|Salzburg|Graz|Innsbruck|奥地利|维也纳|萨尔茨堡|格拉茨|因斯布鲁克|
-      Luxembourg|Luxembourgish|LUX|Luxembourg City|卢森堡|卢森堡市|
-      Ireland|Irish|IRL|Dublin|Cork|Galway|爱尔兰|都柏林|科克|戈尔韦
+      \bDEU\b|Germany|German|Frankfurt|Berlin|Munich|München|Hamburg|Düsseldorf|Dusseldorf|Cologne|Köln|Stuttgart|德国|法兰克福|柏林|慕尼黑|汉堡|杜塞尔多夫|科隆|斯图加特|
+      \bFRA\b|France|French|Paris|Marseille|Lyon|Nice|Toulouse|Bordeaux|Strasbourg|法国|巴黎|马赛|里昂|尼斯|图卢兹|波尔多|斯特拉斯堡|
+      \bNLD\b|Netherlands|Dutch|Holland|Amsterdam|Rotterdam|The Hague|Den Haag|Utrecht|Eindhoven|荷兰|阿姆斯特丹|鹿特丹|海牙|乌得勒支|埃因霍温|
+      \bBEL\b|Belgium|Belgian|Brussels|Antwerp|Ghent|Bruges|比利时|布鲁塞尔|安特卫普|根特|布鲁日|
+      \bCHE\b|Switzerland|Swiss|Zurich|Zürich|Geneva|Genève|Basel|Bern|Lausanne|瑞士|苏黎世|日内瓦|巴塞尔|伯尔尼|洛桑|
+      \bAUT\b|Austria|Austrian|Vienna|Wien|Salzburg|Graz|Innsbruck|奥地利|维也纳|萨尔茨堡|格拉茨|因斯布鲁克|
+      \bLUX\b|Luxembourg|Luxembourgish|Luxembourg City|卢森堡|卢森堡市|
+      \bIRL\b|Ireland|Irish|Dublin|Cork|Galway|爱尔兰|都柏林|科克|戈尔韦
       )
   - name: 🇺🇳 东欧节点
     type: url-test
@@ -627,17 +627,17 @@ proxy-groups:
       - SubProxyProvider
     filter: >-
       (?i)(
-      Poland|Polish|POL|Warsaw|Krakow|Kraków|Gdansk|Gdańsk|Wroclaw|Wrocław|Poznan|Poznań|波兰|华沙|克拉科夫|格但斯克|弗罗茨瓦夫|波兹南|
-      Czech|Czechia|Czech Republic|CZE|Prague|Brno|Ostrava|捷克|捷克共和国|布拉格|布尔诺|俄斯特拉发|
-      Slovakia|Slovak|SVK|Bratislava|Kosice|Košice|斯洛伐克|布拉迪斯拉发|科希策|
-      Hungary|Hungarian|HUN|Budapest|Debrecen|匈牙利|布达佩斯|德布勒森|
-      Romania|Romanian|ROU|Bucharest|Cluj|Cluj-Napoca|Timisoara|Timișoara|罗马尼亚|布加勒斯特|克卢日|蒂米什瓦拉|
-      Bulgaria|Bulgarian|BGR|Sofia|Plovdiv|Varna|保加利亚|索菲亚|普罗夫迪夫|瓦尔纳|
-      Croatia|Croatian|HRV|Zagreb|Split|Dubrovnik|克罗地亚|萨格勒布|斯普利特|杜布罗夫尼克|
-      Serbia|Serbian|SRB|Belgrade|Novi Sad|塞尔维亚|贝尔格莱德|诺维萨德|
-      Slovenia|Slovenian|SVN|Ljubljana|Maribor|斯洛文尼亚|卢布尔雅那|马里博尔|
-      Ukraine|Ukrainian|UKR|Kyiv|Kiev|Kharkiv|Odesa|Odessa|乌克兰|基辅|哈尔科夫|敖德萨|
-      Moldova|Moldovan|MDA|Chisinau|Chișinău|摩尔多瓦|基希讷乌
+      \bPOL\b|Poland|Polish|Warsaw|Krakow|Kraków|Gdansk|Gdańsk|Wroclaw|Wrocław|Poznan|Poznań|波兰|华沙|克拉科夫|格但斯克|弗罗茨瓦夫|波兹南|
+      \bCZE\b|Czech|Czechia|Czech Republic|Prague|Brno|Ostrava|捷克|捷克共和国|布拉格|布尔诺|俄斯特拉发|
+      \bSVK\b|Slovakia|Slovak|Bratislava|Kosice|Košice|斯洛伐克|布拉迪斯拉发|科希策|
+      \bHUN\b|Hungary|Hungarian|Budapest|Debrecen|匈牙利|布达佩斯|德布勒森|
+      \bROU\b|Romania|Romanian|Bucharest|Cluj|Cluj-Napoca|Timisoara|Timișoara|罗马尼亚|布加勒斯特|克卢日|蒂米什瓦拉|
+      \bBGR\b|Bulgaria|Bulgarian|Sofia|Plovdiv|Varna|保加利亚|索菲亚|普罗夫迪夫|瓦尔纳|
+      \bHRV\b|Croatia|Croatian|Zagreb|Split|Dubrovnik|克罗地亚|萨格勒布|斯普利特|杜布罗夫尼克|
+      \bSRB\b|Serbia|Serbian|Belgrade|Novi Sad|塞尔维亚|贝尔格莱德|诺维萨德|
+      \bSVN\b|Slovenia|Slovenian|Ljubljana|Maribor|斯洛文尼亚|卢布尔雅那|马里博尔|
+      \bUKR\b|Ukraine|Ukrainian|Kyiv|Kiev|Kharkiv|Odesa|Odessa|乌克兰|基辅|哈尔科夫|敖德萨|
+      \bMDA\b|Moldova|Moldovan|Chisinau|Chișinău|摩尔多瓦|基希讷乌
       )
   - name: ☀️ 南欧节点
     type: url-test
@@ -648,12 +648,12 @@ proxy-groups:
       - SubProxyProvider
     filter: >-
       (?i)(
-      Italy|Italian|ITA|Rome|Milan|Milano|Venice|Venezia|Naples|Napoli|Turin|Torino|Florence|Firenze|意大利|罗马|米兰|威尼斯|那不勒斯|都灵|佛罗伦萨|
-      Spain|Spanish|ESP|Madrid|Barcelona|Valencia|Seville|Sevilla|Bilbao|Malaga|Málaga|西班牙|马德里|巴塞罗那|瓦伦西亚|塞维利亚|毕尔巴鄂|马拉加|
-      Portugal|Portuguese|PRT|Lisbon|Lisboa|Porto|Braga|葡萄牙|里斯本|波尔图|布拉加|
-      Greece|Greek|GRC|Athens|Thessaloniki|Patras|希腊|雅典|塞萨洛尼基|帕特雷|
-      Malta|Maltese|MLT|Valletta|马耳他|瓦莱塔|
-      Cyprus|Cypriot|CYP|Nicosia|Limassol|Larnaca|塞浦路斯|尼科西亚|利马索尔|拉纳卡
+      \bITA\b|Italy|Italian|Rome|Milan|Milano|Venice|Venezia|Naples|Napoli|Turin|Torino|Florence|Firenze|意大利|罗马|米兰|威尼斯|那不勒斯|都灵|佛罗伦萨|
+      \bESP\b|Spain|Spanish|Madrid|Barcelona|Valencia|Seville|Sevilla|Bilbao|Malaga|Málaga|西班牙|马德里|巴塞罗那|瓦伦西亚|塞维利亚|毕尔巴鄂|马拉加|
+      \bPRT\b|Portugal|Portuguese|Lisbon|Lisboa|Porto|Braga|葡萄牙|里斯本|波尔图|布拉加|
+      \bGRC\b|Greece|Greek|Athens|Thessaloniki|Patras|希腊|雅典|塞萨洛尼基|帕特雷|
+      \bMLT\b|Malta|Maltese|Valletta|马耳他|瓦莱塔|
+      \bCYP\b|Cyprus|Cypriot|Nicosia|Limassol|Larnaca|塞浦路斯|尼科西亚|利马索尔|拉纳卡
       )
   - name: ❄️ 北欧节点
     type: url-test
@@ -664,11 +664,11 @@ proxy-groups:
       - SubProxyProvider
     filter: >-
       (?i)(
-      Sweden|Swedish|SWE|Stockholm|Gothenburg|Gothenburg|Malmo|Malmö|瑞典|斯德哥尔摩|哥德堡|马尔默|
-      Norway|Norwegian|NOR|Oslo|Bergen|Trondheim|挪威|奥斯陆|卑尔根|特隆赫姆|
-      Denmark|Danish|DNK|Copenhagen|Aarhus|Odense|丹麦|哥本哈根|奥胡斯|欧登塞|
-      Finland|Finnish|FIN|Helsinki|Espoo|Tampere|芬兰|赫尔辛基|埃斯波|坦佩雷|
-      Iceland|Icelandic|ISL|Reykjavik|Akureyri|冰岛|雷克雅未克|阿克雷里
+      \bSWE\b|Sweden|Swedish|Stockholm|Gothenburg|Gothenburg|Malmo|Malmö|瑞典|斯德哥尔摩|哥德堡|马尔默|
+      \bNOR\b|Norway|Norwegian|Oslo|Bergen|Trondheim|挪威|奥斯陆|卑尔根|特隆赫姆|
+      \bDNK\b|Denmark|Danish|Copenhagen|Aarhus|Odense|丹麦|哥本哈根|奥胡斯|欧登塞|
+      \bFIN\b|Finland|Finnish|Helsinki|Espoo|Tampere|芬兰|赫尔辛基|埃斯波|坦佩雷|
+      \bISL\b|Iceland|Icelandic|Reykjavik|Akureyri|冰岛|雷克雅未克|阿克雷里
       )
   - name: 🇸🇦 中东节点
     type: url-test
@@ -679,14 +679,14 @@ proxy-groups:
       - SubProxyProvider
     filter: >-
       (?i)(
-      Saudi Arabia|Saudi|Saudi Arabian|KSA|SAU|Jeddah|Riyadh|Mecca|Makkah|Medina|沙特|沙特阿拉伯|吉达|利雅得|麦加|麦地那|
-      United Arab Emirates|UAE|Emirates|Emirati|ARE|Dubai|Abu Dhabi|Sharjah|迪拜|阿联酋|阿拉伯联合酋长国|阿布扎比|沙迦|
-      Qatar|Qatari|QAT|Doha|卡塔尔|多哈|
-      Israel|Israeli|ISR|Jerusalem|Tel Aviv|Haifa|以色列|耶路撒冷|特拉维夫|海法|
-      Iraq|Iraqi|IRQ|Baghdad|Basra|Erbil|伊拉克|巴格达|巴士拉|埃尔比勒|
-      Pakistan|Pakistani|PAK|Karachi|Islamabad|Lahore|巴基斯坦|卡拉奇|伊斯兰堡|拉合尔|
-      Oman|Omani|OMN|Muscat|Salalah|阿曼|马斯喀特|塞拉莱|
-      Bahrain|Bahraini|BHR|Manama|巴林|麦纳麦
+      \bKSA\b|\bSAU\b|Saudi Arabia|Saudi|Saudi Arabian|Jeddah|Riyadh|Mecca|Makkah|Medina|沙特|沙特阿拉伯|吉达|利雅得|麦加|麦地那|
+      \bARE\b|\bUAE\b|United Arab Emirates|Emirates|Emirati|Dubai|Abu Dhabi|Sharjah|迪拜|阿联酋|阿拉伯联合酋长国|阿布扎比|沙迦|
+      \bQAT\b|Qatar|Qatari|Doha|卡塔尔|多哈|
+      \bISR\b|Israel|Israeli|Jerusalem|Tel Aviv|Haifa|以色列|耶路撒冷|特拉维夫|海法|
+      \bIRQ\b|Iraq|Iraqi|Baghdad|Basra|Erbil|伊拉克|巴格达|巴士拉|埃尔比勒|
+      \bPAK\b|Pakistan|Pakistani|Karachi|Islamabad|Lahore|巴基斯坦|卡拉奇|伊斯兰堡|拉合尔|
+      \bOMN\b|Oman|Omani|Muscat|Salalah|阿曼|马斯喀特|塞拉莱|
+      \bBHR\b|Bahrain|Bahraini|Manama|巴林|麦纳麦
       )
   - name:  🇧🇷 南美节点
     type: url-test
@@ -716,15 +716,15 @@ proxy-groups:
       - SubProxyProvider
     filter: >-
       (?i)(
-      South Africa|South African|ZAF|ZA|Cape Town|Johannesburg|Pretoria|Durban|南非|开普敦|约翰内斯堡|比勒陀利亚|德班|
-      Egypt|Egyptian|EGY|Cairo|Alexandria|Giza|埃及|开罗|亚历山大|吉萨|
-      Morocco|Moroccan|MAR|Rabat|Casablanca|Marrakesh|Marrakech|Tangier|摩洛哥|拉巴特|卡萨布兰卡|马拉喀什|丹吉尔|
-      Tunisia|Tunisian|TUN|Tunis|Sfax|突尼斯|突尼斯市|斯法克斯|
-      Kenya|Kenyan|KEN|Nairobi|Mombasa|肯尼亚|内罗毕|蒙巴萨|
-      Nigeria|Nigerian|NGA|Lagos|Abuja|尼日利亚|拉各斯|阿布贾|
-      Ghana|Ghanaian|GHA|Accra|Kumasi|加纳|阿克拉|库马西|
-      Ethiopia|Ethiopian|ETH|Addis Ababa|埃塞俄比亚|亚的斯亚贝巴|
-      Algeria|Algerian|DZA|Algiers|Oran|阿尔及利亚|阿尔及尔|奥兰
+      \bZAF\b|ZA|South Africa|South African|Cape Town|Johannesburg|Pretoria|Durban|南非|开普敦|约翰内斯堡|比勒陀利亚|德班|
+      \bEGY\b|Egypt|Egyptian|Cairo|Alexandria|Giza|埃及|开罗|亚历山大|吉萨|
+      \bMAR\b|Morocco|Moroccan|Rabat|Casablanca|Marrakesh|Marrakech|Tangier|摩洛哥|拉巴特|卡萨布兰卡|马拉喀什|丹吉尔|
+      \bTUN\b|Tunisia|Tunisian|Tunis|Sfax|突尼斯|突尼斯市|斯法克斯|
+      \bKEN\b|Kenya|Kenyan|Nairobi|Mombasa|肯尼亚|内罗毕|蒙巴萨|
+      \bNGA\b|Nigeria|Nigerian|Lagos|Abuja|尼日利亚|拉各斯|阿布贾|
+      \bGHA\b|Ghana|Ghanaian|Accra|Kumasi|加纳|阿克拉|库马西|
+      \bETH\b|Ethiopia|Ethiopian|Addis Ababa|埃塞俄比亚|亚的斯亚贝巴|
+      \bDZA\b|Algeria|Algerian|Algiers|Oran|阿尔及利亚|阿尔及尔|奥兰
       )
   - name: 🛜 家宽节点
     type: url-test
