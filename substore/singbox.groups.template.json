@@ -148,7 +148,7 @@
       "outbounds": [],
       "filter": [
         "India|Indian|\bIND\b|New Delhi|Delhi|Mumbai|Bombay|Bangalore|Bengaluru|Hyderabad|Chennai|Kolkata",
-        "印度|新德里|德里|孟买|班加罗尔|海得拉巴|钦奈|加尔各答",
+        "印度|新德里|孟买|班加罗尔|海得拉巴|钦奈|加尔各答",
         "Nepal|Nepali|\bNPL\b|Kathmandu|Pokhara",
         "尼泊尔|加德满都|博卡拉",
         "Thailand|Thai|\bTHA\b|Bangkok|Chiang Mai|Phuket|Pattaya",
