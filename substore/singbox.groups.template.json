@@ -82,15 +82,24 @@
       "filter": [
          "Mexico|Mexican|MEX|Mexico City|Ciudad de México|Monterrey|Guadalajara|Tijuana|Cancún|Cancun|Querétaro|Queretaro",
          "墨西哥|墨西哥城|蒙特雷|瓜达拉哈拉|蒂华纳|坎昆|克雷塔罗",
-         "Panama|Panamanian|\bPAN\b|Panama City|巴拿马|巴拿马城",
-         "Costa Rica|Costa Rican|CRI|San José|San Jose|Liberia|哥斯达黎加|圣何塞|利比里亚",
-         "Guatemala|Guatemalan|\bGTM\b|Guatemala City|Mixco|危地马拉|危地马拉城|米斯科",
-         "Honduras|Honduran|\bHND\b|Tegucigalpa|San Pedro Sula|洪都拉斯|特古西加尔巴|圣佩德罗苏拉",
-         "El Salvador|Salvadoran|\bSLV\b|San Salvador|萨尔瓦多|圣萨尔瓦多",
-         "Nicaragua|Nicaraguan|\bNIC\b|Managua|尼加拉瓜|马那瓜",
-         "Belize|Belizean|\bBLZ\b|Belmopan|伯利兹|贝尔莫潘",
-         "Greenland|Greenlandic|\bGRL\b|Kalaallit Nunaat|Nuuk|格陵兰|努克",
-         "Bermuda|Bermudian|\bBMU\b|Hamilton|百慕大|哈密尔顿"
+         "Panama|Panamanian|\bPAN\b|Panama City",
+         "巴拿马|巴拿马城",
+         "Costa Rica|Costa Rican|CRI|San José|San Jose|Liberia",
+         "哥斯达黎加|圣何塞|利比里亚",
+         "Guatemala|Guatemalan|\bGTM\b|Guatemala City|Mixco",
+         "危地马拉|危地马拉城|米斯科",
+         "Honduras|Honduran|\bHND\b|Tegucigalpa|San Pedro Sula",
+         "洪都拉斯|特古西加尔巴|圣佩德罗苏拉",
+         "El Salvador|Salvadoran|\bSLV\b|San Salvador",
+         "萨尔瓦多|圣萨尔瓦多",
+         "Nicaragua|Nicaraguan|\bNIC\b|Managua",
+         "尼加拉瓜|马那瓜",
+         "Belize|Belizean|\bBLZ\b|Belmopan",
+         "伯利兹|贝尔莫潘",
+         "Greenland|Greenlandic|\bGRL\b|Kalaallit Nunaat|Nuuk",
+         "格陵兰|努克",
+         "Bermuda|Bermudian|\bBMU\b|Hamilton",
+         "百慕大|哈密尔顿"
       ]
     },
     {
@@ -120,11 +129,16 @@
       "interrupt_exist_connections": false,
       "outbounds": [],
       "filter": [
-         "Kazakhstan|Kazakh|\bKAZ\b|Almaty|Astana|Nur-Sultan|哈萨克斯坦|阿拉木图|阿斯塔纳|努尔苏丹",
-         "Uzbekistan|Uzbek|\bUZB\b|Tashkent|Samarkand|乌兹别克斯坦|塔什干|撒马尔罕",
-         "Kyrgyzstan|Kyrgyz|\bKGZ\b|Bishkek|Osh|吉尔吉斯斯坦|比什凯克|奥什",
-         "Tajikistan|Tajik|\bTJK\b|Dushanbe|塔吉克斯坦|杜尚别",
-         "Turkmenistan|Turkmen|\bTKM\b|Ashgabat|土库曼斯坦|阿什哈巴德"
+         "Kazakhstan|Kazakh|\bKAZ\b|Almaty|Astana|Nur-Sultan",
+         "哈萨克斯坦|阿拉木图|阿斯塔纳|努尔苏丹",
+         "Uzbekistan|Uzbek|\bUZB\b|Tashkent|Samarkand",
+         "乌兹别克斯坦|塔什干|撒马尔罕",
+         "Kyrgyzstan|Kyrgyz|\bKGZ\b|Bishkek|\bOsh\b",
+         "吉尔吉斯斯坦|比什凯克|奥什",
+         "Tajikistan|Tajik|\bTJK\b|Dushanbe",
+         "塔吉克斯坦|杜尚别",
+         "Turkmenistan|Turkmen|\bTKM\b|Ashgabat",
+         "土库曼斯坦|阿什哈巴德"
       ]
     },
     {
@@ -135,16 +149,26 @@
       "filter": [
         "India|Indian|\bIND\b|New Delhi|Delhi|Mumbai|Bombay|Bangalore|Bengaluru|Hyderabad|Chennai|Kolkata",
         "印度|新德里|德里|孟买|班加罗尔|海得拉巴|钦奈|加尔各答",
-        "Nepal|Nepali|\bNPL\b|Kathmandu|Pokhara|尼泊尔|加德满都|博卡拉",
-        "Thailand|Thai|\bTHA\b|Bangkok|Chiang Mai|Phuket|Pattaya|泰国|曼谷|清迈|普吉|芭提雅",
-        "Malaysia|Malaysian|\bMYS\b|Kuala Lumpur|Johor Bahru|Penang|马来西亚|吉隆坡|新山|槟城",
-        "Philippines|Filipino|\bPHL\b|Manila|Cebu|Davao|菲律宾|马尼拉|宿务|达沃",
-        "Vietnam|Vietnamese|\bVNM\b|Hanoi|Ho Chi Minh City|Saigon|Da Nang|越南|河内|胡志明市|西贡|岘港",
-        "Indonesia|Indonesian|\bIDN\b|Jakarta|Bali|Surabaya|Bandung|印度尼西亚|雅加达|巴厘岛|泗水|万隆",
-        "Cambodia|Cambodian|\bKHM\b|Phnom Penh|Sihanoukville|Siem Reap|柬埔寨|金边|西哈努克|暹粒",
-        "Myanmar|Burmese|\bMMR\b|Yangon|Rangoon|Mandalay|缅甸|仰光|曼德勒",
-        "Bangladesh|Bangladeshi|\bBGD\b|Dhaka|Chittagong|孟加拉国|达卡|吉大港",
-        "Maldives|Maldivian|\bMDV\b|\bMale\b|Malé|马尔代夫|马累"
+        "Nepal|Nepali|\bNPL\b|Kathmandu|Pokhara",
+        "尼泊尔|加德满都|博卡拉",
+        "Thailand|Thai|\bTHA\b|Bangkok|Chiang Mai|Phuket|Pattaya",
+        "泰国|曼谷|清迈|普吉|芭提雅",
+        "Malaysia|Malaysian|\bMYS\b|Kuala Lumpur|Johor Bahru|Penang",
+        "马来西亚|吉隆坡|新山|槟城",
+        "Philippines|Filipino|\bPHL\b|Manila|Cebu|Davao",
+        "菲律宾|马尼拉|宿务|达沃",
+        "Vietnam|Vietnamese|\bVNM\b|Hanoi|Ho Chi Minh City|Saigon|Da Nang",
+        "越南|河内|胡志明市|西贡|岘港",
+        "Indonesia|Indonesian|\bIDN\b|Jakarta|Bali|Surabaya|Bandung",
+        "印度尼西亚|雅加达|巴厘岛|泗水|万隆",
+        "Cambodia|Cambodian|\bKHM\b|Phnom Penh|Sihanoukville|Siem Reap",
+        "柬埔寨|金边|西哈努克|暹粒",
+        "Myanmar|Burmese|\bMMR\b|Yangon|Rangoon|Mandalay",
+        "缅甸|仰光|曼德勒",
+        "Bangladesh|Bangladeshi|\bBGD\b|Dhaka|Chittagong",
+        "孟加拉国|达卡|吉大港",
+        "Maldives|Maldivian|\bMDV\b|\bMale\b|Malé",
+        "马尔代夫|马累"
       ]
     },
     {
@@ -165,8 +189,10 @@
          "瑞士|苏黎世|日内瓦|巴塞尔|伯尔尼|洛桑",
          "Austria|Austrian|\bAUT\b|Vienna|Wien|Salzburg|Graz|Innsbruck",
          "奥地利|维也纳|萨尔茨堡|格拉茨|因斯布鲁克",
-         "Luxembourg|Luxembourgish|\bLUX\b|Luxembourg City|卢森堡|卢森堡市",
-         "Ireland|Irish|\bIRL\b|Dublin|Cork|Galway|爱尔兰|都柏林|科克|戈尔韦"
+         "Luxembourg|Luxembourgish|\bLUX\b|Luxembourg City",
+         "卢森堡|卢森堡市",
+         "Ireland|Irish|\bIRL\b|Dublin|Cork|Galway",
+         "爱尔兰|都柏林|科克|戈尔韦"
       ]
     },
     {
@@ -175,7 +201,28 @@
       "interrupt_exist_connections": false,
       "outbounds": [],
       "filter": [
-         
+         "Poland|Polish|POL|Warsaw|Krakow|Kraków|Gdansk|Gdańsk|Wroclaw|Wrocław|Poznan|Poznań",
+         "波兰|华沙|克拉科夫|格但斯克|弗罗茨瓦夫|波兹南",
+         "Czech|Czechia|Czech Republic|CZE|Prague|Brno|Ostrava",
+          "捷克|捷克共和国|布拉格|布尔诺|俄斯特拉发",
+          "Slovakia|Slovak|\bSVK\b|Bratislava|Kosice|Košice",
+          "斯洛伐克|布拉迪斯拉发|科希策",
+          "Hungary|Hungarian|\bHUN\b|Budapest|Debrecen",
+          "匈牙利|布达佩斯|德布勒森",
+          "Romania|Romanian|\bROU\b|Bucharest|Cluj|Cluj-Napoca|Timisoara|Timișoara",
+          "罗马尼亚|布加勒斯特|克卢日|蒂米什瓦拉",
+          "Bulgaria|Bulgarian|\bBGR\b|Sofia|Plovdiv|Varna",
+          "保加利亚|索菲亚|普罗夫迪夫|瓦尔纳",
+          "Croatia|Croatian|\bHRV\b|Zagreb|Split|Dubrovnik",
+          "克罗地亚|萨格勒布|斯普利特|杜布罗夫尼克",
+          "Serbia|Serbian|\bSRB\b|Belgrade|Novi Sad",
+          "塞尔维亚|贝尔格莱德|诺维萨德",
+          "Slovenia|Slovenian|\bSVN\b|Ljubljana|Maribor",
+          "斯洛文尼亚|卢布尔雅那|马里博尔",
+          "Ukraine|Ukrainian|\bUKR\b|Kyiv|Kiev|Kharkiv|Odesa|Odessa",
+          "乌克兰|基辅|哈尔科夫|敖德萨",
+          "Moldova|Moldovan|\bMDA\b|Chisinau|Chișinău",
+          "摩尔多瓦|基希讷乌"
       ]
     },
     {
