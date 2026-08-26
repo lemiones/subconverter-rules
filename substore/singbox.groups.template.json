@@ -51,21 +51,21 @@
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": "Japan|JPN|日本|川日|东京|大阪|泉日|埼玉|沪日|深日"
+      "filter": "Japan|\bJPN\b|日本|川日|东京|大阪|泉日|埼玉|沪日|深日"
     },
     {
       "tag": "🇰🇷 韩国节点",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": "Korea|KOR|韩国|首尔|韩|韓"
+      "filter": "Korea|\bKOR\b|韩国|首尔|韩|韓"
     },
     {
       "tag": "🇺🇲 美国节点",
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": "US|United States|美|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|旧金山"
+      "filter": "\bUS\b|\bUSA\b|United States|美|美国|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|旧金山"
     },
     {
       "tag": "🇨🇦 枫叶节点",
@@ -82,15 +82,15 @@
       "filter": [
          "Mexico|Mexican|MEX|Mexico City|Ciudad de México|Monterrey|Guadalajara|Tijuana|Cancún|Cancun|Querétaro|Queretaro",
          "墨西哥|墨西哥城|蒙特雷|瓜达拉哈拉|蒂华纳|坎昆|克雷塔罗",
-         "Panama|Panamanian|PAN|Panama City|巴拿马|巴拿马城",
+         "Panama|Panamanian|\bPAN\b|Panama City|巴拿马|巴拿马城",
          "Costa Rica|Costa Rican|CRI|San José|San Jose|Liberia|哥斯达黎加|圣何塞|利比里亚",
-         "Guatemala|Guatemalan|GTM|Guatemala City|Mixco|危地马拉|危地马拉城|米斯科",
-         "Honduras|Honduran|HND|Tegucigalpa|San Pedro Sula|洪都拉斯|特古西加尔巴|圣佩德罗苏拉",
-         "El Salvador|Salvadoran|SLV|San Salvador|萨尔瓦多|圣萨尔瓦多",
-         "Nicaragua|Nicaraguan|NIC|Managua|尼加拉瓜|马那瓜",
-         "Belize|Belizean|BLZ|Belmopan|伯利兹|贝尔莫潘",
-         "Greenland|Greenlandic|GRL|Kalaallit Nunaat|Nuuk|格陵兰|努克",
-         "Bermuda|Bermudian|BMU|Hamilton|百慕大|哈密尔顿"
+         "Guatemala|Guatemalan|\bGTM\b|Guatemala City|Mixco|危地马拉|危地马拉城|米斯科",
+         "Honduras|Honduran|\bHND\b|Tegucigalpa|San Pedro Sula|洪都拉斯|特古西加尔巴|圣佩德罗苏拉",
+         "El Salvador|Salvadoran|\bSLV\b|San Salvador|萨尔瓦多|圣萨尔瓦多",
+         "Nicaragua|Nicaraguan|\bNIC\b|Managua|尼加拉瓜|马那瓜",
+         "Belize|Belizean|\bBLZ\b|Belmopan|伯利兹|贝尔莫潘",
+         "Greenland|Greenlandic|\bGRL\b|Kalaallit Nunaat|Nuuk|格陵兰|努克",
+         "Bermuda|Bermudian|\bBMU\b|Hamilton|百慕大|哈密尔顿"
       ]
     },
     {
@@ -98,7 +98,7 @@
       "type": "urltest",
       "interrupt_exist_connections": false,
       "outbounds": [],
-      "filter": "England|UnitedKingdom|IE|英|英国|伦敦|爱尔兰|都柏林"
+      "filter": "England|UnitedKingdom|\bIE\b|英|英国|伦敦|爱尔兰|都柏林"
     },
     {
       "tag": "🇦🇺 澳洲节点",
@@ -120,11 +120,11 @@
       "interrupt_exist_connections": false,
       "outbounds": [],
       "filter": [
-         "Kazakhstan|Kazakh|KAZ|Almaty|Astana|Nur-Sultan|哈萨克斯坦|阿拉木图|阿斯塔纳|努尔苏丹",
-         "Uzbekistan|Uzbek|UZB|Tashkent|Samarkand|乌兹别克斯坦|塔什干|撒马尔罕",
-         "Kyrgyzstan|Kyrgyz|KGZ|Bishkek|Osh|吉尔吉斯斯坦|比什凯克|奥什",
-         "Tajikistan|Tajik|TJK|Dushanbe|塔吉克斯坦|杜尚别",
-         "Turkmenistan|Turkmen|TKM|Ashgabat|土库曼斯坦|阿什哈巴德"
+         "Kazakhstan|Kazakh|\bKAZ\b|Almaty|Astana|Nur-Sultan|哈萨克斯坦|阿拉木图|阿斯塔纳|努尔苏丹",
+         "Uzbekistan|Uzbek|\bUZB\b|Tashkent|Samarkand|乌兹别克斯坦|塔什干|撒马尔罕",
+         "Kyrgyzstan|Kyrgyz|\bKGZ\b|Bishkek|Osh|吉尔吉斯斯坦|比什凯克|奥什",
+         "Tajikistan|Tajik|\bTJK\b|Dushanbe|塔吉克斯坦|杜尚别",
+         "Turkmenistan|Turkmen|\bTKM\b|Ashgabat|土库曼斯坦|阿什哈巴德"
       ]
     },
     {
@@ -133,18 +133,18 @@
       "interrupt_exist_connections": false,
       "outbounds": [],
       "filter": [
-        "India|Indian|IND|New Delhi|Delhi|Mumbai|Bombay|Bangalore|Bengaluru|Hyderabad|Chennai|Kolkata",
+        "India|Indian|\bIND\b|New Delhi|Delhi|Mumbai|Bombay|Bangalore|Bengaluru|Hyderabad|Chennai|Kolkata",
         "印度|新德里|德里|孟买|班加罗尔|海得拉巴|钦奈|加尔各答",
-        "Nepal|Nepali|NPL|Kathmandu|Pokhara|尼泊尔|加德满都|博卡拉",
-        "Thailand|Thai|THA|Bangkok|Chiang Mai|Phuket|Pattaya|泰国|曼谷|清迈|普吉|芭提雅",
-        "Malaysia|Malaysian|MYS|Kuala Lumpur|Johor Bahru|Penang|马来西亚|吉隆坡|新山|槟城",
-        "Philippines|Filipino|PHL|Manila|Cebu|Davao|菲律宾|马尼拉|宿务|达沃",
-        "Vietnam|Vietnamese|VNM|Hanoi|Ho Chi Minh City|Saigon|Da Nang|越南|河内|胡志明市|西贡|岘港",
-        "Indonesia|Indonesian|IDN|Jakarta|Bali|Surabaya|Bandung|印度尼西亚|雅加达|巴厘岛|泗水|万隆",
-        "Cambodia|Cambodian|KHM|Phnom Penh|Sihanoukville|Siem Reap|柬埔寨|金边|西哈努克|暹粒",
-        "Myanmar|Burmese|MMR|Yangon|Rangoon|Mandalay|缅甸|仰光|曼德勒",
-        "Bangladesh|Bangladeshi|BGD|Dhaka|Chittagong|孟加拉国|达卡|吉大港",
-        "Maldives|Maldivian|MDV|Male|Malé|马尔代夫|马累"
+        "Nepal|Nepali|\bNPL\b|Kathmandu|Pokhara|尼泊尔|加德满都|博卡拉",
+        "Thailand|Thai|\bTHA\b|Bangkok|Chiang Mai|Phuket|Pattaya|泰国|曼谷|清迈|普吉|芭提雅",
+        "Malaysia|Malaysian|\bMYS\b|Kuala Lumpur|Johor Bahru|Penang|马来西亚|吉隆坡|新山|槟城",
+        "Philippines|Filipino|\bPHL\b|Manila|Cebu|Davao|菲律宾|马尼拉|宿务|达沃",
+        "Vietnam|Vietnamese|\bVNM\b|Hanoi|Ho Chi Minh City|Saigon|Da Nang|越南|河内|胡志明市|西贡|岘港",
+        "Indonesia|Indonesian|\bIDN\b|Jakarta|Bali|Surabaya|Bandung|印度尼西亚|雅加达|巴厘岛|泗水|万隆",
+        "Cambodia|Cambodian|\bKHM\b|Phnom Penh|Sihanoukville|Siem Reap|柬埔寨|金边|西哈努克|暹粒",
+        "Myanmar|Burmese|\bMMR\b|Yangon|Rangoon|Mandalay|缅甸|仰光|曼德勒",
+        "Bangladesh|Bangladeshi|\bBGD\b|Dhaka|Chittagong|孟加拉国|达卡|吉大港",
+        "Maldives|Maldivian|\bMDV\b|\bMale\b|Malé|马尔代夫|马累"
       ]
     },
     {
@@ -153,20 +153,20 @@
       "interrupt_exist_connections": false,
       "outbounds": [],
       "filter": [
-         "Germany|German|DEU|Frankfurt|Berlin|Munich|München|Hamburg|Düsseldorf|Dusseldorf|Cologne|Köln|Stuttgart",
+         "Germany|German|\bDEU\b|Frankfurt|Berlin|Munich|München|Hamburg|Düsseldorf|Dusseldorf|Cologne|Köln|Stuttgart",
          "德国|法兰克福|柏林|慕尼黑|汉堡|杜塞尔多夫|科隆|斯图加特",
-         "France|French|FRA|Paris|Marseille|Lyon|Nice|Toulouse|Bordeaux|Strasbourg",
+         "France|French|\bFRA\b|Paris|Marseille|Lyon|Nice|Toulouse|Bordeaux|Strasbourg",
          "法国|巴黎|马赛|里昂|尼斯|图卢兹|波尔多|斯特拉斯堡",
-         "Netherlands|Dutch|Holland|NLD|Amsterdam|Rotterdam|The Hague|Den Haag|Utrecht|Eindhoven",
+         "Netherlands|Dutch|Holland|\bNLD\b|Amsterdam|Rotterdam|The Hague|Den Haag|Utrecht|Eindhoven",
          "荷兰|阿姆斯特丹|鹿特丹|海牙|乌得勒支|埃因霍温",
-         "Belgium|Belgian|BEL|Brussels|Antwerp|Ghent|Bruges",
+         "Belgium|Belgian|\bBEL\b|Brussels|Antwerp|Ghent|Bruges",
          "比利时|布鲁塞尔|安特卫普|根特|布鲁日",
-         "Switzerland|Swiss|CHE|Zurich|Zürich|Geneva|Genève|Basel|Bern|Lausanne",
+         "Switzerland|Swiss|\bCHE\b|Zurich|Zürich|Geneva|Genève|Basel|Bern|Lausanne",
          "瑞士|苏黎世|日内瓦|巴塞尔|伯尔尼|洛桑",
-         "Austria|Austrian|AUT|Vienna|Wien|Salzburg|Graz|Innsbruck",
+         "Austria|Austrian|\bAUT\b|Vienna|Wien|Salzburg|Graz|Innsbruck",
          "奥地利|维也纳|萨尔茨堡|格拉茨|因斯布鲁克",
-         "Luxembourg|Luxembourgish|LUX|Luxembourg City|卢森堡|卢森堡市",
-         "Ireland|Irish|IRL|Dublin|Cork|Galway|爱尔兰|都柏林|科克|戈尔韦"
+         "Luxembourg|Luxembourgish|\bLUX\b|Luxembourg City|卢森堡|卢森堡市",
+         "Ireland|Irish|\bIRL\b|Dublin|Cork|Galway|爱尔兰|都柏林|科克|戈尔韦"
       ]
     },
     {
@@ -175,20 +175,7 @@
       "interrupt_exist_connections": false,
       "outbounds": [],
       "filter": [
-         "Germany|German|DEU|Frankfurt|Berlin|Munich|München|Hamburg|Düsseldorf|Dusseldorf|Cologne|Köln|Stuttgart",
-         "德国|法兰克福|柏林|慕尼黑|汉堡|杜塞尔多夫|科隆|斯图加特",
-         "France|French|FRA|Paris|Marseille|Lyon|Nice|Toulouse|Bordeaux|Strasbourg",
-         "法国|巴黎|马赛|里昂|尼斯|图卢兹|波尔多|斯特拉斯堡",
-         "Netherlands|Dutch|Holland|NLD|Amsterdam|Rotterdam|The Hague|Den Haag|Utrecht|Eindhoven",
-         "荷兰|阿姆斯特丹|鹿特丹|海牙|乌得勒支|埃因霍温",
-         "Belgium|Belgian|BEL|Brussels|Antwerp|Ghent|Bruges",
-         "比利时|布鲁塞尔|安特卫普|根特|布鲁日",
-         "Switzerland|Swiss|CHE|Zurich|Zürich|Geneva|Genève|Basel|Bern|Lausanne",
-         "瑞士|苏黎世|日内瓦|巴塞尔|伯尔尼|洛桑",
-         "Austria|Austrian|AUT|Vienna|Wien|Salzburg|Graz|Innsbruck",
-         "奥地利|维也纳|萨尔茨堡|格拉茨|因斯布鲁克",
-         "Luxembourg|Luxembourgish|LUX|Luxembourg City|卢森堡|卢森堡市",
-         "Ireland|Irish|IRL|Dublin|Cork|Galway|爱尔兰|都柏林|科克|戈尔韦"
+         
       ]
     },
     {
@@ -197,16 +184,16 @@
       "interrupt_exist_connections": false,
       "outbounds": [],
       "filter": [
-        "Italy|Italian|ITA|Rome|Milan|Milano|Venice|Venezia|Naples|Napoli|Turin|Torino|Florence|Firenze",
+        "Italy|Italian|\bITA\b|Rome|Milan|Milano|Venice|Venezia|Naples|Napoli|Turin|Torino|Florence|Firenze",
         "意大利|罗马|米兰|威尼斯|那不勒斯|都灵|佛罗伦萨",
-        "Spain|Spanish|ESP|Madrid|Barcelona|Valencia|Seville|Sevilla|Bilbao|Malaga|Málaga",
+        "Spain|Spanish|\bESP\b|Madrid|Barcelona|Valencia|Seville|Sevilla|Bilbao|Malaga|Málaga",
         "西班牙|马德里|巴塞罗那|瓦伦西亚|塞维利亚|毕尔巴鄂|马拉加",
-        "Portugal|Portuguese|PRT|Lisbon|Lisboa|Porto|Braga",
+        "Portugal|Portuguese|\bPRT\b|Lisbon|Lisboa|Porto|Braga",
         "葡萄牙|里斯本|波尔图|布拉加",
-        "Greece|Greek|GRC|Athens|Thessaloniki|Patras",
+        "Greece|Greek|\bGRC\b|Athens|Thessaloniki|Patras",
         "希腊|雅典|塞萨洛尼基|帕特雷",
-        "Malta|Maltese|MLT|Valletta|马耳他|瓦莱塔",
-        "Cyprus|Cypriot|CYP|Nicosia|Limassol|Larnaca",
+        "Malta|Maltese|\bMLT\b|Valletta|马耳他|瓦莱塔",
+        "Cyprus|Cypriot|\bCYP\b|Nicosia|Limassol|Larnaca",
         "塞浦路斯|尼科西亚|利马索尔|拉纳卡"
       ]
     },
@@ -216,15 +203,15 @@
       "interrupt_exist_connections": false,
       "outbounds": [],
       "filter": [
-         "Sweden|Swedish|SWE|Stockholm|Gothenburg|Malmo|Malmö",
+         "Sweden|Swedish|\bSWE\b|Stockholm|Gothenburg|Malmo|Malmö",
          "瑞典|斯德哥尔摩|哥德堡|马尔默",
-         "Norway|Norwegian|NOR|Oslo|Bergen|Trondheim",
+         "Norway|Norwegian|\bNOR\b|Oslo|Bergen|Trondheim",
          "挪威|奥斯陆|卑尔根|特隆赫姆",
-         "Denmark|Danish|DNK|Copenhagen|Aarhus|Odense",
+         "Denmark|Danish|\bDNK\b|Copenhagen|Aarhus|Odense",
          "丹麦|哥本哈根|奥胡斯|欧登塞",
-         "Finland|Finnish|FIN|Helsinki|Espoo|Tampere",
+         "Finland|Finnish|\bFIN\b|Helsinki|Espoo|Tampere",
          "芬兰|赫尔辛基|埃斯波|坦佩雷",
-         "Iceland|Icelandic|ISL|Reykjavik|Akureyri",
+         "Iceland|Icelandic|\bISL\b|Reykjavik|Akureyri",
          "冰岛|雷克雅未克|阿克雷里"
       ]
     },
@@ -234,18 +221,18 @@
       "interrupt_exist_connections": false,
       "outbounds": [],
       "filter": [
-         "Saudi Arabia|Saudi|Saudi Arabian|KSA|SAU|Jeddah|Riyadh|Mecca|Makkah|Medina",
+         "Saudi Arabia|Saudi|Saudi Arabian|\bKSA\b|\bSAU\b|Jeddah|Riyadh|Mecca|Makkah|Medina",
          "沙特|沙特阿拉伯|吉达|利雅得|麦加|麦地那",
-         "United Arab Emirates|UAE|Emirates|Emirati|ARE|Dubai|Abu Dhabi|Sharjah",
+         "United Arab Emirates|\bUAE\b|Emirates|Emirati|\bARE\b|Dubai|Abu Dhabi|Sharjah",
          "迪拜|阿联酋|阿拉伯联合酋长国|阿布扎比|沙迦",
-         "Qatar|Qatari|QAT|Doha|卡塔尔|多哈",
-         "Israel|Israeli|ISR|Jerusalem|Tel Aviv|Haifa",
+         "Qatar|Qatari|\bQAT\b|Doha|卡塔尔|多哈",
+         "Israel|Israeli|\bISR\b|Jerusalem|Tel Aviv|Haifa",
          "以色列|耶路撒冷|特拉维夫|海法",
-         "Iraq|Iraqi|IRQ|Baghdad|Basra|Erbil",
+         "Iraq|Iraqi|\bIRQ\b|Baghdad|Basra|Erbil",
          "伊拉克|巴格达|巴士拉|埃尔比勒",
-         "Pakistan|Pakistani|PAK|Karachi|Islamabad|Lahore",
+         "Pakistan|Pakistani|\bPAK\b|Karachi|Islamabad|Lahore",
          "巴基斯坦|卡拉奇|伊斯兰堡|拉合尔",
-         "Oman|Omani|OMN|Muscat|Salalah",
+         "Oman|Omani|\bOMN\b|Muscat|Salalah",
          "阿曼|马斯喀特|塞拉莱",
          "Bahrain|Bahraini|BHR|Manama",
          "巴林|麦纳麦"
@@ -282,23 +269,23 @@
       "interrupt_exist_connections": false,
       "outbounds": [],
       "filter": [
-         "South Africa|South African|ZAF|ZA|Cape Town|Johannesburg|Pretoria|Durban",
+         "South Africa|South African|\bZAF\b|\bZA\b|Cape Town|Johannesburg|Pretoria|Durban",
          "南非|开普敦|约翰内斯堡|比勒陀利亚|德班",
-         "Egypt|Egyptian|EGY|Cairo|Alexandria|Giza",
+         "Egypt|Egyptian|\bEGY\b|Cairo|Alexandria|Giza",
          "埃及|开罗|亚历山大|吉萨",
-         "Morocco|Moroccan|MAR|Rabat|Casablanca|Marrakesh|Marrakech|Tangier",
+         "Morocco|Moroccan|\bMAR\b|Rabat|Casablanca|Marrakesh|Marrakech|Tangier",
          "摩洛哥|拉巴特|卡萨布兰卡|马拉喀什|丹吉尔",
-         "Tunisia|Tunisian|TUN|Tunis|Sfax",
+         "Tunisia|Tunisian|\bTUN\b|Tunis|Sfax",
          "突尼斯|突尼斯市|斯法克斯",
-         "Kenya|Kenyan|KEN|Nairobi|Mombasa",
+         "Kenya|Kenyan|\bKEN\b|Nairobi|Mombasa",
          "肯尼亚|内罗毕|蒙巴萨",
-         "Nigeria|Nigerian|NGA|Lagos|Abuja",
+         "Nigeria|Nigerian|\bNGA\b|Lagos|Abuja",
          "尼日利亚|拉各斯|阿布贾",
-         "Ghana|Ghanaian|GHA|Accra|Kumasi",
+         "Ghana|Ghanaian|\bGHA\b|Accra|Kumasi",
          "加纳|阿克拉|库马西",
-         "Ethiopia|Ethiopian|ETH|Addis Ababa",
+         "Ethiopia|Ethiopian|\bETH\b|Addis Ababa",
          "埃塞俄比亚|亚的斯亚贝巴",
-         "Algeria|Algerian|DZA|Algiers|Oran",
+         "Algeria|Algerian|\bDZA\b|Algiers|Oran",
          "阿尔及利亚|阿尔及尔|奥兰"
       ]
     },
