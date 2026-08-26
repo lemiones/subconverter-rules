@@ -580,7 +580,7 @@ proxy-groups:
       - SubProxyProvider
     filter: >-
       (?i)(
-      \bIND\b|India|Indian|New Delhi|Delhi|Mumbai|Bombay|Bangalore|Bengaluru|Hyderabad|Chennai|Kolkata|印度|新德里|德里|孟买|班加罗尔|海得拉巴|钦奈|加尔各答|
+      \bIND\b|India|Indian|New Delhi|Delhi|Mumbai|Bombay|Bangalore|Bengaluru|Hyderabad|Chennai|Kolkata|印度|新德里|孟买|班加罗尔|海得拉巴|钦奈|加尔各答|
       \bNPL\b|Nepal|Nepali|Kathmandu|Pokhara|尼泊尔|加德满都|博卡拉|
       \bTHA\b|Thailand|Thai|Bangkok|Chiang Mai|Phuket|Pattaya|泰国|曼谷|清迈|普吉|芭提雅|
       \bMYS\b|Malaysia|Malaysian|Kuala Lumpur|Johor Bahru|Penang|马来西亚|吉隆坡|新山|槟城|
