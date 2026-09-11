@@ -22,6 +22,8 @@ proxy-providers:
 proxy-groups:
   - name: 🚀 节点选择
     type: select
+    use:
+      - SubProxyProvider
     proxies:
       - ♻️ 自动选择
       - 🇭🇰 香港节点
@@ -59,6 +61,8 @@ proxy-groups:
       - SubProxyProvider
   - name: 📲 电报消息
     type: select
+    use:
+      - SubProxyProvider
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
@@ -86,6 +90,8 @@ proxy-groups:
       - DIRECT
   - name: 💬 OpenAI
     type: select
+    use:
+      - SubProxyProvider
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
@@ -142,6 +148,8 @@ proxy-groups:
   #    - DIRECT
   - name: 🌀 GitHub
     type: select
+    use:
+      - SubProxyProvider
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
@@ -170,6 +178,8 @@ proxy-groups:
       - DIRECT
   - name: 📹 油管视频
     type: select
+    use:
+      - SubProxyProvider
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
@@ -197,6 +207,8 @@ proxy-groups:
       - DIRECT
   - name: 🎥 奈飞视频
     type: select
+    use:
+      - SubProxyProvider
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
@@ -224,6 +236,8 @@ proxy-groups:
       - DIRECT
   - name: 📺 巴哈姆特
     type: select
+    use:
+      - SubProxyProvider
     proxies:
       - 🇭🇰 香港节点
       - 🇨🇳 台湾节点
@@ -237,6 +251,8 @@ proxy-groups:
       - DIRECT
   - name: 📺 哔哩哔哩
     type: select
+    use:
+      - SubProxyProvider
     proxies:
       - 🎯 全球直连
       - 🇭🇰 香港节点
@@ -250,6 +266,8 @@ proxy-groups:
       - DIRECT
   - name: 🌍 国外媒体
     type: select
+    use:
+      - SubProxyProvider
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
@@ -277,6 +295,8 @@ proxy-groups:
       - DIRECT
   - name: 🌏 国内媒体
     type: select
+    use:
+      - SubProxyProvider
     proxies:
       - DIRECT
       - 🇭🇰 香港节点
@@ -288,6 +308,8 @@ proxy-groups:
       - 🚀 手动切换
   - name: 📢 谷歌FCM
     type: select
+    use:
+      - SubProxyProvider
     proxies:
       - DIRECT
       - 🚀 节点选择
@@ -314,6 +336,8 @@ proxy-groups:
       - 🚀 手动切换
   - name: Ⓜ️ 微软云盘
     type: select
+    use:
+      - SubProxyProvider
     proxies:
       - DIRECT
       - 🚀 节点选择
@@ -341,6 +365,8 @@ proxy-groups:
       - 🚀 手动切换
   - name: Ⓜ️ 微软服务
     type: select
+    use:
+      - SubProxyProvider
     proxies:
       - DIRECT
       - 🚀 节点选择
@@ -367,6 +393,8 @@ proxy-groups:
       - 🚀 手动切换
   - name: 🍎 苹果服务
     type: select
+    use:
+      - SubProxyProvider
     proxies:
       - DIRECT
       - 🚀 节点选择
@@ -393,6 +421,8 @@ proxy-groups:
       - 🚀 手动切换
   - name: 🎮 游戏平台
     type: select
+    use:
+      - SubProxyProvider
     proxies:
       - DIRECT
       - 🚀 节点选择
@@ -419,18 +449,24 @@ proxy-groups:
       - 🚀 手动切换
   - name: 🎶 网易音乐
     type: select
+    use:
+      - SubProxyProvider
     proxies:
       - DIRECT
       - 🚀 节点选择
       - ♻️ 自动选择
   - name: 🎯 全球直连
     type: select
+    use:
+      - SubProxyProvider
     proxies:
       - DIRECT
       - 🚀 节点选择
       - ♻️ 自动选择
   - name: 🐟 漏网之鱼
     type: select
+    use:
+      - SubProxyProvider
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
