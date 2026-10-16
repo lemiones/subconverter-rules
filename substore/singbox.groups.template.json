@@ -374,7 +374,6 @@
         "server": "dns-direct-detour"
       }
     ],
-    "strategy": "prefer_ipv4",
     "final": "dns-proxy-detour"
   },
   "route": {
