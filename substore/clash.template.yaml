@@ -777,12 +777,6 @@ rules:
   - MATCH,🐟 漏网之鱼
 
 rule-providers:
-  DirectDomainIp:
-    type: http
-    behavior: classical
-    url: https://raw.githubusercontent.com/lemiones/subconverter-rules/refs/heads/main/ruleset/DirectDomainIp.yaml
-    path: ./rule_provider/DirectDomainIp.yaml
-    interval: 86400
   LocalAreaNetwork:
     type: http
     behavior: classical
@@ -983,4 +977,10 @@ rule-providers:
     behavior: classical
     url: https://raw.githubusercontent.com/lemiones/subconverter-rules/refs/heads/main/ruleset/DownloadProcess.yaml
     path: ./rule_provider/DownloadProcess.yaml
+    interval: 86400
+  DirectDomainIp:
+    type: http
+    behavior: classical
+    url: https://raw.githubusercontent.com/lemiones/subconverter-rules/refs/heads/main/ruleset/DirectDomainIp.yaml
+    path: ./rule_provider/DirectDomainIp.yaml
     interval: 86400
