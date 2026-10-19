@@ -913,7 +913,7 @@ rule-providers:
     format: text
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/AmazonIp.text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/Ruleset/AmazonIp.list
     path: ./rule_provider/AmazonIp.text
     interval: 86400
   Bahamut:
@@ -962,7 +962,7 @@ rule-providers:
     format: text
     type: http
     behavior: classical
-    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ChinaDomain.text
+    url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/refs/heads/master/Clash/ChinaDomain.list
     path: ./rule_provider/ChinaDomain.text
     interval: 86400
   ChinaCompanyIp:
