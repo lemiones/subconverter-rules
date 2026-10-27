@@ -17,7 +17,6 @@ proxy-providers:
       interval: 120
       timeout: 3000
       lazy: false
-      expected-status: 200/204/302
 
 proxy-groups:
   - name: 🚀 节点选择
