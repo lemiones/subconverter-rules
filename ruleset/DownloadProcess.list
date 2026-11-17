@@ -21,6 +21,7 @@ PROCESS-NAME,WebTorrent.exe
 PROCESS-NAME,WebTorrent Helper.exe
 PROCESS-NAME,qbittorrent.exe
 DOMAIN-SUFFIX,qbittorrent.org
+# From blackmatrix7
 PROCESS-NAME,BitComet
 PROCESS-NAME,BitComet.exe
 PROCESS-NAME,BitComet_x64.exe
