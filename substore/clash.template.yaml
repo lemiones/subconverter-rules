@@ -670,103 +670,103 @@ rule-providers:
     interval: 86400
   geosite_category_ai_not_cn:
     type: http 
-    behavior: classical
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/category-ai-!cn.mrs 
     path: ./rule_provider/geosite_category_ai_not_cn.mrs
+    interval: 86400
   geosite_github:
     type: http 
-    behavior: classical
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/github.mrs 
     path: ./rule_provider/geosite_github.mrs
+    interval: 86400
   geosite_microsoft_not_cn:
     type: http 
-    behavior: classical
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/microsoft@!cn.mrs 
     path: ./rule_provider/geosite_microsoft_not_cn.mrs
+    interval: 86400
   geosite_apple_not_cn:
     type: http 
-    behavior: classical
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/apple@!cn.mrs 
     path: ./rule_provider/geosite_apple_not_cn.mrs
+    interval: 86400
   geosite_category_netdisk_not_cn:
     type: http 
-    behavior: classical
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/category-netdisk-!cn.mrs 
     path: ./rule_provider/geosite_category_netdisk_not_cn.mrs
+    interval: 86400
   geosite_category_communication:
     type: http 
-    behavior: classical
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/category-communication.mrs
     path: ./rule_provider/geosite_category_communication.mrs
+    interval: 86400
   geosite_category_social_media_not_cn:
     type: http 
-    behavior: classical
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/category-social-media-!cn.mrs
     path: ./rule_provider/geosite_category_social_media_not_cn.mrs
+    interval: 86400
   geosite_category_games_not_cn:
     type: http 
-    behavior: classical
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/category-games-!cn.mrs
     path: ./rule_provider/geosite_category_games_not_cn.mrs
+    interval: 86400
   geosite_category_entertainment_not_cn:
     type: http 
-    behavior: classical
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/category-entertainment@!cn.mrs
     path: ./rule_provider/geosite_category_entertainment_not_cn.mrs
+    interval: 86400
   geosite_category_bank_cn:
     type: http 
-    behavior: classical
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/category-bank-cn.mrs
     path: ./rule_provider/geosite_category_bank_cn.mrs
+    interval: 86400
   geosite_category_media_cn:
     type: http 
-    behavior: classical
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/category-media-cn.mrs
     path: ./rule_provider/geosite_category_media_cn.mrs
+    interval: 86400
   geosite_geolocation_not_cn:
     type: http 
-    behavior: classical
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/geolocation-!cn.mrs
     path: ./rule_provider/geosite_geolocation_not_cn.mrs
+    interval: 86400
   geosite_private:
     type: http 
-    behavior: classical
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/private.mrs
     path: ./rule_provider/geosite_private.mrs
+    interval: 86400
   geosite_steam_cn:
     type: http 
-    behavior: classical
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/steam@cn.mrs
     path: ./rule_provider/geosite_steam_cn.mrs
+    interval: 86400
   geosite_google_cn:
     type: http 
-    behavior: classical
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/google@cn.mrs
     path: ./rule_provider/geosite_google_cn.mrs
+    interval: 86400
   geosite_geolocation_cn:
     type: http 
-    behavior: classical
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/geolocation-cn.mrs
     path: ./rule_provider/geosite_geolocation_cn.mrs
+    interval: 86400
   geosite_cn:
     type: http 
-    behavior: classical
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/cn.mrs
     path: ./rule_provider/geosite_cn.mrs
+    interval: 86400
