@@ -639,7 +639,7 @@ rules:
   - RULE-SET,geosite-apple-!cn,🍎 苹果服务
   - RULE-SET,geosite-category-netdisk-!cn,Ⓜ️ 国外网盘
   - RULE-SET,geosite-category-communication,📱 国外社交
-  - RULE-SET,geosite-category-socia-media-!cn,📱 国外社交
+  - RULE-SET,geosite-category-social-media-!cn,📱 国外社交
   - RULE-SET,geosite-category-games-!cn,🎮 游戏平台
   - RULE-SET,geosite-category-entertainment-!cn,📹 娱乐频道
   - RULE-SET,geosite-category-bank-cn,🌏 国内媒体
@@ -647,7 +647,7 @@ rules:
   - RULE-SET,geosite-geolocation-!cn,🌍 国外媒体
   - RULE-SET,geosite-private,🎯 全球直连
   - RULE-SET,geosite-steam-cn,🎯 全球直连
-  - RULE-SET,geosite-googl-cn,🎯 全球直连
+  - RULE-SET,geosite-google-cn,🎯 全球直连
   - RULE-SET,geosite-geolocation-cn,🎯 全球直连
   - RULE-SET,geosite-cn,🎯 全球直连
   - GEOIP,CN,🎯 全球直连
