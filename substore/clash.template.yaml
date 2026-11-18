@@ -192,7 +192,7 @@ proxy-groups:
       - 🌍 非洲节点
       - 🚀 手动切换
       - DIRECT
-  - name: 📱 国外社交
+  - name: 📱 社交媒体
     type: select
     proxies:
       - 🚀 节点选择
@@ -273,7 +273,7 @@ proxy-groups:
       - 🌍 非洲节点
       - 🚀 手动切换
       - DIRECT
-  - name: 🌍 国外媒体
+  - name: 🌍 国外网站
     type: select
     proxies:
       - 🚀 节点选择
@@ -300,7 +300,7 @@ proxy-groups:
       - 🌍 非洲节点
       - 🚀 手动切换
       - DIRECT
-  - name: 🌏 国内媒体
+  - name: 🌏 国内网站
     type: select
     proxies:
       - DIRECT
@@ -638,14 +638,15 @@ rules:
   - RULE-SET,geosite-microsoft-!cn,Ⓜ️ 微软服务
   - RULE-SET,geosite-apple-!cn,🍎 苹果服务
   - RULE-SET,geosite-category-netdisk-!cn,Ⓜ️ 国外网盘
-  - RULE-SET,geosite-category-communication,📱 国外社交
-  - RULE-SET,geosite-category-social-media-!cn,📱 国外社交
+  - RULE-SET,geosite-category-communication,📱 社交媒体
+  - RULE-SET,geosite-category-social-media-!cn,📱 社交媒体
   - RULE-SET,geosite-category-games-!cn,🎮 游戏平台
   - RULE-SET,geosite-category-entertainment-!cn,📹 娱乐频道
-  - RULE-SET,geosite-category-bank-cn,🌏 国内媒体
-  - RULE-SET,geosite-category-media-cn,🌏 国内媒体
-  - RULE-SET,geosite-geolocation-!cn,🌍 国外媒体
+  - RULE-SET,geosite-category-bank-cn,🌏 国内网站
+  - RULE-SET,geosite-category-media-cn,🌏 国内网站
+  - RULE-SET,geosite-geolocation-!cn,🌍 国外网站
   - RULE-SET,geosite-private,🎯 全球直连
+  - RULE-SET,geosite-apple-cn,🎯 全球直连
   - RULE-SET,geosite-steam-cn,🎯 全球直连
   - RULE-SET,geosite-google-cn,🎯 全球直连
   - RULE-SET,geosite-geolocation-cn,🎯 全球直连
@@ -758,6 +759,13 @@ rule-providers:
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/private.mrs
     path: ./rule_provider/geosite-private.mrs
+    interval: 86400
+  geosite-apple-cn:
+    type: http 
+    behavior: domain
+    format: mrs
+    url: https://direct.sleepstars.de/mihomo/geosite/apple@cn.mrs
+    path: ./rule_provider/geosite-apple-cn.mrs
     interval: 86400
   geosite-steam-cn:
     type: http 
