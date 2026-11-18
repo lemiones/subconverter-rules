@@ -668,7 +668,7 @@ rule-providers:
     url: https://raw.githubusercontent.com/lemiones/subconverter-rules/refs/heads/main/ruleset/DownloadProcess.yaml
     path: ./rule_provider/download-process.yaml
     interval: 86400
-  geosite-category-ai-!_cn:
+  geosite-category-ai-!cn:
     type: http 
     behavior: domain
     format: mrs
