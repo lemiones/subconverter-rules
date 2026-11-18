@@ -631,159 +631,159 @@ proxy-groups:
       - sub-proxy-provider
     filter: "(?i)(家宽|宽带|动态家宽)"
 rules:
-  - RULE-SET,direct_domain_ip,🎯 全球直连
-  - RULE-SET,download_process,🎯 全球直连
-  - RULE-SET,geosite_category_ai_not_cn,💬 OpenAI
-  - RULE-SET,geosite_github,🌀 GitHub
-  - RULE-SET,geosite_microsoft_not_cn,Ⓜ️ 微软服务
-  - RULE-SET,geosite_apple_not_cn,🍎 苹果服务
-  - RULE-SET,geosite_category_netdisk_not_cn,Ⓜ️ 国外网盘
-  - RULE-SET,geosite_category_communication,📱 国外社交
-  - RULE-SET,geosite_category_social_media_not_cn,📱 国外社交
-  - RULE-SET,geosite_category_games_not_cn,🎮 游戏平台
-  - RULE-SET,geosite_category_entertainment_not_cn,📹 娱乐频道
-  - RULE-SET,geosite_category_bank_cn,🌏 国内媒体
-  - RULE-SET,geosite_category_media_cn,🌏 国内媒体
-  - RULE-SET,geosite_geolocation_not_cn,🌍 国外媒体
-  - RULE-SET,geosite_private,🎯 全球直连
-  - RULE-SET,geosite_steam_cn,🎯 全球直连
-  - RULE-SET,geosite_google_cn,🎯 全球直连
-  - RULE-SET,geosite_geolocation_cn,🎯 全球直连
-  - RULE-SET,geosite_cn,🎯 全球直连
+  - RULE-SET,direct-domain-ip,🎯 全球直连
+  - RULE-SET,download-process,🎯 全球直连
+  - RULE-SET,geosite-category-ai-!cn,💬 OpenAI
+  - RULE-SET,geosite-github,🌀 GitHub
+  - RULE-SET,geosite-microsoft-!cn,Ⓜ️ 微软服务
+  - RULE-SET,geosite-apple-!cn,🍎 苹果服务
+  - RULE-SET,geosite-category-netdisk-!cn,Ⓜ️ 国外网盘
+  - RULE-SET,geosite-category-communication,📱 国外社交
+  - RULE-SET,geosite-category-socia-media-!cn,📱 国外社交
+  - RULE-SET,geosite-category-games-!cn,🎮 游戏平台
+  - RULE-SET,geosite-category-entertainment-!cn,📹 娱乐频道
+  - RULE-SET,geosite-category-bank-cn,🌏 国内媒体
+  - RULE-SET,geosite-category-media-cn,🌏 国内媒体
+  - RULE-SET,geosite-geolocation-!cn,🌍 国外媒体
+  - RULE-SET,geosite-private,🎯 全球直连
+  - RULE-SET,geosite-steam-cn,🎯 全球直连
+  - RULE-SET,geosite-googl-cn,🎯 全球直连
+  - RULE-SET,geosite-geolocation-cn,🎯 全球直连
+  - RULE-SET,geosite-cn,🎯 全球直连
   - GEOIP,CN,🎯 全球直连
   - MATCH,🐟 漏网之鱼
 
 rule-providers:
-  direct_domain_ip:
+  direct-domain-ip:
     type: http
     behavior: classical
     format: yaml
     url: https://raw.githubusercontent.com/lemiones/subconverter-rules/refs/heads/main/ruleset/DirectDomainIp.yaml
-    path: ./rule_provider/direct_domain_ip.yaml
+    path: ./rule_provider/direct-domain-ip.yaml
     interval: 86400
-  download_process:
+  download-process:
     type: http 
     behavior: classical
     format: yaml
     url: https://raw.githubusercontent.com/lemiones/subconverter-rules/refs/heads/main/ruleset/DownloadProcess.yaml
-    path: ./rule_provider/download_process.yaml
+    path: ./rule_provider/download-process.yaml
     interval: 86400
-  geosite_category_ai_not_cn:
+  geosite-category-ai-!_cn:
     type: http 
     behavior: domain
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/category-ai-!cn.mrs 
-    path: ./rule_provider/geosite_category_ai_not_cn.mrs
+    path: ./rule_provider/geosite-category-ai-!cn.mrs
     interval: 86400
-  geosite_github:
+  geosite-github:
     type: http 
     behavior: domain
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/github.mrs 
-    path: ./rule_provider/geosite_github.mrs
+    path: ./rule_provider/geosite-github.mrs
     interval: 86400
-  geosite_microsoft_not_cn:
+  geosite-microsoft-!cn:
     type: http 
     behavior: domain
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/microsoft@!cn.mrs 
-    path: ./rule_provider/geosite_microsoft_not_cn.mrs
+    path: ./rule_provider/geosite-microsoft-!cn.mrs
     interval: 86400
-  geosite_apple_not_cn:
+  geosite-apple-!cn:
     type: http 
     behavior: domain
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/apple@!cn.mrs 
-    path: ./rule_provider/geosite_apple_not_cn.mrs
+    path: ./rule_provider/geosite-apple-!cn.mrs
     interval: 86400
-  geosite_category_netdisk_not_cn:
+  geosite-category-netdisk-!cn:
     type: http 
     behavior: domain
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/category-netdisk-!cn.mrs 
-    path: ./rule_provider/geosite_category_netdisk_not_cn.mrs
+    path: ./rule_provider/geosite-category-netdisk-!cn.mrs
     interval: 86400
-  geosite_category_communication:
+  geosite-category-communication:
     type: http 
     behavior: domain
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/category-communication.mrs
-    path: ./rule_provider/geosite_category_communication.mrs
+    path: ./rule_provider/geosite-category-communication.mrs
     interval: 86400
-  geosite_category_social_media_not_cn:
+  geosite-category-social-media-!cn:
     type: http 
     behavior: domain
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/category-social-media-!cn.mrs
-    path: ./rule_provider/geosite_category_social_media_not_cn.mrs
+    path: ./rule_provider/geosite-category-social-media-!cn.mrs
     interval: 86400
-  geosite_category_games_not_cn:
+  geosite-category-games-!cn:
     type: http 
     behavior: domain
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/category-games-!cn.mrs
-    path: ./rule_provider/geosite_category_games_not_cn.mrs
+    path: ./rule_provider/geosite-category-games-!cn.mrs
     interval: 86400
-  geosite_category_entertainment_not_cn:
+  geosite-category-entertainment-!cn:
     type: http 
     behavior: domain
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/category-entertainment@!cn.mrs
-    path: ./rule_provider/geosite_category_entertainment_not_cn.mrs
+    path: ./rule_provider/geosite-category-entertainment-!cn.mrs
     interval: 86400
-  geosite_category_bank_cn:
+  geosite-category-bank-cn:
     type: http
     behavior: domain
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/category-bank-cn.mrs
-    path: ./rule_provider/geosite_category_bank_cn.mrs
+    path: ./rule_provider/geosite-category-bank-cn.mrs
     interval: 86400
-  geosite_category_media_cn:
+  geosite-category-media-cn:
     type: http 
     behavior: domain
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/category-media-cn.mrs
-    path: ./rule_provider/geosite_category_media_cn.mrs
+    path: ./rule_provider/geosite-category-media-cn.mrs
     interval: 86400
-  geosite_geolocation_not_cn:
+  geosite-geolocation-!cn:
     type: http 
     behavior: domain
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/geolocation-!cn.mrs
-    path: ./rule_provider/geosite_geolocation_not_cn.mrs
+    path: ./rule_provider/geosite-geolocation-!cn.mrs
     interval: 86400
-  geosite_private:
+  geosite-private:
     type: http 
     behavior: domain
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/private.mrs
-    path: ./rule_provider/geosite_private.mrs
+    path: ./rule_provider/geosite-private.mrs
     interval: 86400
-  geosite_steam_cn:
+  geosite-steam-cn:
     type: http 
     behavior: domain
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/steam@cn.mrs
-    path: ./rule_provider/geosite_steam_cn.mrs
+    path: ./rule_provider/geosite-steam-cn.mrs
     interval: 86400
-  geosite_google_cn:
+  geosite-google-cn:
     type: http 
     behavior: domain
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/google@cn.mrs
-    path: ./rule_provider/geosite_google_cn.mrs
+    path: ./rule_provider/geosite-google-cn.mrs
     interval: 86400
-  geosite_geolocation_cn:
+  geosite-geolocation-cn:
     type: http 
     behavior: domain
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/geolocation-cn.mrs
-    path: ./rule_provider/geosite_geolocation_cn.mrs
+    path: ./rule_provider/geosite-geolocation-cn.mrs
     interval: 86400
-  geosite_cn:
+  geosite-cn:
     type: http 
     behavior: domain
     format: mrs
     url: https://direct.sleepstars.de/mihomo/geosite/cn.mrs
-    path: ./rule_provider/geosite_cn.mrs
+    path: ./rule_provider/geosite-cn.mrs
     interval: 86400
