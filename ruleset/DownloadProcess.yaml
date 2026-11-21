@@ -25,7 +25,7 @@ payload:
   - DOMAIN-SUFFIX,smtp
   - DOMAIN-KEYWORD,aria2
   # From blackmatrix7
-  DOMAIN-SUFFIX,qbittorrent.org
+  - DOMAIN-SUFFIX,qbittorrent.org
   - DOMAIN-KEYWORD,thunder
   - DOMAIN-KEYWORD,xlliveud
   - DOMAIN-KEYWORD,xunlei
