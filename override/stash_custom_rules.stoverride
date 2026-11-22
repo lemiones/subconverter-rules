@@ -5,9 +5,9 @@ author: |-
   Lemione[https://github.com/lemiones]
 homepage: 'https://github.com/lemiones/subconverter-rules/'
 icon: 'https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Global.png'
-category: 'Custom Rules'
-date: '2024-12-21 07:13:21'
-version: '0.1.0'
+category: 'Custom DNS Rules'
+date: '2026-11-23 08:00:00'
+version: '0.1.1'
 
 rule-providers:
   openclash-fake-filter:
@@ -48,6 +48,8 @@ dns: #!replace
   # 代理服务器域名解析
   # 该配置使用独立的 DNS 查询链路，不会跟随代理规则，可避免连接代理服务器时产生递归查询
   proxy-server-nameserver:
+    - https://doh.pub/dns-query
+    - https://dns.alidns.com/dns-query
     - tls://dot.pub
     - tls://dns.quad9.net
   # 对部分域名使用单独的 DNS 服务器  
