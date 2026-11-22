@@ -237,7 +237,7 @@ internet-test-url = https://connectivitycheck.platform.hicloud.com/generate_204
 // iOS 5.23.0 及以上版本和 Mac 6.10.0 及以上版本支持 HTTPS URL。
 // 可选，HTTP URL，默认值：http://bing.com/
 // 
-proxy-test-urls = http://cp.cloudflare.com/generate_204
+proxy-test-url = https://cp.cloudflare.com/generate_204
 
 //
 // 代理策略的默认连接性测试超时时间。
