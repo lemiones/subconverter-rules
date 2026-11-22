@@ -230,14 +230,14 @@ http-api-mcp = false
 // TLS 握手在 HEAD 请求之前进行，并会验证服务器证书；报告的延迟仍基于通过已建立连接发出的第二个 HEAD 请求进行测量，因此不包含 TLS 握手的时间。
 // 可选，HTTP URL，默认值：http://bing.com/
 // 
-internet-test-url = http://connectivitycheck.platform.hicloud.com/generate_204
+internet-test-url = https://connectivitycheck.platform.hicloud.com/generate_204
 
 // 
 // 代理策略的默认测试 URL。
 // iOS 5.23.0 及以上版本和 Mac 6.10.0 及以上版本支持 HTTPS URL。
 // 可选，HTTP URL，默认值：http://bing.com/
 // 
-proxy-test-url = http://cp.cloudflare.com/generate_204
+proxy-test-urls = http://cp.cloudflare.com/generate_204
 
 //
 // 代理策略的默认连接性测试超时时间。
@@ -488,3 +488,62 @@ read-etc-hosts = true #!MACOS-ONLY
 subnet-exp-wifi-always-match = true #!MACOS-ONLY
  
 # <---------------------------- Surge Mac Only Parameters End ---------------------------->
+
+[Testing]
+
+//
+// The URL used for the download throughput test.
+// Optional, URL
+// 
+download-url = https://mensura.cdn-apple.com/api/v1/gm/config/large
+
+//
+// The URL used for the download throughput test through proxy policies. 
+// If this parameter is omitted, Surge uses download-url.
+// Optional, URL
+//
+download-url-proxy = https://mensura.cdn-apple.com/api/v1/gm/config/large
+
+// 
+// The URL used for the upload throughput test.
+// Optional, URL
+// 
+upload-url = https://mensura.cdn-apple.com/api/v1/gm/config/slurp
+
+//
+// The URL used for the upload throughput test through proxy policies. 
+// If this parameter is omitted, Surge uses upload-url.
+// Optional, URL
+// 
+upload-url-proxy = https://mensura.cdn-apple.com/api/v1/gm/config/slurp
+
+//
+// The number of concurrent download connections.
+// Optional, integer, default: 4
+//
+download-concurrency = 4
+
+//
+// The number of concurrent upload connections.
+// Optional, integer, default: 4
+// 
+upload-concurrency = 4
+
+//
+// The maximum duration of the download test.
+// Optional, duration, default: 10s
+//
+download-duration-limit = 10s
+
+// 
+// The maximum amount of data uploaded during the upload test, in bytes. 
+// Unit suffixes such as GB are not supported.
+// Optional, integer, default: 1000000000
+// 
+upload-size-limit = 1000000000
+
+//
+// The maximum duration of the upload test.
+// Optional, duration, default: 10s
+// 
+upload-duration-limit = 10s
