@@ -50,6 +50,7 @@ dns: #!replace
   proxy-server-nameserver:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
+    - https://dns.cmfro.com:8443/dns-query
     - tls://dot.pub
     - tls://dns.quad9.net
   # 对部分域名使用单独的 DNS 服务器  
