@@ -48,7 +48,6 @@ dns: #!replace
   # 代理服务器域名解析
   # 该配置使用独立的 DNS 查询链路，不会跟随代理规则，可避免连接代理服务器时产生递归查询
   proxy-server-nameserver:
-    - https://dns.cmfro.com:8443/dns-query
     - tls://dot.pub
     - tls://dns.quad9.net
   # 对部分域名使用单独的 DNS 服务器  
@@ -59,6 +58,8 @@ dns: #!replace
     'geosite:geolocation-!cn': 
        - tls://dns.google
        - tls://dns.quad9.net
+    '*.shzxvgs.com':
+       - https://dns.cmfro.com:8443/dns-query
   # 在以下列表的域名将不会被解析为 fake ip，这些域名相关的解析请求将会返回它们真实的 IP 地址
   fake-ip-filter:
     - 'geosite:private'
