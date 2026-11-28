@@ -50,6 +50,9 @@ dns: #!replace
   proxy-server-nameserver:
     - tls://dot.pub
     - tls://dns.quad9.net
+  # 对节点域名采用单独的服务器
+  proxy-server-nameserver-policy:
+    '*.shzxvgs.com': https://dns.cmfro.com:8443/dns-query#DIRECT&h3=true
   # 对部分域名使用单独的 DNS 服务器  
   nameserver-policy: 
     'geosite:cn': 
@@ -58,8 +61,6 @@ dns: #!replace
     'geosite:geolocation-!cn': 
        - tls://dns.google
        - tls://dns.quad9.net
-    '*.shzxvgs.com':
-       - https://dns.cmfro.com:8443/dns-query
   # 在以下列表的域名将不会被解析为 fake ip，这些域名相关的解析请求将会返回它们真实的 IP 地址
   fake-ip-filter:
     - 'geosite:private'
